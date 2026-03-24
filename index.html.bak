@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asenso — Special Inspections & Deputy Inspection | Southern California</title>
+  <meta name="description" content="ICC-certified special inspections and deputy inspection across LA, Orange County, Riverside and San Bernardino. Family-owned, minority-owned, pursuing DBE. Same-day reports.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:     #142235;
+      --charcoal: #2A2F36;
+      --sand:     #EAE2D6;
+      --stone:    #D6D1C8;
+      --gold:     #B8924A;
+      --white:    #FDFAF7;
+      --text:     #2A2F36;
+      --muted:    #7A7670;
+      --border:   rgba(42,47,54,0.10);
+      --radius:   6px;
+      --max:      1160px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--white); color: var(--text); font-family: 'Manrope', sans-serif; font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    .pattern-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+    .pattern-bg svg { width: 100%; height: 100%; }
+
+    /* NAV */
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(253,250,247,0.96); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 0 2rem; }
+    .nav-inner { max-width: var(--max); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .logo { display: flex; align-items: center; gap: 13px; text-decoration: none; }
+    .logo-mark { width: 36px; height: 36px; flex-shrink: 0; }
+    .logo-text { display: flex; flex-direction: column; line-height: 1.1; gap: 2px; }
+    .logo-name { font-size: 15px; font-weight: 800; letter-spacing: 0.2em; color: var(--navy); text-transform: uppercase; }
+    .logo-sub  { font-size: 9px; font-weight: 600; letter-spacing: 0.22em; color: var(--gold); text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 2.2rem; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--muted); font-size: 13px; font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--navy); }
+    .btn-nav { background: var(--navy); color: var(--white); font-family: 'Manrope', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 10px 22px; border: none; border-radius: 100px; cursor: pointer; text-decoration: none; display: inline-block; transition: background .2s, transform .15s; }
+    .btn-nav:hover { background: #1c3148; transform: translateY(-1px); }
+
+    /* IDENTITY BANNER */
+    #identity-band { background: var(--navy); padding: .75rem 2rem; border-bottom: 1px solid rgba(255,255,255,.06); }
+    .identity-inner { max-width: var(--max); margin: 0 auto; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: .4rem 1.6rem; }
+    .id-tag { font-size: 10.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(234,226,214,.5); display: flex; align-items: center; gap: 6px; }
+    .id-tag::before { content: ''; width: 4px; height: 4px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+    .id-tag.pursuing { color: rgba(184,146,74,.65); }
+    .id-tag.pursuing::before { background: rgba(184,146,74,.5); }
+
+    /* HERO */
+    #hero { min-height: 90vh; display: flex; align-items: center; background: var(--navy); position: relative; overflow: hidden; padding: 6rem 2rem; }
+    .hero-inner { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 5rem; align-items: center; position: relative; z-index: 1; }
+    .hero-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: .34em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 12px; }
+    .hero-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: var(--gold); }
+    h1 { font-size: clamp(2.8rem, 4.8vw, 4.2rem); font-weight: 800; line-height: 1.04; letter-spacing: -.025em; color: var(--white); margin-bottom: 1.5rem; }
+    h1 em { font-style: normal; color: var(--gold); }
+    .hero-lead { font-size: 16px; color: rgba(234,226,214,.58); line-height: 1.85; margin-bottom: .85rem; max-width: 500px; font-weight: 400; }
+    .hero-family { font-size: 13px; color: rgba(184,146,74,.65); line-height: 1.65; margin-bottom: 2.2rem; max-width: 480px; font-style: italic; }
+    .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.4rem; }
+    .btn-gold { background: var(--gold); color: var(--navy); font-family: 'Manrope', sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 13px 28px; border: none; border-radius: 100px; cursor: pointer; text-decoration: none; display: inline-block; transition: opacity .2s, transform .15s; }
+    .btn-gold:hover { opacity: .88; transform: translateY(-1px); }
+    .btn-ghost { background: transparent; color: rgba(234,226,214,.75); font-family: 'Manrope', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 13px 28px; border: 1.5px solid rgba(234,226,214,.2); border-radius: 100px; cursor: pointer; text-decoration: none; display: inline-block; transition: border-color .2s; }
+    .btn-ghost:hover { border-color: rgba(234,226,214,.5); }
+    .jurisdiction-row { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+    .juris-label { font-size: 10px; font-weight: 600; letter-spacing: .15em; text-transform: uppercase; color: rgba(234,226,214,.28); margin-right: .2rem; }
+    .juris-tag { font-size: 11px; font-weight: 600; color: rgba(234,226,214,.5); background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); border-radius: 100px; padding: 4px 12px; white-space: nowrap; }
+    .hero-creds { display: flex; flex-direction: column; gap: .85rem; }
+    .cred-pill { display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); border-radius: 10px; padding: 1rem 1.2rem; }
+    .cred-icon { width: 18px; height: 18px; color: var(--gold); flex-shrink: 0; margin-top: 2px; }
+    .cred-label { font-size: 12px; font-weight: 700; color: var(--white); margin-bottom: 2px; }
+    .cred-sub   { font-size: 11px; color: rgba(234,226,214,.42); line-height: 1.4; }
+
+    /* SHARED */
+    section { padding: 6rem 2rem; }
+    .section-inner { max-width: var(--max); margin: 0 auto; }
+    .section-tag { font-size: 10px; font-weight: 700; letter-spacing: .32em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    h2 { font-size: clamp(1.9rem, 3vw, 2.6rem); font-weight: 800; line-height: 1.07; letter-spacing: -.02em; color: var(--navy); margin-bottom: 1rem; }
+    .section-lead { font-size: 16px; color: var(--muted); max-width: 560px; margin-bottom: 3.5rem; line-height: 1.8; font-weight: 400; }
+
+    /* DIFF BAND */
+    #diff-band { background: var(--sand); padding: 2.8rem 2rem; }
+    .diff-inner { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: repeat(4,1fr); gap: 2rem; }
+    .diff-item { display: flex; flex-direction: column; gap: .35rem; }
+    .diff-item svg { width: 22px; height: 22px; color: var(--gold); margin-bottom: .4rem; }
+    .diff-item strong { font-size: .9rem; font-weight: 700; color: var(--navy); }
+    .diff-item span { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+    /* SERVICES */
+    #services { background: var(--white); }
+    .services-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: start; }
+    .service-nav { position: sticky; top: 88px; max-height: calc(100vh - 120px); overflow-y: auto; }
+    .service-panel { scroll-margin-top: 100px; }
+    .service-nav-label { font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; }
+    .service-nav-list { list-style: none; display: flex; flex-direction: column; gap: .2rem; }
+    .service-nav-list li a { display: block; padding: .55rem .85rem; border-radius: var(--radius); text-decoration: none; font-size: 13.5px; font-weight: 500; color: var(--muted); transition: background .15s, color .15s; border-left: 2px solid transparent; }
+    .service-nav-list li a:hover { background: var(--sand); color: var(--navy); border-left-color: var(--gold); }
+    .service-panels { display: flex; flex-direction: column; gap: 2rem; }
+    .service-panel { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 2.2rem 2rem; transition: border-color .2s; position: relative; overflow: hidden; }
+    .service-panel::before { content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 3px; background: var(--gold); opacity: 0; transition: opacity .2s; }
+    .service-panel:hover { border-color: rgba(184,146,74,.3); }
+    .service-panel:hover::before { opacity: 1; }
+    .panel-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: .75rem; }
+    .panel-header h3 { font-size: 1.1rem; font-weight: 800; color: var(--navy); }
+    .panel-code { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); background: rgba(184,146,74,.1); padding: 4px 10px; border-radius: 100px; white-space: nowrap; flex-shrink: 0; }
+    .panel-desc { font-size: 14px; color: var(--muted); line-height: 1.75; margin-bottom: 1.2rem; }
+    .panel-items { display: grid; grid-template-columns: 1fr 1fr; gap: .4rem .75rem; list-style: none; }
+    .panel-items li { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--charcoal); line-height: 1.5; }
+    .panel-items li::before { content: ''; width: 4px; height: 4px; background: var(--gold); flex-shrink: 0; margin-top: 7px; clip-path: polygon(50% 0%,0% 100%,100% 100%); }
+
+    /* CREDENTIALS SECTION */
+    #credentials { background: var(--sand); }
+    .creds-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; margin-bottom: 3.5rem; }
+    .creds-intro p { font-size: 15px; color: var(--muted); line-height: 1.8; }
+
+    /* cert body tabs */
+    .cert-tabs { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .cert-tab { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 6px 14px; border-radius: 100px; border: 1.5px solid var(--stone); background: transparent; color: var(--muted); cursor: pointer; transition: all .15s; font-family: 'Manrope', sans-serif; }
+    .cert-tab.active, .cert-tab:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
+    .cert-body-section { display: none; }
+    .cert-body-section.active { display: block; }
+
+    /* team grid */
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; }
+    .team-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 1.6rem; }
+    .team-card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1.1rem; }
+    .team-name { font-size: .95rem; font-weight: 800; color: var(--navy); letter-spacing: -.01em; }
+    .team-cert-num { font-size: 10px; font-weight: 600; letter-spacing: .06em; color: var(--muted); margin-top: 2px; }
+    .team-expires { font-size: 10px; font-weight: 600; letter-spacing: .06em; color: rgba(184,146,74,.8); background: rgba(184,146,74,.1); padding: 3px 9px; border-radius: 100px; white-space: nowrap; flex-shrink: 0; }
+    .team-certs { list-style: none; display: flex; flex-direction: column; gap: .4rem; }
+    .team-certs li { display: flex; align-items: flex-start; gap: 8px; font-size: 12.5px; color: var(--muted); line-height: 1.4; }
+    .team-certs li::before { content: ''; width: 4px; height: 4px; background: var(--gold); flex-shrink: 0; margin-top: 6px; clip-path: polygon(50% 0%,0% 100%,100% 100%); }
+    .team-certs li strong { color: var(--charcoal); font-weight: 600; }
+
+    /* jurisdiction grid */
+    .juris-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+    .juris-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 1.6rem; }
+    .juris-card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+    .juris-authority { font-size: .92rem; font-weight: 800; color: var(--navy); }
+    .juris-cert-id { font-size: 10px; font-weight: 600; color: var(--muted); }
+
+    /* cert summary bar */
+    .cert-summary { display: grid; grid-template-columns: repeat(6,1fr); gap: 1rem; margin-bottom: 3rem; }
+    .cert-summary-item { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 1.1rem 1rem; text-align: center; }
+    .cert-summary-body { font-size: 1rem; font-weight: 800; color: var(--navy); letter-spacing: -.01em; margin-bottom: 2px; }
+    .cert-summary-label { font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+
+    /* CERT CATEGORY GRID (team-level, no names) */
+    .cert-category-grid { display: flex; flex-direction: column; gap: .5rem; }
+    .cert-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .75rem 1rem; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); }
+    .cert-row-name { font-size: 14px; font-weight: 500; color: var(--charcoal); }
+    .cert-row-count { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--gold); background: rgba(184,146,74,.1); padding: 3px 10px; border-radius: 100px; white-space: nowrap; flex-shrink: 0; }
+
+    /* SENIOR STAFF */
+    #senior-staff { background: var(--sand); }
+    .staff-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    .staff-card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; }
+    .staff-card-top { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; }
+    .staff-avatar { width: 48px; height: 48px; border-radius: 10px; background: var(--navy); color: var(--gold); font-size: 13px; font-weight: 800; letter-spacing: .04em; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .staff-name  { font-size: 1rem; font-weight: 800; color: var(--navy); letter-spacing: -.01em; margin-bottom: 2px; }
+    .staff-title { font-size: 12.5px; font-weight: 500; color: var(--muted); margin-bottom: 3px; }
+    .staff-exp   { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--gold); }
+    .staff-certs-label { font-size: 9px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: .7rem; }
+    .staff-cert-list { list-style: none; display: flex; flex-direction: column; gap: .45rem; }
+    .staff-cert-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--muted); line-height: 1.5; }
+    .staff-cert-list li::before { content: ''; width: 4px; height: 4px; background: var(--gold); flex-shrink: 0; margin-top: 6px; clip-path: polygon(50% 0%,0% 100%,100% 100%); }
+    .staff-cert-list li strong { color: var(--charcoal); font-weight: 700; }
+    @media (max-width: 720px) { .staff-grid { grid-template-columns: 1fr; } }
+
+    /* WHY */
+    #why { background: var(--white); position: relative; overflow: hidden; }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    .why-features { display: flex; flex-direction: column; gap: 1.8rem; }
+    .feature-item { display: flex; gap: 1.4rem; align-items: flex-start; }
+    .feature-num { font-size: 2.4rem; font-weight: 800; letter-spacing: -.04em; color: rgba(184,146,74,.18); line-height: 1; flex-shrink: 0; width: 48px; }
+    .feature-content h4 { font-size: .95rem; font-weight: 700; margin-bottom: .25rem; color: var(--navy); }
+    .feature-content p { font-size: 13.5px; color: var(--muted); line-height: 1.7; }
+    .vs-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; background: var(--white); }
+    .vs-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .vs-table th { font-size: 10px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; color: var(--muted); padding: .7rem .85rem; text-align: left; border-bottom: 1px solid var(--stone); }
+    .vs-table th.col-a { color: var(--gold); }
+    .vs-table td { padding: .65rem .85rem; border-bottom: 1px solid rgba(214,209,200,.5); color: var(--muted); vertical-align: top; line-height: 1.5; }
+    .vs-table tr:last-child td { border-bottom: none; }
+    .vs-table td.row-label { font-weight: 600; color: var(--charcoal); white-space: nowrap; }
+    .vs-table td.col-a { color: var(--navy); font-weight: 600; }
+    .check { color: var(--gold); }
+    .dsa-callout { background: rgba(184,146,74,.08); border: 1px solid rgba(184,146,74,.2); border-radius: 10px; padding: 1.1rem 1.3rem; margin-top: 1.5rem; display: flex; gap: 12px; align-items: flex-start; }
+    .dsa-callout svg { width: 18px; height: 18px; color: var(--gold); flex-shrink: 0; margin-top: 2px; }
+    .dsa-callout p { font-size: 13px; color: var(--charcoal); line-height: 1.6; }
+    .dsa-callout p strong { color: var(--navy); font-weight: 700; }
+
+    /* PROCESS */
+    #process { background: var(--navy); position: relative; overflow: hidden; }
+    #process .section-tag { color: var(--gold); }
+    #process h2 { color: var(--white); }
+    #process .section-lead { color: rgba(234,226,214,.48); }
+    .process-steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 2rem; }
+    .step-num { font-size: 2.8rem; font-weight: 800; letter-spacing: -.04em; color: rgba(184,146,74,.18); line-height: 1; margin-bottom: 1.2rem; }
+    .step-div  { width: 32px; height: 1px; background: var(--gold); margin-bottom: 1.2rem; opacity: .4; }
+    .process-step h4 { font-size: .9rem; font-weight: 700; color: var(--white); margin-bottom: .45rem; }
+    .process-step p { font-size: 13px; color: rgba(234,226,214,.48); line-height: 1.7; }
+
+    /* SELECTED PROJECTS */
+    #projects { background: var(--navy); }
+    #projects .section-tag { color: var(--gold); }
+    #projects h2 { color: var(--white); }
+    #projects .section-lead { color: rgba(234,226,214,.48); }
+    .projects-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; }
+    .project-card { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08); border-radius: 12px; padding: 1.6rem; transition: background .2s, border-color .2s; }
+    .project-card:hover { background: rgba(255,255,255,.07); border-color: rgba(184,146,74,.3); }
+    .project-sector { display: inline-flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: .9rem; }
+    .project-sector::before { content: ''; width: 4px; height: 4px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+    .project-card h3 { font-size: .95rem; font-weight: 800; color: var(--white); margin-bottom: .4rem; line-height: 1.3; letter-spacing: -.01em; }
+    .project-meta { font-size: 12px; color: rgba(234,226,214,.4); margin-bottom: .6rem; }
+    .project-card p { font-size: 13px; color: rgba(234,226,214,.5); line-height: 1.65; }
+    .project-scope { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .85rem; }
+    .project-tag { font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: rgba(184,146,74,.7); background: rgba(184,146,74,.1); border-radius: 100px; padding: 3px 9px; }
+
+    /* WHO WE SERVE */
+    #serve { background: var(--sand); }
+    .serve-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+    .serve-card { background: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; }
+    .serve-icon { width: 32px; height: 32px; color: var(--gold); margin-bottom: 1rem; }
+    .serve-card h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: .5rem; }
+    .serve-card p { font-size: 13.5px; color: var(--muted); line-height: 1.7; }
+
+    /* CONTACT */
+    #contact { background: var(--white); position: relative; overflow: hidden; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.35fr; gap: 5rem; align-items: start; position: relative; z-index: 1; }
+    .contact-info p { font-size: 15px; color: var(--muted); line-height: 1.8; margin-bottom: 2rem; }
+    .contact-detail { display: flex; align-items: flex-start; gap: 12px; font-size: 13.5px; color: var(--muted); margin-bottom: .9rem; }
+    .contact-detail svg { width: 16px; height: 16px; color: var(--gold); flex-shrink: 0; margin-top: 3px; }
+    .contact-urgent { margin-top: 2rem; padding: 1.1rem 1.3rem; background: rgba(20,34,53,.06); border-radius: 8px; font-size: 13px; color: var(--muted); line-height: 1.6; }
+    .contact-urgent strong { color: var(--navy); font-weight: 700; }
+    .contact-form { background: var(--sand); border: 1px solid var(--stone); border-radius: 14px; padding: 2.6rem; }
+    .form-group { margin-bottom: 1.1rem; }
+    .form-group label { display: block; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: .4rem; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; background: var(--white); border: 1px solid var(--stone); border-radius: var(--radius); color: var(--charcoal); font-family: 'Manrope', sans-serif; font-size: 14px; font-weight: 500; padding: 11px 14px; transition: border-color .2s; outline: none; -webkit-appearance: none; }
+    .form-group input::placeholder, .form-group textarea::placeholder { color: var(--stone); }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); }
+    .form-group select { cursor: pointer; }
+    .form-group select option { background: #fff; }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-submit { width: 100%; padding: 14px; font-size: 13px; border-radius: 100px; margin-top: .5rem; }
+    .form-success { display: none; text-align: center; padding: 2.5rem 1rem; }
+    .form-success strong { display: block; font-size: 1.3rem; font-weight: 800; color: var(--navy); margin-bottom: .5rem; }
+    .form-success p { font-size: 14px; color: var(--muted); }
+
+    /* FOOTER */
+    footer { background: var(--navy); padding: 3rem 2rem; }
+    .footer-inner { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: auto 1fr auto; gap: 3rem; align-items: start; flex-wrap: wrap; }
+    footer .logo-name { color: var(--white); }
+    footer .logo-sub  { color: var(--gold); }
+    .footer-id-tags { display: flex; flex-direction: column; gap: .55rem; }
+    .footer-id-tags p { font-size: 10px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: rgba(234,226,214,.28); margin-bottom: .3rem; }
+    .footer-id-tag { display: flex; align-items: center; gap: 8px; font-size: 11.5px; font-weight: 500; color: rgba(234,226,214,.45); }
+    .footer-id-tag::before { content: ''; width: 4px; height: 4px; background: var(--gold); border-radius: 50%; opacity: .5; flex-shrink: 0; }
+    .footer-right { text-align: right; align-self: end; }
+    .footer-copy { font-size: 12px; color: rgba(234,226,214,.3); line-height: 1.9; }
+    .footer-juris { font-size: 11px; color: rgba(234,226,214,.22); margin-top: .5rem; }
+
+    /* RESPONSIVE */
+    /* ── HAMBURGER ── */
+    .hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 36px; height: 36px; background: none; border: none; cursor: pointer; padding: 4px; flex-shrink: 0; }
+    .hamburger span { display: block; height: 1.5px; background: var(--navy); border-radius: 2px; transition: transform .25s, opacity .2s; }
+    .hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    /* mobile nav drawer */
+    .mobile-nav {
+      display: none; position: fixed; top: 68px; left: 0; right: 0; bottom: 0;
+      background: rgba(253,250,247,0.98); backdrop-filter: blur(16px);
+      z-index: 99; flex-direction: column; padding: 2rem 1.5rem;
+      overflow-y: auto;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav ul { list-style: none; display: flex; flex-direction: column; gap: .25rem; margin-bottom: 2rem; }
+    .mobile-nav ul li a {
+      display: block; font-size: 1.15rem; font-weight: 700; color: var(--navy);
+      text-decoration: none; padding: .85rem 0;
+      border-bottom: 1px solid var(--border); letter-spacing: -.01em;
+    }
+    .mobile-nav ul li a:hover { color: var(--gold); }
+    .mobile-nav .btn-gold { width: 100%; text-align: center; padding: 15px; font-size: 13px; }
+    .mobile-nav-identity { margin-top: 2rem; display: flex; flex-direction: column; gap: .5rem; }
+    .mobile-nav-identity span { font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+    .mobile-nav-identity span::before { content: ''; width: 4px; height: 4px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+
+    /* ── TABLET ── */
+    @media (max-width: 980px) {
+      .hero-inner      { grid-template-columns: 1fr; }
+      .hero-creds      { display: none; }
+      .services-layout { grid-template-columns: 1fr; }
+      .service-nav     { position: static; display: none; }
+      .panel-items     { grid-template-columns: 1fr; }
+      .why-grid        { grid-template-columns: 1fr; gap: 3rem; }
+      .contact-grid    { grid-template-columns: 1fr; gap: 3rem; }
+      .process-steps   { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+      .serve-grid      { grid-template-columns: 1fr 1fr; }
+      .projects-grid   { grid-template-columns: 1fr 1fr; }
+      .diff-inner      { grid-template-columns: 1fr 1fr; }
+      .creds-intro     { grid-template-columns: 1fr; gap: 1.5rem; }
+      .cert-summary    { grid-template-columns: repeat(3,1fr); }
+      .footer-inner    { grid-template-columns: 1fr 1fr; }
+      .staff-grid      { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 620px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.75rem; }
+
+      /* nav — show hamburger, hide desktop links */
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+
+      /* hero */
+      #hero { padding: 4rem 1.25rem 3rem; min-height: auto; }
+      .hero-lead { font-size: 15px; }
+      .hero-family { font-size: 13px; }
+      .hero-cta { flex-direction: column; }
+      .hero-cta a { text-align: center; }
+      .jurisdiction-row { gap: .35rem; }
+      .juris-tag { font-size: 10px; padding: 3px 9px; }
+
+      /* identity band */
+      #identity-band { padding: .6rem 1.25rem; }
+      .identity-inner { gap: .3rem 1rem; justify-content: flex-start; }
+      .id-tag { font-size: 9.5px; }
+
+      /* diff band */
+      #diff-band { padding: 2.5rem 1.25rem; }
+      .diff-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+
+      /* sections */
+      section { padding: 3.5rem 1.25rem; }
+      .section-lead { margin-bottom: 2.5rem; }
+      nav, #diff-band, #identity-band { padding-left: 1.25rem; padding-right: 1.25rem; }
+
+      /* services */
+      .panel-items { grid-template-columns: 1fr; }
+
+      /* cert tabs — make them scrollable row */
+      .cert-tabs { flex-wrap: nowrap; overflow-x: auto; padding-bottom: .5rem; -webkit-overflow-scrolling: touch; gap: .4rem; }
+      .cert-tabs::-webkit-scrollbar { display: none; }
+      .cert-tab { white-space: nowrap; flex-shrink: 0; }
+
+      /* cert summary */
+      .cert-summary { grid-template-columns: repeat(3,1fr); gap: .6rem; }
+      .cert-summary-item { padding: .8rem .6rem; }
+      .cert-summary-body { font-size: .9rem; }
+      .cert-summary-label { font-size: 9px; }
+
+      /* team grid — single col */
+      .team-grid  { grid-template-columns: 1fr; }
+      .juris-grid { grid-template-columns: 1fr; }
+      .staff-grid { grid-template-columns: 1fr; }
+
+      /* comparison table — Asenso column only on mobile */
+      .vs-table thead tr th:nth-child(3),
+      .vs-table thead tr th:nth-child(4),
+      .vs-table tbody tr td:nth-child(3),
+      .vs-table tbody tr td:nth-child(4) { display: none; }
+      .vs-table th, .vs-table td { padding: .55rem .65rem; font-size: 12px; }
+      .vs-table th.col-a, .vs-table td.col-a { min-width: 120px; }
+      .vs-mobile-note { display: block; font-size: 11px; color: var(--muted); margin-top: .75rem; font-style: italic; }
+
+      /* process */
+      .process-steps { grid-template-columns: 1fr; }
+
+      /* who we serve */
+      .serve-grid { grid-template-columns: 1fr; }
+      .projects-grid { grid-template-columns: 1fr; }
+
+      /* form */
+      .form-row { grid-template-columns: 1fr; }
+
+      /* footer */
+      .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-right { text-align: left; }
+
+      /* why grid */
+      .why-grid { grid-template-columns: 1fr; gap: 3rem; }
+    }
+
+    /* note shown only on mobile below comparison table */
+    .vs-mobile-note { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <svg class="logo-mark" viewBox="0 0 36 36" fill="none">
+        <path d="M4 24 C8 24,10 14,15 14 C20 14,21 24,26 24 C29 24,30.5 20,33 18" stroke="#B8924A" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <path d="M2 18 C6 18,8 10,13 10 C18 10,19 22,24 22 C27 22,28.5 18,33 16" stroke="#B8924A" stroke-width="1.2" stroke-linecap="round" fill="none" opacity=".35"/>
+        <path d="M14 30 L17 26 L20 30 Z" fill="#B8924A" opacity=".2"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-name">ASENSO</span>
+        <span class="logo-sub">Special Inspections</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#credentials">Credentials</a></li>
+      <li><a href="#why">Why Asenso</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#senior-staff">Senior Staff</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-nav nav-cta">Start a Project</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE NAV DRAWER -->
+<div class="mobile-nav" id="mobile-nav">
+  <ul>
+    <li><a href="#services"     onclick="closeMenu()">Services</a></li>
+    <li><a href="#credentials"  onclick="closeMenu()">Credentials</a></li>
+    <li><a href="#why"          onclick="closeMenu()">Why Asenso</a></li>
+    <li><a href="#projects"     onclick="closeMenu()">Projects</a></li>
+    <li><a href="#senior-staff" onclick="closeMenu()">Senior Staff</a></li>
+    <li><a href="#contact"      onclick="closeMenu()">Contact</a></li>
+  </ul>
+  <a href="#contact" class="btn-gold" onclick="closeMenu()">Start a Project</a>
+  <div class="mobile-nav-identity">
+    <span>Family-Owned Business</span>
+    <span>Minority-Owned Business</span>
+    <span>Small Business (SBE)</span>
+    <span>Pursuing DBE Certification</span>
+  </div>
+</div>
+
+<!-- IDENTITY BANNER -->
+<div id="identity-band">
+  <div class="identity-inner">
+    <span class="id-tag">Family-Owned Business</span>
+    <span class="id-tag">Minority-Owned Business</span>
+    <span class="id-tag">Small Business (SBE)</span>
+    <span class="id-tag pursuing">Pursuing DBE Certification</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="pattern-bg">
+    <svg viewBox="0 0 900 700" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <pattern id="geo" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
+          <polygon points="30,2 58,17 58,35 30,50 2,35 2,17" fill="none" stroke="#EAE2D6" stroke-width=".6" opacity=".04"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#geo)"/>
+    </svg>
+  </div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">ICC-Certified · Southern California</div>
+      <h1>Certified expertise.<br>Reliable delivery.<br><em>Every project.</em></h1>
+      <p class="hero-lead">
+        Asenso provides ICC-certified special inspections, structural observation, threshold
+        inspections, and QA/QC services — with a credential stack deep enough to cover any IBC
+        Chapter 17 scope, and a team responsive enough to move at your pace.
+      </p>
+      <p class="hero-family">Family-owned and family-staffed — we've built this firm on the certifications, the relationships, and the reputation we're proud to put our name on.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-gold">Start a Project</a>
+        <a href="#credentials" class="btn-ghost">View Credentials</a>
+      </div>
+      <div class="jurisdiction-row">
+        <span class="juris-label">Licensed in</span>
+        <span class="juris-tag">LA City</span>
+        <span class="juris-tag">LA County</span>
+        <span class="juris-tag">Orange County</span>
+        <span class="juris-tag">Riverside County</span>
+        <span class="juris-tag">San Bernardino County</span>
+        <span class="juris-tag">Long Beach</span>
+      </div>
+    </div>
+    <div class="hero-creds">
+      <div class="cred-pill">
+        <svg class="cred-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div><div class="cred-label">ICC · AWS · ACI · IFC Certified</div><div class="cred-sub">Full IBC Ch. 17 scope coverage across the team</div></div>
+      </div>
+      <div class="cred-pill">
+        <svg class="cred-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div><div class="cred-label">24–48 Hour Mobilization</div><div class="cred-sub">7 days a week across Southern California</div></div>
+      </div>
+      <div class="cred-pill">
+        <svg class="cred-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <div><div class="cred-label">Same-Day Field Reports</div><div class="cred-sub">Digital delivery, AHJ-ready documentation</div></div>
+      </div>
+      <div class="cred-pill">
+        <svg class="cred-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+        <div><div class="cred-label">Deep DSA Experience</div><div class="cred-sub">K–12, community college &amp; public works</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFF BAND -->
+<div id="diff-band">
+  <div class="diff-inner">
+    <div class="diff-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      <strong>Founder-led firm</strong>
+      <span>You work with the principals — not an account manager at a national lab.</span>
+    </div>
+    <div class="diff-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <strong>24–48 hr scheduling</strong>
+      <span>Fast mobilization when your schedule can't wait for a lab's dispatch queue.</span>
+    </div>
+    <div class="diff-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      <strong>Inspector continuity</strong>
+      <span>The same certified inspector on your project, start to finish. No rotating bodies.</span>
+    </div>
+    <div class="diff-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      <strong>AHJ-ready reports</strong>
+      <span>Same-day digital field reports formatted for the building department, SEOR, and owner.</span>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-inner">
+    <div class="section-tag">What We Do</div>
+    <h2>Special &amp; Deputy Inspection Services</h2>
+    <p class="section-lead">ICC-certified across the full IBC Chapter 17 and CBC scope. Licensed in LA City, LA County, Orange County, Riverside, San Bernardino, and Long Beach.</p>
+    <div class="services-layout">
+      <div class="service-nav">
+        <div class="service-nav-label">Jump to</div>
+        <ul class="service-nav-list">
+          <li><a href="#svc-special">Special Inspections</a></li>
+          <li><a href="#svc-structural">Structural Observation</a></li>
+          <li><a href="#svc-threshold">Threshold Inspections</a></li>
+          <li><a href="#svc-qaqc">QA/QC Program Management</a></li>
+        </ul>
+      </div>
+      <div class="service-panels">
+        <div class="service-panel" id="svc-special">
+          <div class="panel-header"><h3>Special Inspections</h3><span class="panel-code">IBC Ch. 17 / CBC</span></div>
+          <p class="panel-desc">Continuous and periodic special inspections per the project Statement of Special Inspections — performed by ICC-certified inspectors licensed in the relevant jurisdiction.</p>
+          <ul class="panel-items">
+            <li>Reinforcing Steel Placement</li>
+            <li>Concrete Placement &amp; Curing</li>
+            <li>Shotcrete Placement</li>
+            <li>Pre-Stress &amp; Post-Tensioned Concrete</li>
+            <li>Structural Steel Welding</li>
+            <li>High-Strength Bolting</li>
+            <li>Reinforced Masonry Construction</li>
+            <li>Epoxy Anchor Installation</li>
+            <li>Mechanical Anchors</li>
+            <li>Non-Destructive Testing</li>
+            <li>Fireproofing</li>
+            <li>Structural Wood</li>
+            <li>Exterior Insulation &amp; Finish Systems (EIFS)</li>
+            <li>Welder Qualifications</li>
+            <li>Steel &amp; Welding Fabricator Shop Inspections</li>
+          </ul>
+        </div>
+        <div class="service-panel" id="svc-structural">
+          <div class="panel-header"><h3>Structural Observation</h3><span class="panel-code">ASCE 7</span></div>
+          <p class="panel-desc">Structural observation services coordinated with the Structural Engineer of Record — ensuring field conditions match design intent at every required phase.</p>
+          <ul class="panel-items">
+            <li>Phased site visits per observation program</li>
+            <li>Deficiency tracking &amp; resolution log</li>
+            <li>SEOR coordination and reporting</li>
+            <li>Final structural observation letter for AHJ</li>
+            <li>Coordination with building department at closeout</li>
+          </ul>
+        </div>
+        <div class="service-panel" id="svc-threshold">
+          <div class="panel-header"><h3>Threshold Inspections</h3><span class="panel-code">CBC §1705</span></div>
+          <p class="panel-desc">Threshold building inspection services for projects triggering mandatory structural observation — including large concrete and post-tensioned structures.</p>
+          <ul class="panel-items">
+            <li>Concrete &amp; post-tensioned slab systems</li>
+            <li>Moment frames and shear wall construction</li>
+            <li>Sequential phase documentation</li>
+            <li>Threshold inspection reports for AHJ</li>
+          </ul>
+        </div>
+        <div class="service-panel" id="svc-qaqc">
+          <div class="panel-header"><h3>QA/QC Program Management</h3><span class="panel-code">Owner · GC · Agency</span></div>
+          <p class="panel-desc">Embedded quality assurance and control support for contractors, owners, and public agencies who need an independent eye on the work throughout construction.</p>
+          <ul class="panel-items">
+            <li>Project-specific QA/QC plan development</li>
+            <li>Pre-pour &amp; pre-placement checklists</li>
+            <li>Non-conformance tracking &amp; resolution</li>
+            <li>Owner's representative support</li>
+            <li>Contractor QC program review</li>
+            <li>Closeout documentation packages</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section id="credentials">
+  <div class="section-inner">
+    <div class="section-tag">Our Team's Credentials</div>
+    <h2>The certification stack<br>behind every inspection.</h2>
+
+    <div class="creds-intro">
+      <p>Every inspector on the Asenso team holds active, verified certifications from the leading bodies in the industry — ICC, AWS, ACI, and IFC. We don't say "ICC certified" as a marketing line. Below is the full credential inventory our team collectively holds, organized by certifying body.</p>
+      <div class="cert-summary">
+        <div class="cert-summary-item"><div class="cert-summary-body">ICC</div><div class="cert-summary-label">Certified</div></div>
+        <div class="cert-summary-item"><div class="cert-summary-body">AWS</div><div class="cert-summary-label">Welding</div></div>
+        <div class="cert-summary-item"><div class="cert-summary-body">ACI</div><div class="cert-summary-label">Field &amp; Anchor</div></div>
+        <div class="cert-summary-item"><div class="cert-summary-body">IFC</div><div class="cert-summary-label">Firestop</div></div>
+        <div class="cert-summary-item"><div class="cert-summary-body">LA City</div><div class="cert-summary-label">Registered</div></div>
+        <div class="cert-summary-item"><div class="cert-summary-body">Long Beach</div><div class="cert-summary-label">Registered</div></div>
+      </div>
+    </div>
+
+    <div class="cert-tabs">
+      <button class="cert-tab active" onclick="showTab('icc', this)">ICC</button>
+      <button class="cert-tab" onclick="showTab('aws', this)">AWS Welding</button>
+      <button class="cert-tab" onclick="showTab('aci', this)">ACI</button>
+      <button class="cert-tab" onclick="showTab('ifc', this)">IFC Firestop</button>
+      <button class="cert-tab" onclick="showTab('jurisdictions', this)">Jurisdiction Approvals</button>
+    </div>
+
+    <!-- ICC -->
+    <div class="cert-body-section active" id="tab-icc">
+      <div class="cert-category-grid">
+        <div class="cert-row"><span class="cert-row-name">Master of Special Inspection</span></div>
+        <div class="cert-row"><span class="cert-row-name">Reinforced Concrete Special Inspector</span></div>
+        <div class="cert-row"><span class="cert-row-name">Prestressed Concrete Special Inspector</span></div>
+        <div class="cert-row"><span class="cert-row-name">Structural Steel &amp; Bolting Special Inspector</span></div>
+        <div class="cert-row"><span class="cert-row-name">Structural Welding Special Inspector</span></div>
+        <div class="cert-row"><span class="cert-row-name">Structural Masonry Special Inspector</span></div>
+        <div class="cert-row"><span class="cert-row-name">Spray-Applied Fireproofing Special Inspector</span></div>
+        <div class="cert-row"><span class="cert-row-name">Firestopping Credential of Learning Achievement</span></div>
+        <div class="cert-row"><span class="cert-row-name">CA Commercial Building Inspector</span></div>
+        <div class="cert-row"><span class="cert-row-name">CA Commercial Plumbing Inspector</span></div>
+      </div>
+    </div>
+
+    <!-- AWS -->
+    <div class="cert-body-section" id="tab-aws">
+      <div class="cert-category-grid">
+        <div class="cert-row"><span class="cert-row-name">AWS Certified Welding Inspector (CWI)</span></div>
+      </div>
+      <p style="font-size:13px;color:var(--muted);margin-top:1.25rem;line-height:1.7;">Three AWS CWIs on staff — covering structural steel welding inspection, welder qualifications, and fabricator shop inspections across all project types.</p>
+    </div>
+
+    <!-- ACI -->
+    <div class="cert-body-section" id="tab-aci">
+      <div class="cert-category-grid">
+        <div class="cert-row"><span class="cert-row-name">Post-Installed Concrete Anchor Installation Inspector</span></div>
+        <div class="cert-row"><span class="cert-row-name">Concrete Field Testing Technician, Grade I</span></div>
+        <div class="cert-row"><span class="cert-row-name">Masonry Field Testing Technician</span></div>
+      </div>
+    </div>
+
+    <!-- IFC -->
+    <div class="cert-body-section" id="tab-ifc">
+      <div class="cert-category-grid">
+        <div class="cert-row"><span class="cert-row-name">IFC / International Firestop Council Certified</span></div>
+      </div>
+      <p style="font-size:13px;color:var(--muted);margin-top:1.25rem;line-height:1.7;">IFC certification combined with ICC Firestopping credentials gives our team comprehensive firestop inspection coverage across penetrations, joints, and rated assemblies.</p>
+    </div>
+
+    <div class="cert-body-section" id="tab-jurisdictions">
+      <div class="juris-grid">
+        <div class="juris-card">
+          <div class="juris-card-header">
+            <div><div class="juris-authority">City of Los Angeles</div><div class="juris-cert-id">Registered Deputy Inspector</div></div>
+          </div>
+          <ul class="team-certs">
+            <li>Wood Construction</li>
+          </ul>
+        </div>
+        <div class="juris-card">
+          <div class="juris-card-header">
+            <div><div class="juris-authority">City of Long Beach</div><div class="juris-cert-id">Registered Deputy Inspector</div></div>
+          </div>
+          <ul class="team-certs">
+            <li>Concrete · Driven Pile · Epoxy · Fireproofing</li>
+            <li>Masonry · Prestressed Concrete · Structural Steel &amp; Welding</li>
+          </ul>
+        </div>
+        <div class="juris-card">
+          <div class="juris-card-header">
+            <div><div class="juris-authority">County of Los Angeles</div><div class="juris-cert-id">ICC credentials accepted</div></div>
+          </div>
+          <ul class="team-certs">
+            <li>Full IBC Chapter 17 special inspection scope</li>
+            <li>CBC compliant · all materials categories</li>
+          </ul>
+        </div>
+        <div class="juris-card">
+          <div class="juris-card-header">
+            <div><div class="juris-authority">Orange County</div><div class="juris-cert-id">ICC credentials accepted</div></div>
+          </div>
+          <ul class="team-certs">
+            <li>Full IBC Chapter 17 special inspection scope</li>
+            <li>CBC compliant · all materials categories</li>
+          </ul>
+        </div>
+        <div class="juris-card">
+          <div class="juris-card-header">
+            <div><div class="juris-authority">Riverside County</div><div class="juris-cert-id">ICC credentials accepted</div></div>
+          </div>
+          <ul class="team-certs">
+            <li>Full IBC Chapter 17 special inspection scope</li>
+            <li>CBC compliant · all materials categories</li>
+          </ul>
+        </div>
+        <div class="juris-card">
+          <div class="juris-card-header">
+            <div><div class="juris-authority">San Bernardino County</div><div class="juris-cert-id">ICC credentials accepted</div></div>
+          </div>
+          <ul class="team-certs">
+            <li>Full IBC Chapter 17 special inspection scope</li>
+            <li>CBC compliant · all materials categories</li>
+          </ul>
+        </div>
+      </div>
+      <p style="font-size:13px;color:var(--muted);margin-top:1.5rem;line-height:1.7;">Working in a jurisdiction not listed? Contact us — our ICC certifications are accepted by most Southern California municipalities, and we can confirm coverage for your specific project location before you engage.</p>
+      <div class="dsa-callout" style="margin-top:1.25rem">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <p><strong>DSA Experience:</strong> Our team has worked on DSA-regulated K–12 and community college projects and understands the inspector qualification, documentation, and agency coordination those jobs require. We're actively pursuing formal DSA listing and are transparent about where we stand today.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY ASENSO -->
+<section id="why">
+  <div class="section-inner">
+    <div class="why-grid">
+      <div>
+        <div class="section-tag">Why Asenso</div>
+        <h2>Boutique service.<br>Big-firm credentials.</h2>
+        <p class="section-lead">The large labs have the lab footprint. What they can't give you is a principal who answers the phone, an inspector who knows your project, and a firm that moves at your pace.</p>
+        <div class="why-features">
+          <div class="feature-item">
+            <div class="feature-num">01</div>
+            <div class="feature-content">
+              <h4>The same inspector, start to finish</h4>
+              <p>No rotating staff, no hand-off gaps. The inspector at your pre-con meeting is on-site every phase — and remembers what was agreed at the last one.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">02</div>
+            <div class="feature-content">
+              <h4>Reports that hold up in front of agencies</h4>
+              <p>Field reports issued same day, formatted for the AHJ, SEOR, and owner. Written to satisfy the building department — not just to check a box.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">03</div>
+            <div class="feature-content">
+              <h4>You can reach us when it matters</h4>
+              <p>Mid-pour and need an answer fast? Call us directly. No call center, no dispatch queue — you get the inspector or a principal, immediately.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-num">04</div>
+            <div class="feature-content">
+              <h4>Family-built, credential-proven</h4>
+              <p>Asenso is family-owned and family-staffed. Every cert on our team is real, current, and earned — not borrowed from a subcontractor we'll dispatch without telling you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="vs-wrap">
+          <table class="vs-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="col-a">Asenso</th>
+                <th>Large Lab<br><span style="font-weight:400;font-size:.85em;letter-spacing:0">(NV5, Twining)</span></th>
+                <th>Other Boutique</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="row-label">Inspector continuity</td><td class="col-a"><span class="check">✓</span> Same inspector throughout</td><td>Varies by staff</td><td>Often, but varies</td></tr>
+              <tr><td class="row-label">24–48 hr mobilization</td><td class="col-a"><span class="check">✓</span> Standard</td><td>Dispatch queue, slower</td><td>Depends on size</td></tr>
+              <tr><td class="row-label">Principal access</td><td class="col-a"><span class="check">✓</span> Direct to founder</td><td>Account manager layer</td><td>Sometimes</td></tr>
+              <tr><td class="row-label">Full cert stack visible</td><td class="col-a"><span class="check">✓</span> Published, verified</td><td>Not typically shown</td><td>Rarely</td></tr>
+              <tr><td class="row-label">DSA experience</td><td class="col-a"><span class="check">✓</span> Deep field experience</td><td>Yes, DSA-approved</td><td>Varies</td></tr>
+              <tr><td class="row-label">In-house materials lab</td><td>Partnered out</td><td><span class="check">✓</span> In-house</td><td>Usually partnered</td></tr>
+              <tr><td class="row-label">Minority/DBE firm</td><td class="col-a"><span class="check">✓</span> Minority-owned, SBE</td><td>Typically not</td><td>Varies</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="vs-mobile-note">Swipe to compare — large lab and boutique columns hidden on small screens.</p>
+        <div class="dsa-callout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <p><strong>On DBE &amp; SBE certification:</strong> We are actively pursuing DBE certification and are a registered small business. For public agency projects with diversity and small business goals, contact us to discuss how we can support your compliance requirements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="pattern-bg">
+    <svg viewBox="0 0 900 500" preserveAspectRatio="xMidYMid slice"><defs><pattern id="dot" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="1" fill="#EAE2D6" opacity=".055"/></pattern></defs><rect width="100%" height="100%" fill="url(#dot)"/></svg>
+  </div>
+  <div class="section-inner">
+    <div class="section-tag">How We Work</div>
+    <h2>SSI review to permit closeout.</h2>
+    <p class="section-lead">Structured around your project schedule — not a lab's dispatch queue.</p>
+    <div class="process-steps">
+      <div class="process-step"><div class="step-num">01</div><div class="step-div"></div><h4>SSI &amp; Drawing Review</h4><p>We review the Statement of Special Inspections, structural drawings, and specs before the first pour. No surprises in the field.</p></div>
+      <div class="process-step"><div class="step-num">02</div><div class="step-div"></div><h4>Pre-Construction Meeting</h4><p>We align with the GC, SEOR, and AHJ on inspection scope, hold points, phasing, and reporting expectations before work begins.</p></div>
+      <div class="process-step"><div class="step-num">03</div><div class="step-div"></div><h4>Field Inspections</h4><p>On-site per your SSI — continuous or periodic. Same-day digital field reports. Same inspector every visit.</p></div>
+      <div class="process-step"><div class="step-num">04</div><div class="step-div"></div><h4>Closeout Package</h4><p>Final summary report, all field logs, NCR resolution, and observation letters — compiled and ready for AHJ submittal.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTED PROJECTS -->
+<section id="projects">
+  <div class="section-inner">
+    <div class="section-tag">Selected Projects</div>
+    <h2>Work we've put<br>our name on.</h2>
+    <p class="section-lead">A cross-section of projects our senior staff have delivered — public agency, healthcare, education, and beyond. References available upon request.</p>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-sector">Public Agency · Aviation</div>
+        <h3>John Wayne Airport — AIP Improvement Program</h3>
+        <div class="project-meta">County of Orange · $220M Program · Orange County, CA</div>
+        <p>QA Senior Special Inspector for a major capital improvement program — overseeing daily structural activities, interfacing with County inspectors and regulatory agencies, and managing full closeout documentation.</p>
+        <div class="project-scope">
+          <span class="project-tag">Structural Steel</span>
+          <span class="project-tag">Welding</span>
+          <span class="project-tag">Concrete</span>
+          <span class="project-tag">Public Agency</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-sector">Public Agency · Aviation</div>
+        <h3>John Wayne Airport — Terminal Improvements (P202)</h3>
+        <div class="project-meta">County of Orange · $102M · Orange County, CA</div>
+        <p>QA Field Representative and Construction Manager overseeing seismic upgrades to Terminal A & B, structural welding sequences, mechanical/electrical systems, and coordination with Swinerton Builders and JWA Operations.</p>
+        <div class="project-scope">
+          <span class="project-tag">Seismic Upgrade</span>
+          <span class="project-tag">Structural Welding</span>
+          <span class="project-tag">CM Oversight</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-sector">DSA · K–12 Education</div>
+        <h3>Hawthorne High School — Athletic Facilities</h3>
+        <div class="project-meta">DSA Title 24 · Los Angeles, CA</div>
+        <p>Welding inspector ensuring DSA Title 24, AWS D1.1, and AISC compliance for structural steel columns, beams, and connections. Full documentation of welder qualifications, WPS, and seismic safety requirements.</p>
+        <div class="project-scope">
+          <span class="project-tag">DSA Title 24</span>
+          <span class="project-tag">AWS D1.1</span>
+          <span class="project-tag">Structural Steel</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-sector">DSA · Higher Education</div>
+        <h3>Mt. San Antonio College — Pedestrian Bridge</h3>
+        <div class="project-meta">DSA Title 24 · Walnut, CA</div>
+        <p>Welding inspections for a pedestrian bridge and elevator support structure — verifying seismic compliance, structural steel connections, AWS D1.1 weld quality, and load-bearing capacity for public access.</p>
+        <div class="project-scope">
+          <span class="project-tag">DSA Title 24</span>
+          <span class="project-tag">Bridge Structure</span>
+          <span class="project-tag">AWS D1.1</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-sector">DSA · Higher Education</div>
+        <h3>Long Beach City College — Math &amp; Tech Building V</h3>
+        <div class="project-meta">DSA · Ninyo &amp; Moore · Long Beach, CA</div>
+        <p>QA Senior Special Inspector for new academic building construction — steel framing, pipe welding for HVAC, elevator construction, and reinforced concrete. Direct interface with DSA Inspector of Residence throughout.</p>
+        <div class="project-scope">
+          <span class="project-tag">DSA</span>
+          <span class="project-tag">Steel Framing</span>
+          <span class="project-tag">Reinforced Concrete</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-sector">Healthcare</div>
+        <h3>Children's Hospital of Orange County (CHOC)</h3>
+        <div class="project-meta">Orange County, CA</div>
+        <p>Welding and structural inspection for hospital expansion and pharmacy relocation — including structural steel, moment frames, seismic anchors, and non-destructive testing per AWS D1.1, D1.3, and AISC standards.</p>
+        <div class="project-scope">
+          <span class="project-tag">AWS D1.1</span>
+          <span class="project-tag">NDT</span>
+          <span class="project-tag">Seismic Anchors</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-sector">Healthcare</div>
+        <h3>Hoag Hospital Newport Beach</h3>
+        <div class="project-meta">Newport Beach, CA</div>
+        <p>Spray-applied fireproofing inspections and reinforced concrete observations — verifying proper application and curing of fireproofing coatings on welded structural steel supports for hospital expansion.</p>
+        <div class="project-scope">
+          <span class="project-tag">Fireproofing</span>
+          <span class="project-tag">Reinforced Concrete</span>
+          <span class="project-tag">Structural Steel</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-sector">Healthcare · Campus</div>
+        <h3>City of Hope — Irvine Campus</h3>
+        <div class="project-meta">QC Lead · 2-Year Program · Irvine, CA</div>
+        <p>Raymond Getz III served as QC Lead for the full Irvine campus build over a two-year engagement — overseeing comprehensive QC program management and coordination across structural, mechanical, and other trades from groundbreaking through closeout.</p>
+        <div class="project-scope">
+          <span class="project-tag">QC Program Lead</span>
+          <span class="project-tag">Healthcare Campus</span>
+          <span class="project-tag">Multi-Trade</span>
+          <span class="project-tag">2-Year Program</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-sector">Entertainment · Commercial</div>
+        <h3>Disneyland — Splash Mountain Renovation</h3>
+        <div class="project-meta">$60M Enhancement Project · Anaheim, CA</div>
+        <p>Quality control oversight for all welding and metalwork on a major theme park renovation — steel frame, column supports, and trusses inspected to AWS D1.1. Full documentation of procedures and corrective actions.</p>
+        <div class="project-scope">
+          <span class="project-tag">AWS D1.1</span>
+          <span class="project-tag">Steel Trusses</span>
+          <span class="project-tag">QC Program</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-sector">Federal · Defense</div>
+        <h3>Vandenberg Air Force Base — Sentinel Program</h3>
+        <div class="project-meta">Department of Defense · GBSD Nuclear Refurbishment</div>
+        <p>Led QC for a DoD nuclear refurbishment program — managing inspections for launch facilities and secure communication centers under the Ground Based Strategic Deterrent (GBSD) Sentinel initiative.</p>
+        <div class="project-scope">
+          <span class="project-tag">DoD</span>
+          <span class="project-tag">QC Program Lead</span>
+          <span class="project-tag">Federal</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SENIOR STAFF -->
+<section id="senior-staff">
+  <div class="section-inner">
+    <div class="section-tag">Senior Staff</div>
+    <h2>The people leading<br>every project.</h2>
+    <p class="section-lead">Our senior staff are the consistent presence on your job — from the pre-construction meeting to the closeout package. This isn't the full team, but it's who leads the work.</p>
+    <div class="staff-grid">
+
+      <div class="staff-card" style="border-color: rgba(184,146,74,.3); position: relative; overflow: hidden;">
+        <div style="position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);"></div>
+        <div class="staff-card-top">
+          <div class="staff-avatar">RG</div>
+          <div>
+            <div class="staff-name">Raymond Getz III</div>
+            <div class="staff-title">Lead Inspector</div>
+            <div class="staff-exp">20+ years experience</div>
+          </div>
+        </div>
+        <div class="staff-certs-label">Key Certifications</div>
+        <ul class="staff-cert-list">
+          <li>AWS Certified Welding Inspector (CWI)</li>
+          <li>ICC — Steel &amp; Bolting, Welding, Masonry, Fireproofing</li>
+          <li>ICC Firestopping Credential of Learning Achievement</li>
+          <li>IFC / International Firestop Council Certified</li>
+        </ul>
+      </div>
+
+      <div class="staff-card">
+        <div class="staff-card-top">
+          <div class="staff-avatar">RM</div>
+          <div>
+            <div class="staff-name">Raymond Mitchell</div>
+            <div class="staff-title">Senior Inspector</div>
+            <div class="staff-exp">15+ years experience</div>
+          </div>
+        </div>
+        <div class="staff-certs-label">Key Certifications</div>
+        <ul class="staff-cert-list">
+          <li><strong>ICC Master of Special Inspection</strong></li>
+          <li>ICC — Concrete, Prestressed, Masonry, Steel &amp; Bolting, Welding, Fireproofing</li>
+          <li>AWS Certified Welding Inspector (CWI)</li>
+          <li>ACI — Anchor Inspector, Masonry &amp; Concrete Field Tech</li>
+          <li>CA Commercial Building &amp; Plumbing Inspector</li>
+          <li>Long Beach Registered Deputy Inspector</li>
+        </ul>
+      </div>
+
+      <div class="staff-card">
+        <div class="staff-card-top">
+          <div class="staff-avatar">R4</div>
+          <div>
+            <div class="staff-name">Raymond Getz IV</div>
+            <div class="staff-title">Senior Inspector</div>
+            <div class="staff-exp">10+ years experience</div>
+          </div>
+        </div>
+        <div class="staff-certs-label">Key Certifications</div>
+        <ul class="staff-cert-list">
+          <li>AWS Certified Welding Inspector (CWI)</li>
+          <li>ICC — Concrete, Prestressed, Masonry, Fireproofing</li>
+        </ul>
+      </div>
+
+      <div class="staff-card">
+        <div class="staff-card-top">
+          <div class="staff-avatar">VG</div>
+          <div>
+            <div class="staff-name">Victor Getz</div>
+            <div class="staff-title">Senior Inspector</div>
+            <div class="staff-exp">10+ years experience</div>
+          </div>
+        </div>
+        <div class="staff-certs-label">Key Certifications</div>
+        <ul class="staff-cert-list">
+          <li>ICC — Concrete, Prestressed, Masonry, Fireproofing</li>
+          <li>CA Commercial Building Inspector</li>
+          <li>LA City Registered Deputy Inspector — Wood Construction</li>
+          <li>ACI Concrete Field Testing Technician, Grade I</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE SERVE -->
+<section id="serve">
+  <div class="section-inner">
+    <div class="section-tag">Who We Serve</div>
+    <h2>Built for the people running the job.</h2>
+    <p class="section-lead">GC supers, engineers of record, and public agency PMs — people who need an inspector that's certified, prepared, and reachable.</p>
+    <div class="serve-grid">
+      <div class="serve-card">
+        <svg class="serve-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        <h3>General Contractors</h3>
+        <p>We work around your pour schedule, not the other way around. Reach us directly, same-day reports, no dispatch lag. Hold points don't stall your job.</p>
+      </div>
+      <div class="serve-card">
+        <svg class="serve-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <h3>Architects &amp; Engineers of Record</h3>
+        <p>We support your structural observation program and keep documentation tight — so your stamp is backed by a thorough, defensible field record every phase.</p>
+      </div>
+      <div class="serve-card">
+        <svg class="serve-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+        <h3>Public Agencies &amp; DSA Projects</h3>
+        <p>K–12, community college, public works. We know the documentation rigor and agency coordination those projects demand. Our minority/SBE status supports your outreach goals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="pattern-bg">
+    <svg viewBox="0 0 900 700" preserveAspectRatio="xMidYMid slice"><defs><pattern id="geo2" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse"><polygon points="30,2 58,17 58,35 30,50 2,35 2,17" fill="none" stroke="#142235" stroke-width=".7" opacity=".035"/></pattern></defs><rect width="100%" height="100%" fill="url(#geo2)"/></svg>
+  </div>
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-tag">Get in Touch</div>
+        <h2>Let's talk about your project.</h2>
+        <p>Send us a project brief or call to talk scope. We respond within one business day — and we're happy to jump on a quick call before you commit to anything.</p>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42A2 2 0 0 1 3.6 1.25h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.89a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+          <span>(949) 606-3428 &nbsp;·&nbsp; Mon–Sat 6AM–7PM</span>
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>info@asensoinspections.com</span>
+        </div>
+        <div class="contact-detail">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>LA City &amp; County · Orange County · Riverside · San Bernardino · Long Beach</span>
+        </div>
+        <div class="contact-urgent">
+          <strong>Urgent or same-day needs?</strong> Call us directly — if you're mid-pour and need an inspector on-site, we'll do everything we can to get there.
+        </div>
+      </div>
+      <div class="contact-form">
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div class="form-group"><label>First Name</label><input type="text" name="first_name" required placeholder="Michael"></div>
+            <div class="form-group"><label>Last Name</label><input type="text" name="last_name" required placeholder="Torres"></div>
+          </div>
+          <div class="form-group"><label>Company</label><input type="text" name="company" placeholder="ABC General Contractors"></div>
+          <div class="form-group"><label>Email Address</label><input type="email" name="email" required placeholder="m.torres@contractor.com"></div>
+          <div class="form-group"><label>Phone</label><input type="tel" name="phone" placeholder="(555) 000-0000"></div>
+          <div class="form-group">
+            <label>Service Needed</label>
+            <select name="service">
+              <option value="">Select a service…</option>
+              <option>Special Inspections (IBC Ch. 17)</option>
+              <option>Structural Observation</option>
+              <option>Threshold Inspections (CBC §1705)</option>
+              <option>QA/QC Program Management</option>
+              <option>Multiple / Full Project Coverage</option>
+              <option>Not Sure — Let's Talk</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Project Description</label><textarea name="message" placeholder="e.g. 4-story Type I concrete + masonry in Anaheim — concrete and masonry special inspections, starts Q3 2025"></textarea></div>
+          <button type="submit" class="btn-gold form-submit">Send Project Brief</button>
+        </form>
+        <div class="form-success" id="form-success">
+          <strong>Message received.</strong>
+          <p>We'll follow up within one business day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="#" class="logo">
+      <svg class="logo-mark" viewBox="0 0 36 36" fill="none">
+        <path d="M4 24 C8 24,10 14,15 14 C20 14,21 24,26 24 C29 24,30.5 20,33 18" stroke="#B8924A" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <path d="M2 18 C6 18,8 10,13 10 C18 10,19 22,24 22 C27 22,28.5 18,33 16" stroke="#B8924A" stroke-width="1.2" stroke-linecap="round" fill="none" opacity=".35"/>
+        <path d="M14 30 L17 26 L20 30 Z" fill="#B8924A" opacity=".2"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-name">ASENSO</span>
+        <span class="logo-sub">Special Inspections</span>
+      </div>
+    </a>
+    <div class="footer-id-tags">
+      <p>Business Identity</p>
+      <div class="footer-id-tag">Family-Owned Business</div>
+      <div class="footer-id-tag">Minority-Owned Business</div>
+      <div class="footer-id-tag">Small Business (SBE)</div>
+      <div class="footer-id-tag">Pursuing DBE Certification</div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-copy">© 2025 Asenso Inspections. All rights reserved.<br>ICC · AWS · ACI · IFC Certified · Licensed &amp; Insured</p>
+      <p class="footer-juris">LA City · LA County · Orange County · Riverside · San Bernardino · Long Beach</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('mobile-nav');
+    const btn = document.getElementById('hamburger');
+    const open = nav.classList.toggle('open');
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  function closeMenu() {
+    document.getElementById('mobile-nav').classList.remove('open');
+    document.getElementById('hamburger').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  window.addEventListener('resize', () => { if (window.innerWidth > 620) closeMenu(); });
+
+  function showTab(id, btn) {
+    document.querySelectorAll('.cert-body-section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.cert-tab').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + id).classList.add('active');
+    btn.classList.add('active');
+  }
+  const form = document.getElementById('contact-form');
+  const success = document.getElementById('form-success');
+  if (form) {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = form.querySelector('[type=submit]');
+      btn.textContent = 'Sending…';
+      try {
+        const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+        if (res.ok) { form.style.display = 'none'; success.style.display = 'block'; }
+        else { btn.textContent = 'Error — Try Again'; }
+      } catch { btn.textContent = 'Error — Try Again'; }
+    });
+  }
+</script>
+</body>
+</html>
