@@ -12,6 +12,16 @@ export const metadata: Metadata = {
   title: "Asenso — Special Inspections & Deputy Inspection | Southern California",
   description:
     "ICC-certified special inspections and deputy inspection across LA, Orange County, Riverside and San Bernardino. Family-owned, minority-owned, pursuing DBE. Same-day reports.",
+  openGraph: {
+    title: "Asenso — Special Inspections & Deputy Inspection | Southern California",
+    description:
+      "ICC-certified special inspections and deputy inspection across LA, Orange County, Riverside and San Bernardino. Family-owned, minority-owned, pursuing DBE. Same-day reports.",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
