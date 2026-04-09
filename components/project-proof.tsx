@@ -42,20 +42,21 @@ export function ProjectProof() {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
           {sectors.map((sector) => (
-            <div
+            <a
               key={sector.label}
-              className="flex flex-col items-center text-center gap-3 p-4 rounded-lg transition-colors hover:bg-sand/50"
+              href="#projects"
+              className="flex flex-col items-center text-center gap-3 p-4 rounded-lg transition-all hover:bg-sand/50 hover:-translate-y-0.5 no-underline group cursor-pointer"
             >
-              <sector.icon className="w-7 h-7 text-gold" />
+              <sector.icon className="w-7 h-7 text-gold transition-transform group-hover:scale-110" />
               <div>
-                <div className="text-[0.85rem] font-bold text-navy mb-1">
+                <div className="text-[0.85rem] font-bold text-navy mb-1 transition-colors group-hover:text-gold">
                   {sector.label}
                 </div>
                 <div className="text-[11px] text-muted leading-[1.4]">
                   {sector.example}
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
