@@ -54,7 +54,7 @@ export function Process() {
     <section id="process" className="bg-navy py-24 px-8 relative overflow-hidden">
       <DotPattern />
       <div className="max-w-[--container-site] mx-auto relative z-1">
-        <SectionTag>How We Work</SectionTag>
+        <SectionTag>Engagement Process</SectionTag>
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-white mb-4">
           SSI review to permit closeout.
         </h2>

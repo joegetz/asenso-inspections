@@ -4,23 +4,23 @@ import { Info } from "lucide-react";
 const features = [
   {
     num: "01",
-    title: "The same inspector, start to finish",
-    desc: "No rotating staff, no hand-off gaps. The inspector at your pre-con meeting is on-site every phase \u2014 and remembers what was agreed at the last one.",
+    title: "We know your project, not just the code",
+    desc: "The inspector at your pre-con meeting is the same one on-site every phase. No rotating staff, no hand-off gaps \u2014 they remember what was agreed and understand your project\u2019s specifics.",
   },
   {
     num: "02",
-    title: "Reports that hold up in front of agencies",
-    desc: "Field reports issued same day, formatted for the AHJ, SEOR, and owner. Written to satisfy the building department \u2014 not just to check a box.",
+    title: "Documentation built for scrutiny",
+    desc: "Field reports formatted for the AHJ, SEOR, and owner. Written to hold up under review \u2014 not just check a compliance box. Same-day delivery, ready for submittal.",
   },
   {
     num: "03",
-    title: "You can reach us when it matters",
-    desc: "Mid-pour and need an answer fast? Call us directly. No call center, no dispatch queue \u2014 you get the inspector or a principal, immediately.",
+    title: "Direct access when decisions can\u2019t wait",
+    desc: "Mid-pour and need an answer? You reach the inspector or a principal directly. No call center, no dispatch queue, no account manager layer between you and the person who knows your job.",
   },
   {
     num: "04",
-    title: "Family-built, credential-proven",
-    desc: "Asenso is family-owned and family-staffed. Every cert on our team is real, current, and earned \u2014 not borrowed from a subcontractor we\u2019ll dispatch without telling you.",
+    title: "Active in-house certifications across the team",
+    desc: "Every cert is real, current, and earned by our inspectors \u2014 not borrowed from a subcontractor network. You get our team, with credentials you can verify, on every project.",
   },
 ];
 
@@ -78,14 +78,15 @@ export function WhyAsenso() {
           <div>
             <SectionTag>Why Asenso</SectionTag>
             <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
-              Boutique service.
+              Responsive service.
               <br />
-              Big-firm credentials.
+              Verified credentials.
             </h2>
             <p className="text-[16px] text-muted max-w-[560px] mb-14 leading-[1.8] font-normal">
-              The large labs have the lab footprint. What they can&apos;t give you
-              is a principal who answers the phone, an inspector who knows your
-              project, and a firm that moves at your pace.
+              National labs offer materials testing capabilities. Boutique firms
+              offer personalized service. We focus on what both often
+              miss: inspector continuity, principal access, and credential
+              transparency from day one.
             </p>
             <div className="flex flex-col gap-[1.8rem]">
               {features.map((f) => (
@@ -108,6 +109,15 @@ export function WhyAsenso() {
 
           {/* Right: comparison table */}
           <div>
+            <div className="mb-3">
+              <h3 className="text-[0.85rem] font-bold text-navy uppercase tracking-[0.08em] mb-1">
+                Service Comparison Guide
+              </h3>
+              <p className="text-[12px] text-muted">
+                How Asenso compares to national testing labs and other boutique
+                inspection firms
+              </p>
+            </div>
             <div className="overflow-x-auto border border-border rounded-xl bg-offwhite">
               <table className="w-full border-collapse text-[13px]">
                 <thead>
@@ -117,14 +127,10 @@ export function WhyAsenso() {
                       Asenso
                     </th>
                     <th className="hidden sm:table-cell text-[10px] font-bold tracking-[0.15em] uppercase text-muted p-[0.7rem_0.85rem] text-left border-b border-stone">
-                      Large Lab
-                      <br />
-                      <span className="font-normal text-[0.85em] tracking-normal">
-                        (NV5, Twining)
-                      </span>
+                      National Lab
                     </th>
                     <th className="hidden sm:table-cell text-[10px] font-bold tracking-[0.15em] uppercase text-muted p-[0.7rem_0.85rem] text-left border-b border-stone">
-                      Other Boutique
+                      Boutique Firm
                     </th>
                   </tr>
                 </thead>

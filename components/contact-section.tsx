@@ -52,7 +52,7 @@ export function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.35fr] gap-20 items-start">
           {/* Left: contact info */}
           <div>
-            <SectionTag>Get in Touch</SectionTag>
+            <SectionTag>Contact</SectionTag>
             <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
               Let&apos;s talk about your project.
             </h2>

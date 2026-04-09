@@ -59,7 +59,7 @@ export function SeniorStaff() {
   return (
     <section id="senior-staff" className="bg-sand py-24 px-8">
       <div className="max-w-[--container-site] mx-auto">
-        <SectionTag>Senior Staff</SectionTag>
+        <SectionTag>Leadership</SectionTag>
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
           The people leading
           <br />

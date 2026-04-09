@@ -54,7 +54,7 @@ export function Nav() {
             href="#contact"
             className="hidden sm:inline-block bg-navy text-offwhite text-[12px] font-bold tracking-[0.1em] uppercase px-[22px] py-[10px] rounded-full transition-all hover:bg-[#1c3148] hover:-translate-y-px no-underline"
           >
-            Start a Project
+            Discuss a Project
           </a>
 
           {/* Hamburger */}
@@ -103,11 +103,10 @@ export function Nav() {
             onClick={() => setOpen(false)}
             className="block w-full text-center bg-gold text-navy text-[13px] font-extrabold tracking-[0.1em] uppercase px-7 py-[15px] rounded-full no-underline hover:opacity-88"
           >
-            Start a Project
+            Discuss a Project
           </a>
           <div className="mt-8 flex flex-col gap-2">
             {[
-              "Family-Owned Business",
               "Minority-Owned Business",
               "Small Business (SBE)",
               "Pursuing DBE Certification",

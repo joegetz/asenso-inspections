@@ -113,7 +113,7 @@ export function Credentials() {
   return (
     <section id="credentials" className="bg-sand py-24 px-8">
       <div className="max-w-[--container-site] mx-auto">
-        <SectionTag>Our Team&apos;s Credentials</SectionTag>
+        <SectionTag>Credentials</SectionTag>
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
           The certification stack
           <br />

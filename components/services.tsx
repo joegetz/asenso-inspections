@@ -2,6 +2,21 @@ import { SectionTag } from "./section-tag";
 
 const services = [
   {
+    id: "svc-qaqc",
+    title: "QA/QC Program Management",
+    code: "Owner \u00b7 GC \u00b7 Agency",
+    desc: "Embedded quality assurance and control support for contractors, owners, and public agencies who need active oversight throughout construction \u2014 not just code-triggered inspection milestones.",
+    items: [
+      "Project-specific QA/QC plan development",
+      "Pre-pour & pre-placement readiness verification",
+      "Non-conformance tracking & resolution",
+      "Owner\u2019s representative support",
+      "Contractor QC program review",
+      "Issue resolution follow-through",
+      "Closeout documentation & readiness packages",
+    ],
+  },
+  {
     id: "svc-special",
     title: "Special Inspections",
     code: "IBC Ch. 17 / CBC",
@@ -49,41 +64,28 @@ const services = [
       "Threshold inspection reports for AHJ",
     ],
   },
-  {
-    id: "svc-qaqc",
-    title: "QA/QC Program Management",
-    code: "Owner \u00b7 GC \u00b7 Agency",
-    desc: "Embedded quality assurance and control support for contractors, owners, and public agencies who need an independent eye on the work throughout construction.",
-    items: [
-      "Project-specific QA/QC plan development",
-      "Pre-pour & pre-placement checklists",
-      "Non-conformance tracking & resolution",
-      "Owner\u2019s representative support",
-      "Contractor QC program review",
-      "Closeout documentation packages",
-    ],
-  },
 ];
 
 const navItems = [
+  { href: "#svc-qaqc", label: "QA/QC Program Management" },
   { href: "#svc-special", label: "Special Inspections" },
   { href: "#svc-structural", label: "Structural Observation" },
   { href: "#svc-threshold", label: "Threshold Inspections" },
-  { href: "#svc-qaqc", label: "QA/QC Program Management" },
 ];
 
 export function Services() {
   return (
     <section id="services" className="bg-offwhite py-24 px-8">
       <div className="max-w-[--container-site] mx-auto">
-        <SectionTag>What We Do</SectionTag>
+        <SectionTag>Services</SectionTag>
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
-          Special & Deputy Inspection Services
+          Inspection & Quality Services
         </h2>
         <p className="text-[16px] text-muted max-w-[560px] mb-14 leading-[1.8] font-normal">
-          ICC-certified across the full IBC Chapter 17 and CBC scope. Licensed in
-          LA City, LA County, Orange County, Riverside, San Bernardino, and Long
-          Beach.
+          From code-required special inspections to embedded QA/QC program
+          management &mdash; ICC-certified across the full IBC Chapter 17 and CBC
+          scope, licensed in LA City, LA County, Orange County, Riverside, San
+          Bernardino, and Long Beach.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-16 items-start">

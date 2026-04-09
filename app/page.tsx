@@ -1,6 +1,7 @@
 import { Nav } from "@/components/nav";
 import { IdentityBand } from "@/components/identity-band";
 import { Hero } from "@/components/hero";
+import { ProjectProof } from "@/components/project-proof";
 import { DiffBand } from "@/components/diff-band";
 import { Services } from "@/components/services";
 import { Credentials } from "@/components/credentials";
@@ -18,6 +19,7 @@ export default function Home() {
       <Nav />
       <IdentityBand />
       <Hero />
+      <ProjectProof />
       <DiffBand />
       <Services />
       <Credentials />

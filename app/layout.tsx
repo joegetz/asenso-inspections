@@ -9,13 +9,13 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Asenso — Special Inspections & Deputy Inspection | Southern California",
+  title: "Asenso — Quality Oversight & Inspection Services | Southern California",
   description:
-    "ICC-certified special inspections and deputy inspection across LA, Orange County, Riverside and San Bernardino. Family-owned, minority-owned, pursuing DBE. Same-day reports.",
+    "Special inspections, structural observation, and QA/QC program management across LA, Orange County, Riverside and San Bernardino. ICC-certified, minority-owned, pursuing DBE.",
   openGraph: {
-    title: "Asenso — Special Inspections & Deputy Inspection | Southern California",
+    title: "Asenso — Quality Oversight & Inspection Services | Southern California",
     description:
-      "ICC-certified special inspections and deputy inspection across LA, Orange County, Riverside and San Bernardino. Family-owned, minority-owned, pursuing DBE. Same-day reports.",
+      "Special inspections, structural observation, and QA/QC program management across LA, Orange County, Riverside and San Bernardino. ICC-certified, minority-owned, pursuing DBE.",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {

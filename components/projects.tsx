@@ -54,7 +54,7 @@ const projects = [
     sector: "Healthcare \u00b7 Campus",
     title: "City of Hope \u2014 Irvine Campus",
     meta: "QC Lead \u00b7 2-Year Program \u00b7 Irvine, CA",
-    desc: "Raymond Getz III served as QC Lead for the full Irvine campus build over a two-year engagement \u2014 overseeing comprehensive QC program management and coordination across structural, mechanical, and other trades from groundbreaking through closeout.",
+    desc: "QC Lead for the full Irvine campus build over a two-year engagement \u2014 overseeing comprehensive QC program management and coordination across structural, mechanical, and other trades from groundbreaking through closeout.",
     tags: ["QC Program Lead", "Healthcare Campus", "Multi-Trade", "2-Year Program"],
   },
   {
@@ -77,7 +77,7 @@ export function Projects() {
   return (
     <section id="projects" className="bg-navy py-24 px-8">
       <div className="max-w-[--container-site] mx-auto">
-        <SectionTag>Selected Projects</SectionTag>
+        <SectionTag>Project Experience</SectionTag>
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-white mb-4">
           Work we&apos;ve put
           <br />

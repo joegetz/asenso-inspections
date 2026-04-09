@@ -1,5 +1,4 @@
 const tags = [
-  { label: "Family-Owned Business", pursuing: false },
   { label: "Minority-Owned Business", pursuing: false },
   { label: "Small Business (SBE)", pursuing: false },
   { label: "Pursuing DBE Certification", pursuing: true },

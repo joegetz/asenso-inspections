@@ -1,7 +1,6 @@
 import { Logo } from "./logo";
 
 const identityTags = [
-  "Family-Owned Business",
   "Minority-Owned Business",
   "Small Business (SBE)",
   "Pursuing DBE Certification",
