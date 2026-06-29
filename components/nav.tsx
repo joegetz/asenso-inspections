@@ -4,11 +4,12 @@ import { useState, useEffect } from "react";
 import { Logo } from "./logo";
 
 const links = [
+  { href: "#firm", label: "The Firm" },
   { href: "#services", label: "Services" },
   { href: "#credentials", label: "Credentials" },
   { href: "#why", label: "Why Asenso" },
-  { href: "#projects", label: "Projects" },
   { href: "#senior-staff", label: "Senior Staff" },
+  { href: "#projects", label: "Projects" },
   { href: "#contact", label: "Contact" },
 ];
 
