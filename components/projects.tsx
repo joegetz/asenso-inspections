@@ -79,9 +79,9 @@ export function Projects() {
       <div className="max-w-[--container-site] mx-auto">
         <SectionTag>Project Experience</SectionTag>
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-white mb-4">
-          Work we&apos;ve put
+          Work our staff
           <br />
-          our name on.
+          have delivered.
         </h2>
         <p className="text-[16px] text-sand/[0.48] max-w-[560px] mb-14 leading-[1.8] font-normal">
           A cross-section of projects our senior staff have delivered &mdash;
