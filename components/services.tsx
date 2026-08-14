@@ -40,6 +40,50 @@ const services = [
     ],
   },
   {
+    id: "svc-cqm",
+    title: "Construction Quality Management",
+    code: "Owner · EPC",
+    desc: "Serving as the owner’s or EPC’s embedded quality team — verifying the trade contractors’ work on your behalf across the full structural scope, with the planning, documentation, and closeout a financed or mission-critical build requires.",
+    items: [
+      "Inspection & Test Plan (ITP) development",
+      "Hold & witness-point register management",
+      "USACE three-phase control",
+      "Receiving inspection & material traceability",
+      "Non-conformance (NCR) tracking to closure",
+      "Heat-number & mill-cert verification",
+      "MSHA-ready remote / industrial mobilization",
+      "Turnover & closeout documentation packages",
+    ],
+  },
+  {
+    id: "svc-materials",
+    title: "Materials Testing",
+    code: "ASTM · ISO/IEC 17025",
+    desc: "Field sampling and testing of concrete, masonry, and soils, with laboratory breaks through our ISO/IEC 17025-accredited partner of twenty years — accredited-lab results without the rotating staff of a national branch network.",
+    items: [
+      "Concrete field testing (slump, air, temperature)",
+      "Concrete cylinder casting & accredited-lab breaks",
+      "Grout prism & mortar compression tests",
+      "Reinforcing & anchor verification",
+      "Soils & compaction coordination",
+      "Chain-of-custody from field to lab",
+      "Calibrated equipment with current certificates",
+    ],
+  },
+  {
+    id: "svc-ndt",
+    title: "Non-Destructive Testing",
+    code: "ASNT · AWS",
+    desc: "Visual and non-destructive examination of structural welds, coordinated with ASNT-qualified personnel — sized to the project’s acceptance criteria and inspection test plan.",
+    items: [
+      "Visual weld inspection by CWI",
+      "Ultrasonic testing (UT) coordination",
+      "Magnetic particle (MT) & dye penetrant (PT)",
+      "Bolting verification — turn-of-nut & direct tension",
+      "Welder & WPS qualification review",
+    ],
+  },
+  {
     id: "svc-structural",
     title: "Structural Observation",
     code: "ASCE 7",
@@ -69,6 +113,9 @@ const services = [
 const navItems = [
   { href: "#svc-qaqc", label: "QA/QC Program Management" },
   { href: "#svc-special", label: "Special Inspections" },
+  { href: "#svc-cqm", label: "Construction Quality Management" },
+  { href: "#svc-materials", label: "Materials Testing" },
+  { href: "#svc-ndt", label: "Non-Destructive Testing" },
   { href: "#svc-structural", label: "Structural Observation" },
   { href: "#svc-threshold", label: "Threshold Inspections" },
 ];
@@ -81,11 +128,12 @@ export function Services() {
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
           Inspection & Quality Services
         </h2>
-        <p className="text-[16px] text-muted max-w-[560px] mb-14 leading-[1.8] font-normal">
-          From code-required special inspections to embedded QA/QC program
-          management &mdash; ICC-certified across the full IBC Chapter 17 and CBC
-          scope, licensed in LA City, LA County, Orange County, Riverside, San
-          Bernardino, and Long Beach.
+        <p className="text-[16px] text-muted max-w-[600px] mb-14 leading-[1.8] font-normal">
+          From code-required special inspections to materials testing and
+          embedded quality management for owners and EPC teams &mdash;
+          ICC-certified across the full IBC Chapter 17 and CBC scope, licensed
+          across Southern California and deployed on industrial sites throughout
+          the Southwest.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-16 items-start">

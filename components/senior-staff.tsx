@@ -53,6 +53,31 @@ const staff = [
       "ACI Concrete Field Testing Technician, Grade I",
     ],
   },
+  {
+    initials: "EG",
+    name: "Easter Getz",
+    title: "QA/QC Program Coordinator",
+    exp: "13+ years experience",
+    featured: false,
+    certs: [
+      "ICC Spray-Applied Fireproofing Special Inspector",
+      "IFC Firestopping Credential",
+      "ACI Post-Installed Anchor",
+      "Owns documentation, records & closeout turnover program",
+    ],
+  },
+  {
+    initials: "UG",
+    name: "Utu Getz",
+    title: "Inspector \u2014 Surge & Backup",
+    exp: "5+ years experience",
+    featured: false,
+    certs: [
+      "ICC \u2014 Structural Welding, Steel & Bolting",
+      "ICC \u2014 Fireproofing, Commercial Building",
+      "ACI Post-Installed Anchor",
+    ],
+  },
 ];
 
 export function SeniorStaff() {
@@ -67,8 +92,9 @@ export function SeniorStaff() {
         </h2>
         <p className="text-[16px] text-muted max-w-[560px] mb-14 leading-[1.8] font-normal">
           Our senior staff are the consistent presence on your job &mdash; from
-          the pre-construction meeting to the closeout package. This isn&apos;t
-          the full team, but it&apos;s who leads the work.
+          the pre-construction meeting to the closeout package. These are the
+          leaders; they direct a bench of 25+ certified inspectors across the
+          region.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {staff.map((s) => (
@@ -122,6 +148,27 @@ export function SeniorStaff() {
               </ul>
             </div>
           ))}
+        </div>
+
+        {/* Advisor + bench band */}
+        <div className="mt-6 bg-navy rounded-[14px] p-7 px-8 flex flex-col sm:flex-row sm:items-center gap-x-8 gap-y-3">
+          <div className="flex items-baseline gap-3 shrink-0">
+            <span className="text-[1.6rem] font-extrabold text-gold leading-none">
+              25+
+            </span>
+            <span className="text-[13px] text-sand/55 leading-[1.5] max-w-[180px]">
+              certified inspectors available across the region
+            </span>
+          </div>
+          <div className="hidden sm:block w-px self-stretch bg-white/10" />
+          <p className="text-[13.5px] text-sand/55 leading-[1.7]">
+            <strong className="text-white font-semibold">
+              Engineering advisory:
+            </strong>{" "}
+            Magdalena Cejudo, P.E. &mdash; licensed Professional Engineer
+            providing structural engineering review, so field findings are backed
+            by licensed judgment when a project calls for it.
+          </p>
         </div>
       </div>
     </section>
