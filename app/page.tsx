@@ -8,6 +8,7 @@ import { Credentials } from "@/components/credentials";
 import { WhyAsenso } from "@/components/why-asenso";
 import { Process } from "@/components/process";
 import { Projects } from "@/components/projects";
+import { FirmStory } from "@/components/firm-story";
 import { SeniorStaff } from "@/components/senior-staff";
 import { WhoWeServe } from "@/components/who-we-serve";
 import { ContactSection } from "@/components/contact-section";
@@ -28,6 +29,7 @@ export default function Home() {
       <SeniorStaff />
       <Process />
       <Projects />
+      <FirmStory />
       <ContactSection />
       <Footer />
     </>

@@ -1,7 +1,7 @@
 import { SectionTag } from "./section-tag";
 
-// Delivery history of our named inspectors, delivered under the GC or
-// host inspection firm shown.
+// Delivery history of our team, delivered under the GC or host
+// inspection firm shown.
 const projects = [
   {
     sector: "Aviation",
@@ -9,7 +9,6 @@ const projects = [
     meta: "Hensel Phelps · $1.6B · Los Angeles, CA · Active",
     desc: "Structural QA team: receiving inspection, material traceability and heat-number verification across structural steel, concrete, embeds, anchors, and welding; deficiency logs, NCRs, and turnover records.",
     tags: ["Material Traceability", "Structural Steel", "Welding"],
-    inspector: "R. Getz IV, R. Getz III, C. Zimmerman, E. Getz",
   },
   {
     sector: "Federal · Defense",
@@ -17,7 +16,6 @@ const projects = [
     meta: "Northrop Grumman / Clark · Department of Defense",
     desc: "Construction Quality Manager for classified DoD facilities under EM-385 and ICD-705 — multidiscipline quality and BIM coordination on remote federal installations.",
     tags: ["DoD", "EM-385 / ICD-705", "CQM"],
-    inspector: "Raymond Getz IV",
   },
   {
     sector: "Healthcare · Campus",
@@ -25,7 +23,6 @@ const projects = [
     meta: "Fenagh · 6-Level Hospital · Irvine, CA",
     desc: "QA Lead Special Inspector on a six-level HCAI hospital — daily structural inspection, special-inspection coordination, and HCAI Inspector-of-Record interface through closeout.",
     tags: ["HCAI / OSHPD", "Structural Steel", "QC Program Lead"],
-    inspector: "Raymond Getz III",
   },
   {
     sector: "Aviation",
@@ -33,7 +30,6 @@ const projects = [
     meta: "$3.4B · San Diego, CA",
     desc: "MEP inspection on the full replacement of the 1960s terminal — conduit, feeders, panels, disconnects, and automatic transfer switches, with energization and testing.",
     tags: ["MEP", "Energization", "Aviation"],
-    inspector: "Raymond Mitchell",
   },
   {
     sector: "Public Agency · Aviation",
@@ -41,7 +37,6 @@ const projects = [
     meta: "County of Orange · $220M+ · Orange County, CA",
     desc: "QA Senior Special Inspector and oversight across capital improvement and Essential Facility seismic retrofit programs — ~175 structural connections, equipment anchorage, and full closeout documentation.",
     tags: ["Structural Steel", "Seismic Upgrade", "Public Agency"],
-    inspector: "R. Getz III, R. Mitchell",
   },
   {
     sector: "Healthcare",
@@ -49,7 +44,6 @@ const projects = [
     meta: "Orange County, CA",
     desc: "Welding and structural inspection for hospital expansion and pharmacy relocation — structural steel, moment frames, seismic anchors, and inspection per AWS D1.1 and AISC standards.",
     tags: ["AWS D1.1", "Seismic Anchors", "OSHPD"],
-    inspector: "Raymond Getz III",
   },
   {
     sector: "Federal · Remote",
@@ -57,7 +51,6 @@ const projects = [
     meta: "Remote Mojave Installation · 2022–2023",
     desc: "Special inspector on South Airfield military construction: MEP seismic bracing, equipment anchorage, reinforced concrete, and structural masonry on a remote federal installation.",
     tags: ["Seismic Anchorage", "Remote", "Federal"],
-    inspector: "Victor Getz",
   },
   {
     sector: "Water · Wastewater",
@@ -65,7 +58,6 @@ const projects = [
     meta: "Process Pipe Welding · Orange County, CA",
     desc: "QA Senior Special Inspector for in-service gas-line pipe welding — removal from service, fit-up and welding to Welding Procedure Specifications, sequencing, and return to service.",
     tags: ["Pipe Welding", "WPS", "Process"],
-    inspector: "Raymond Mitchell",
   },
   {
     sector: "Water · Wastewater",
@@ -73,7 +65,6 @@ const projects = [
     meta: "20″ Process Pipeline · Ontario, CA",
     desc: "QA Certified Welding Inspector for a below-grade process pipeline — fit-up and welding of joints, flanges, and fittings on ion-exchange water-treatment facilities.",
     tags: ["CWI", "Process Pipeline", "Water Treatment"],
-    inspector: "Raymond Getz III",
   },
   {
     sector: "DSA · Higher Education",
@@ -81,7 +72,6 @@ const projects = [
     meta: "DSA · Long Beach, CA",
     desc: "QA Senior Special Inspector — steel framing, pipe welding for HVAC, elevator construction, and reinforced concrete. Direct interface with DSA Inspector of Record throughout.",
     tags: ["DSA", "Steel Framing", "Reinforced Concrete"],
-    inspector: "Raymond Mitchell",
   },
   {
     sector: "Entertainment · Commercial",
@@ -89,7 +79,6 @@ const projects = [
     meta: "$60M · Anaheim, CA",
     desc: "Quality control oversight for welding and metalwork — steel frame, column supports, and trusses inspected to AWS D1.1. Full documentation of procedures and corrective actions.",
     tags: ["AWS D1.1", "Steel Trusses", "QC Program"],
-    inspector: "Raymond Getz IV",
   },
 ];
 
@@ -115,9 +104,6 @@ function ProjectCard({ p }: { p: (typeof projects)[number] }) {
             </span>
           ))}
         </div>
-      </div>
-      <div className="text-[11px] text-sand/35 mt-3 pt-3 border-t border-white/[0.06]">
-        Inspector: {p.inspector}
       </div>
     </div>
   );
@@ -147,8 +133,8 @@ export function Projects() {
         </div>
 
         <p className="text-[12px] text-sand/[0.32] leading-[1.7] mt-10 max-w-[860px]">
-          Projects reflect the delivery history of our named inspectors,
-          delivered under the GC or host firm shown. Dollar figures are total
+          Projects reflect our team’s delivery history, performed under the
+          GC or host firm shown. Dollar figures are total
           project value, shown for context. References available on request.
         </p>
       </div>

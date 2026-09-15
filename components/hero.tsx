@@ -18,7 +18,7 @@ const credPills = [
   {
     icon: Clock,
     label: "24–48 Hour Response",
-    sub: "Western U.S. & Texas",
+    sub: "CA · TX · Mountain West",
   },
   {
     icon: FileText,
@@ -75,7 +75,7 @@ export function Hero() {
         {/* Left column */}
         <div>
           <div className="text-[10px] font-bold tracking-[0.34em] uppercase text-gold mb-6 flex items-center gap-3 before:content-[''] before:block before:w-7 before:h-px before:bg-gold">
-            Western U.S. &amp; Texas
+            California, Texas &amp; the Mountain West
           </div>
           <h1 className="text-[clamp(2.8rem,4.8vw,4.2rem)] font-extrabold leading-[1.04] tracking-tight text-white mb-6">
             Quality oversight for
@@ -86,9 +86,9 @@ export function Hero() {
           </h1>
           <p className="text-[16px] text-sand/[0.58] leading-[1.85] mb-[2.2rem] max-w-[500px] font-normal">
             Special inspections, structural observation, threshold inspections,
-            and embedded QA/QC support across the Western U.S. and Texas
-            &mdash; backed by ICC-certified inspectors, AHJ-ready documentation,
-            and a team that moves at your pace.
+            and embedded QA/QC support across California, Texas, and the
+            Mountain West &mdash; backed by ICC-certified inspectors, AHJ-ready
+            documentation, and a team that moves at your pace.
           </p>
           <div className="flex gap-4 flex-wrap mb-[2.4rem]">
             <a

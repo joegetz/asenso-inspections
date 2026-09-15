@@ -55,21 +55,6 @@ export function WhoWeServe() {
           ))}
         </div>
 
-        {/* References */}
-        <div className="mb-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-[12.5px] text-muted">
-          <span className="font-bold tracking-[0.12em] uppercase text-[10.5px] text-navy">
-            Our inspectors have worked with
-          </span>
-          <span>Hensel Phelps</span>
-          <span className="text-gold/50">·</span>
-          <span>County of Orange</span>
-          <span className="text-gold/50">·</span>
-          <span>Fenagh Engineering &amp; Testing</span>
-          <span className="text-gold/50">·</span>
-          <span>Austin Industrial</span>
-          <span className="text-muted/60">— references on request</span>
-        </div>
-
         {/* Capability Statement CTA */}
         <div className="bg-offwhite border border-border rounded-xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div className="flex items-start gap-4">

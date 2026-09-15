@@ -9,13 +9,13 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Asenso — Quality Oversight & Inspection Services | Western U.S. & Texas",
+  title: "Asenso — Special Inspections & QA/QC | California, Texas & the Mountain West",
   description:
-    "Special inspections, structural observation, and QA/QC program management across the Western U.S. and Texas. ICC-certified, minority-owned, California DGS-certified small business (SBE/VSBE).",
+    "Special inspections, structural observation, and QA/QC program management across California, Texas, and the Mountain West — including LA, Orange County, Riverside and San Bernardino. ICC-certified, minority-owned, California DGS-certified small business (SBE/VSBE).",
   openGraph: {
-    title: "Asenso — Quality Oversight & Inspection Services | Western U.S. & Texas",
+    title: "Asenso — Special Inspections & QA/QC | California, Texas & the Mountain West",
     description:
-      "Special inspections, structural observation, and QA/QC program management across the Western U.S. and Texas. ICC-certified, minority-owned, California DGS-certified small business (SBE/VSBE).",
+      "Special inspections, structural observation, and QA/QC program management across California, Texas, and the Mountain West — including LA, Orange County, Riverside and San Bernardino. ICC-certified, minority-owned, California DGS-certified small business (SBE/VSBE).",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {

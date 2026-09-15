@@ -55,7 +55,7 @@ export function ProjectProof() {
             Team experience across
           </div>
           <h3 className="text-[1.4rem] font-extrabold text-navy tracking-tight">
-            High-accountability sectors across the Western U.S. and Texas
+            High-accountability sectors across California, Texas &amp; the Mountain West
           </h3>
         </div>
         <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">

@@ -72,7 +72,7 @@ export function ContactSection() {
             <div className="flex items-start gap-3 text-[13.5px] text-muted mb-[0.9rem]">
               <MapPin className="w-4 h-4 text-gold shrink-0 mt-[3px]" />
               <span>
-                California &middot; Texas &middot; Mountain West &middot; Southwest
+                California &middot; Texas &middot; Mountain West
               </span>
             </div>
             <div className="mt-8 p-[1.1rem_1.3rem] bg-navy/[0.06] rounded-lg text-[13px] text-muted leading-[1.6]">

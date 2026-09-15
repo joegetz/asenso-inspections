@@ -38,7 +38,7 @@ export function Footer() {
             additional-insured on request
           </p>
           <p className="text-[11px] text-sand/[0.22] mt-2">
-            California &middot; Texas &middot; Mountain West &middot; Southwest
+            California &middot; Texas &middot; Mountain West
           </p>
         </div>
       </div>
