@@ -63,7 +63,7 @@ const tableRows = [
   },
   {
     label: "Minority/DBE firm",
-    asenso: "\u2713 Minority-owned, SBE",
+    asenso: "\u2713 Minority-owned, DGS-certified SBE",
     lab: "Typically not",
     boutique: "Varies",
   },
@@ -192,12 +192,15 @@ export function WhyAsenso() {
               <Info className="w-[18px] h-[18px] text-gold shrink-0 mt-0.5" />
               <p className="text-[13px] text-charcoal leading-[1.6]">
                 <strong className="text-navy font-bold">
-                  On DBE & SBE certification:
+                  On SBE & VSBE certification:
                 </strong>{" "}
-                We are actively pursuing DBE certification and are a registered
-                small business. For public agency projects with diversity and small
-                business goals, contact us to discuss how we can support your
-                compliance requirements.
+                We are a California DGS-certified Small Business (Micro) and
+                Small Business for Public Works (SB-PW), qualifying as an SBE
+                — and as a very small business enterprise (VSBE) where
+                agencies recognize the DGS micro designation. DBE certification
+                is in progress. For public agency projects with diversity and
+                small business goals, contact us to discuss how we can support
+                your compliance requirements.
               </p>
             </div>
           </div>

@@ -1,10 +1,18 @@
-import { Building2, GraduationCap, Plane, Heart, Shield } from "lucide-react";
+import {
+  Building2,
+  GraduationCap,
+  Plane,
+  Heart,
+  Shield,
+  Droplets,
+  Factory,
+} from "lucide-react";
 
 const sectors = [
   {
     icon: Plane,
     label: "Aviation",
-    example: "John Wayne Airport",
+    example: "JWA · LAX · San Diego Int'l",
   },
   {
     icon: Heart,
@@ -19,7 +27,17 @@ const sectors = [
   {
     icon: Shield,
     label: "Federal / Defense",
-    example: "Vandenberg AFB",
+    example: "Sentinel · Vandenberg AFB",
+  },
+  {
+    icon: Factory,
+    label: "Industrial",
+    example: "Semiconductor · Process",
+  },
+  {
+    icon: Droplets,
+    label: "Water / Wastewater",
+    example: "Treatment · Pipe Welding",
   },
   {
     icon: Building2,
@@ -34,18 +52,18 @@ export function ProjectProof() {
       <div className="max-w-[--container-site] mx-auto">
         <div className="text-center mb-10">
           <div className="text-[10px] font-bold tracking-[0.2em] uppercase text-muted mb-2">
-            Trusted on
+            Team experience across
           </div>
           <h3 className="text-[1.4rem] font-extrabold text-navy tracking-tight">
-            High-accountability projects across Southern California
+            High-accountability sectors across the Western U.S. and Texas
           </h3>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
           {sectors.map((sector) => (
             <a
               key={sector.label}
               href="#projects"
-              className="flex flex-col items-center text-center gap-3 p-4 rounded-lg transition-all hover:bg-sand/50 hover:-translate-y-0.5 no-underline group cursor-pointer"
+              className="w-[136px] flex flex-col items-center text-center gap-3 p-4 rounded-lg transition-all hover:bg-sand/50 hover:-translate-y-0.5 no-underline group cursor-pointer"
             >
               <sector.icon className="w-7 h-7 text-gold transition-transform group-hover:scale-110" />
               <div>

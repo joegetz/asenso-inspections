@@ -1,6 +1,6 @@
 const tags = [
   { label: "Minority-Owned Business", pursuing: false },
-  { label: "Small Business (SBE)", pursuing: false },
+  { label: "DGS-Certified SBE (Micro & SB-PW)", pursuing: false },
   { label: "Pursuing DBE Certification", pursuing: true },
 ];
 

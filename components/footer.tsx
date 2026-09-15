@@ -2,7 +2,7 @@ import { Logo } from "./logo";
 
 const identityTags = [
   "Minority-Owned Business",
-  "Small Business (SBE)",
+  "DGS-Certified SBE (Micro & SB-PW)",
   "Pursuing DBE Certification",
 ];
 
@@ -28,15 +28,17 @@ export function Footer() {
 
         <div className="text-right sm:self-end">
           <p className="text-[12px] text-sand/30 leading-[1.9]">
-            &copy; {new Date().getFullYear()} Asenso Inspections. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Asenso. All rights reserved.
             <br />
-            ICC &middot; AWS &middot; ACI &middot; IFC Certified &middot; Licensed
-            & Insured
+            Asenso Consulting Co.
+            <br />
+            ICC &middot; AWS &middot; ACI &middot; IFC Certified
+            <br />
+            Insured &middot; workers&rsquo; comp &amp; general liability &middot;
+            additional-insured on request
           </p>
           <p className="text-[11px] text-sand/[0.22] mt-2">
-            LA City &middot; LA County &middot; Orange County &middot; Riverside
-            &middot; San Bernardino &middot; Long Beach
+            California &middot; Texas &middot; Mountain West &middot; Southwest
           </p>
         </div>
       </div>

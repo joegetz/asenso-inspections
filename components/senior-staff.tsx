@@ -53,6 +53,31 @@ const staff = [
       "ACI Concrete Field Testing Technician, Grade I",
     ],
   },
+  {
+    initials: "EG",
+    name: "Easter Getz",
+    title: "QA/QC Program Coordinator",
+    exp: "13+ years experience",
+    featured: false,
+    certs: [
+      "ICC Spray-Applied Fireproofing Special Inspector",
+      "IFC Firestopping Credential",
+      "ACI Post-Installed Anchor",
+      "Owns documentation, records & closeout turnover program",
+    ],
+  },
+  {
+    initials: "UG",
+    name: "Utu Getz",
+    title: "Inspector \u2014 Surge & Backup",
+    exp: "5+ years experience",
+    featured: false,
+    certs: [
+      "ICC \u2014 Structural Welding, Steel & Bolting",
+      "ICC \u2014 Fireproofing, Commercial Building",
+      "ACI Post-Installed Anchor",
+    ],
+  },
 ];
 
 export function SeniorStaff() {
@@ -66,9 +91,9 @@ export function SeniorStaff() {
           every project.
         </h2>
         <p className="text-[16px] text-muted max-w-[560px] mb-14 leading-[1.8] font-normal">
-          Our senior staff are the consistent presence on your job &mdash; from
-          the pre-construction meeting to the closeout package. This isn&apos;t
-          the full team, but it&apos;s who leads the work.
+          Our team are the consistent presence on your job &mdash; from
+          the pre-construction meeting to the closeout package. Each built their
+          career across GCs and labs, now consolidated under one firm.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {staff.map((s) => (
@@ -122,6 +147,18 @@ export function SeniorStaff() {
               </ul>
             </div>
           ))}
+        </div>
+
+        {/* Advisor band */}
+        <div className="mt-6 bg-navy rounded-[14px] p-7 px-8">
+          <p className="text-[13.5px] text-sand/55 leading-[1.7]">
+            <strong className="text-white font-semibold">
+              Engineering advisory:
+            </strong>{" "}
+            Magdalena Cejudo, P.E. &mdash; licensed Professional Engineer
+            providing structural engineering review, so field findings are backed
+            by licensed judgment when a project calls for it.
+          </p>
         </div>
       </div>
     </section>
