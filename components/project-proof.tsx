@@ -1,5 +1,4 @@
 import {
-  Building2,
   GraduationCap,
   Plane,
   Heart,
@@ -10,39 +9,34 @@ import {
 
 const sectors = [
   {
-    icon: Plane,
-    label: "Aviation",
-    example: "JWA · LAX · San Diego Int'l",
-  },
-  {
-    icon: Heart,
-    label: "Healthcare",
-    example: "City of Hope · CHOC · Hoag",
-  },
-  {
-    icon: GraduationCap,
-    label: "Education / DSA",
-    example: "K–12 · Community College",
-  },
-  {
     icon: Shield,
     label: "Federal / Defense",
-    example: "Sentinel · Vandenberg AFB",
+    example: "Sentinel \u00b7 Vandenberg AFB",
   },
   {
     icon: Factory,
     label: "Industrial",
-    example: "Semiconductor · Process",
+    example: "Semiconductor \u00b7 Process",
+  },
+  {
+    icon: Heart,
+    label: "Healthcare",
+    example: "City of Hope \u00b7 CHOC \u00b7 Hoag",
+  },
+  {
+    icon: Plane,
+    label: "Aviation",
+    example: "JWA \u00b7 LAX \u00b7 San Diego Int'l",
+  },
+  {
+    icon: GraduationCap,
+    label: "Education / DSA",
+    example: "K\u201312 \u00b7 Community College",
   },
   {
     icon: Droplets,
     label: "Water / Wastewater",
-    example: "Treatment · Pipe Welding",
-  },
-  {
-    icon: Building2,
-    label: "Public Works",
-    example: "County & Municipal",
+    example: "Treatment \u00b7 Pipe Welding",
   },
 ];
 
