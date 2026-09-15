@@ -12,14 +12,6 @@ const projects = [
     inspector: "R. Getz IV, R. Getz III, C. Zimmerman, E. Getz",
   },
   {
-    sector: "Industrial · Semiconductor",
-    title: "Texas Instruments Semiconductor Fab",
-    meta: "Austin Industrial · $11B · Lehi, UT",
-    desc: "QC inspection of structural, mechanical, and MEP installations on a 300mm wafer-fab campus tied into the operating plant — tanks, piping, and unit operations to a phased turnover.",
-    tags: ["Structural / MEP", "Industrial", "Mission-Critical"],
-    inspector: "Raymond Mitchell",
-  },
-  {
     sector: "Federal · Defense",
     title: "Sentinel Program (GBSD)",
     meta: "Northrop Grumman / Clark · Department of Defense",
