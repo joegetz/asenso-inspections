@@ -52,10 +52,10 @@ export function ProjectProof() {
       <div className="max-w-[--container-site] mx-auto">
         <div className="text-center mb-10">
           <div className="text-[10px] font-bold tracking-[0.2em] uppercase text-muted mb-2">
-            Trusted on
+            Team experience across
           </div>
           <h3 className="text-[1.4rem] font-extrabold text-navy tracking-tight">
-            High-accountability projects across the Southwest
+            High-accountability sectors across the Western U.S. and Texas
           </h3>
         </div>
         <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">

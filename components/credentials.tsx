@@ -239,8 +239,8 @@ export function Credentials() {
             </div>
             <p className="text-[13px] text-muted mt-6 leading-[1.7]">
               Working in a jurisdiction not listed? Contact us &mdash; our ICC
-              certifications are accepted by most Southern California
-              municipalities, and we can confirm coverage for your specific project
+              certifications are accepted by most municipalities in the regions we
+              serve, and we can confirm coverage for your specific project
               location before you engage.
             </p>
             <DsaCallout>

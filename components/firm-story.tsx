@@ -1,10 +1,10 @@
 import { SectionTag } from "./section-tag";
 
 const stats = [
-  { value: "Since 2000", label: "Inspecting the work that carries load" },
-  { value: "25+", label: "Certified inspectors across the region" },
-  { value: "2nd Gen", label: "Family-owned, minority-owned, SBE" },
-  { value: "4 States", label: "CA · AZ · NV · UT project experience" },
+  { value: "Since 2000", label: "Our founders' first inspection work" },
+  { value: "~3 Decades", label: "Combined team experience in the trades" },
+  { value: "2nd Gen", label: "Family-owned, minority-owned, DGS-certified SBE" },
+  { value: "4 States", label: "CA · AZ · NV · UT team experience" },
 ];
 
 export function FirmStory() {
@@ -29,18 +29,19 @@ export function FirmStory() {
               it ever reaches a report &mdash; and a checklist cannot teach that.
             </p>
             <p className="text-[16px] text-charcoal leading-[1.85]">
-              A quarter-century on, Asenso is second-generation and family-run:
-              more than twenty-five certified inspectors across Southern
-              California and the Southwest. A national lab sends whoever is free
-              that week. We do the opposite. The same senior inspector stays on
-              your job from the first pour to the closeout package, with his own
-              name on every report.
+              A quarter-century on, Asenso is second-generation and family-run.
+              Our inspectors built their careers across GCs and labs throughout
+              the Western U.S. and Texas, and have now consolidated under one
+              firm. A national lab sends whoever is free that week. We do the
+              opposite. The same
+              senior inspector stays on your job from the first pour to the
+              closeout package, with their name on every report.
             </p>
             <p className="text-[16px] text-charcoal leading-[1.85]">
               That commitment comes from who we are. Our family&rsquo;s Filipino
               and Samoan roots carry a real pride in the work and a duty to bring
               the next generation up behind us. Those were family values before
-              they were business ones &mdash; and they are why our name on a
+              they were business ones &mdash; and they are why the name on a
               report still means something.
             </p>
 

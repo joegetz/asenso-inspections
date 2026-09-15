@@ -91,10 +91,9 @@ export function SeniorStaff() {
           every project.
         </h2>
         <p className="text-[16px] text-muted max-w-[560px] mb-14 leading-[1.8] font-normal">
-          Our senior staff are the consistent presence on your job &mdash; from
-          the pre-construction meeting to the closeout package. These are the
-          leaders; they direct a bench of 25+ certified inspectors across the
-          region.
+          Our team are the consistent presence on your job &mdash; from
+          the pre-construction meeting to the closeout package. Each built their
+          career across GCs and labs, now consolidated under one firm.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {staff.map((s) => (
@@ -150,17 +149,8 @@ export function SeniorStaff() {
           ))}
         </div>
 
-        {/* Advisor + bench band */}
-        <div className="mt-6 bg-navy rounded-[14px] p-7 px-8 flex flex-col sm:flex-row sm:items-center gap-x-8 gap-y-3">
-          <div className="flex items-baseline gap-3 shrink-0">
-            <span className="text-[1.6rem] font-extrabold text-gold leading-none">
-              25+
-            </span>
-            <span className="text-[13px] text-sand/55 leading-[1.5] max-w-[180px]">
-              certified inspectors available across the region
-            </span>
-          </div>
-          <div className="hidden sm:block w-px self-stretch bg-white/10" />
+        {/* Advisor band */}
+        <div className="mt-6 bg-navy rounded-[14px] p-7 px-8">
           <p className="text-[13.5px] text-sand/55 leading-[1.7]">
             <strong className="text-white font-semibold">
               Engineering advisory:

@@ -132,8 +132,8 @@ export function Services() {
           From code-required special inspections to materials testing and
           embedded quality management for owners and EPC teams &mdash;
           ICC-certified across the full IBC Chapter 17 and CBC scope, licensed
-          across Southern California and deployed on industrial sites throughout
-          the Southwest.
+          in California and deployed on industrial sites across the Western U.S.
+          and Texas.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-16 items-start">

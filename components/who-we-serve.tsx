@@ -58,7 +58,7 @@ export function WhoWeServe() {
         {/* References */}
         <div className="mb-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-[12.5px] text-muted">
           <span className="font-bold tracking-[0.12em] uppercase text-[10.5px] text-navy">
-            Engaged by
+            Our inspectors have worked with
           </span>
           <span>Hensel Phelps</span>
           <span className="text-gold/50">·</span>
@@ -66,7 +66,7 @@ export function WhoWeServe() {
           <span className="text-gold/50">·</span>
           <span>Fenagh Engineering &amp; Testing</span>
           <span className="text-gold/50">·</span>
-          <span>Swinerton</span>
+          <span>Austin Industrial</span>
           <span className="text-muted/60">— references on request</span>
         </div>
 

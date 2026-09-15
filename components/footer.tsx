@@ -2,7 +2,7 @@ import { Logo } from "./logo";
 
 const identityTags = [
   "Minority-Owned Business",
-  "Small Business (SBE)",
+  "DGS-Certified SBE (Micro & SB-PW)",
   "Pursuing DBE Certification",
 ];
 
@@ -38,8 +38,7 @@ export function Footer() {
             additional-insured on request
           </p>
           <p className="text-[11px] text-sand/[0.22] mt-2">
-            LA City &middot; LA County &middot; Orange County &middot; Riverside
-            &middot; San Bernardino &middot; Long Beach
+            California &middot; Texas &middot; Mountain West &middot; Southwest
           </p>
         </div>
       </div>
