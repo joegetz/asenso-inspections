@@ -1,12 +1,13 @@
 import { Shield, Clock, FileText, Briefcase } from "lucide-react";
 
 const jurisdictions = [
-  "LA City",
-  "LA County",
+  "Los Angeles",
   "Orange County",
-  "Riverside County",
-  "San Bernardino County",
-  "Long Beach",
+  "San Diego",
+  "Dallas\u2013Fort Worth",
+  "Austin",
+  "Salt Lake City",
+  "Denver",
 ];
 
 const credPills = [
@@ -106,7 +107,7 @@ export function Hero() {
           </div>
           <div className="flex flex-wrap gap-2 items-center">
             <span className="text-[10px] font-semibold tracking-[0.15em] uppercase text-sand/[0.28] mr-[0.2rem]">
-              Licensed in
+              Working in
             </span>
             {jurisdictions.map((j) => (
               <span
