@@ -20,7 +20,7 @@ const tabs: { id: TabId; label: string }[] = [
   { id: "aws", label: "AWS Welding" },
   { id: "aci", label: "ACI" },
   { id: "ifc", label: "IFC Firestop" },
-  { id: "jurisdictions", label: "Jurisdiction Approvals" },
+  { id: "jurisdictions", label: "Jurisdictions & Coverage" },
 ];
 
 const iccCerts = [
@@ -57,38 +57,39 @@ const jurisdictions = [
     ],
   },
   {
-    authority: "County of Los Angeles",
-    type: "ICC credentials accepted",
+    authority: "California",
+    type: "Full IBC Ch. 17 / CBC coverage",
     certs: [
-      "Full IBC Chapter 17 special inspection scope",
-      "CBC compliant \u00b7 all materials categories",
+      "LA \u00b7 Orange \u00b7 Riverside \u00b7 San Bernardino \u00b7 San Diego",
+      "All materials categories \u00b7 DSA and HCAI project experience",
     ],
   },
   {
-    authority: "Orange County",
-    type: "ICC credentials accepted",
+    authority: "Texas",
+    type: "Full IBC Ch. 17 coverage",
     certs: [
-      "Full IBC Chapter 17 special inspection scope",
-      "CBC compliant \u00b7 all materials categories",
+      "DFW \u00b7 Austin \u00b7 San Antonio \u00b7 Houston",
+      "Industrial, semiconductor & data center scopes",
     ],
   },
   {
-    authority: "Riverside County",
-    type: "ICC credentials accepted",
+    authority: "Mountain West",
+    type: "Full IBC Ch. 17 coverage",
     certs: [
-      "Full IBC Chapter 17 special inspection scope",
-      "CBC compliant \u00b7 all materials categories",
+      "UT \u00b7 AZ \u00b7 NV \u00b7 CO \u00b7 NM",
+      "Industrial, federal & remote-site mobilization",
     ],
   },
   {
-    authority: "San Bernardino County",
-    type: "ICC credentials accepted",
+    authority: "Federal Installations",
+    type: "EM-385 / ICD-705 experience",
     certs: [
-      "Full IBC Chapter 17 special inspection scope",
-      "CBC compliant \u00b7 all materials categories",
+      "DoD, USACE three-phase control",
+      "Cleared and escorted-site protocols",
     ],
   },
 ];
+
 
 function CertRow({ name }: { name: string }) {
   return (
@@ -238,10 +239,12 @@ export function Credentials() {
               ))}
             </div>
             <p className="text-[13px] text-muted mt-6 leading-[1.7]">
-              Working in a jurisdiction not listed? Contact us &mdash; our ICC
-              certifications are accepted by most municipalities in the regions we
-              serve, and we can confirm coverage for your specific project
-              location before you engage.
+              We staff by jurisdiction. Our principals hold the registrations
+              above, and across every region we serve we deploy from a
+              credentialed roster of ICC-certified inspectors qualified for the
+              authority having jurisdiction on your project. Tell us the
+              location and we will confirm the inspector and scope before you
+              engage.
             </p>
             <DsaCallout>
               <strong className="text-navy font-bold">DSA Experience:</strong>{" "}
