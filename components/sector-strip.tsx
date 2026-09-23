@@ -9,26 +9,30 @@ import {
 
 const sectors = [
   {
+    icon: Heart,
+    label: "Healthcare / HCAI",
+    example: "City of Hope \u00b7 CHOC \u00b7 Hoag",
+  },
+  { icon: Plane, label: "Aviation", example: "LAX \u00b7 JWA \u00b7 San Diego Int'l" },
+  {
+    icon: Factory,
+    label: "Advanced Manufacturing",
+    example: "Semiconductor \u00b7 Data centers",
+  },
+  {
     icon: Shield,
     label: "Federal / Defense",
-    example: "Sentinel · Vandenberg SFB",
+    example: "Sentinel \u00b7 Vandenberg SFB",
   },
-  { icon: Factory, label: "Industrial", example: "Semiconductor · Process" },
-  {
-    icon: Heart,
-    label: "Healthcare",
-    example: "City of Hope · CHOC · Hoag",
-  },
-  { icon: Plane, label: "Aviation", example: "JWA · LAX · San Diego Int'l" },
   {
     icon: GraduationCap,
     label: "Education / DSA",
-    example: "K–12 · Community College",
+    example: "K\u201312 \u00b7 Community college",
   },
   {
     icon: Droplets,
     label: "Water / Wastewater",
-    example: "Treatment · Pipe welding",
+    example: "Treatment \u00b7 Pipe welding",
   },
 ];
 

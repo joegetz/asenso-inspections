@@ -12,13 +12,6 @@ const projects = [
     tags: ["Material Traceability", "Structural Steel", "Welding"],
   },
   {
-    sector: "Federal · Defense",
-    title: "Sentinel Program (GBSD)",
-    meta: "Department of Defense · Nuclear refurbishment",
-    desc: "Construction Quality Manager for classified DoD facilities under EM-385 and ICD-705 — multidiscipline quality and BIM coordination on remote federal installations.",
-    tags: ["DoD", "EM-385 / ICD-705", "CQM"],
-  },
-  {
     sector: "Healthcare · Campus",
     title: "City of Hope — Orange County Hospital",
     meta: "6-level hospital · HCAI · Irvine, CA",
@@ -33,13 +26,6 @@ const projects = [
     tags: ["MEP", "Energization", "Aviation"],
   },
   {
-    sector: "Public Agency · Aviation",
-    title: "John Wayne Airport — AIP & Terminal Improvements",
-    meta: "County of Orange · $220M+ · Orange County, CA",
-    desc: "QA Senior Special Inspector and oversight across capital improvement and Essential Facility seismic retrofit programs — ~175 structural connections, equipment anchorage, and full closeout documentation.",
-    tags: ["Structural Steel", "Seismic Upgrade", "Public Agency"],
-  },
-  {
     sector: "Healthcare",
     title: "Children's Hospital of Orange County (CHOC)",
     meta: "Orange County, CA",
@@ -47,11 +33,32 @@ const projects = [
     tags: ["AWS D1.1", "Seismic Anchors", "OSHPD"],
   },
   {
+    sector: "Public Agency · Aviation",
+    title: "John Wayne Airport — AIP & Terminal Improvements",
+    meta: "County of Orange · $220M+ · Orange County, CA",
+    desc: "QA Senior Special Inspector and oversight across capital improvement and Essential Facility seismic retrofit programs — ~175 structural connections, equipment anchorage, and full closeout documentation.",
+    tags: ["Structural Steel", "Seismic Upgrade", "Public Agency"],
+  },
+  {
+    sector: "Federal · Defense",
+    title: "Sentinel Program (GBSD)",
+    meta: "Department of Defense · Nuclear refurbishment",
+    desc: "Construction Quality Manager for classified DoD facilities under EM-385 and ICD-705 — multidiscipline quality and BIM coordination on remote federal installations.",
+    tags: ["DoD", "EM-385 / ICD-705", "CQM"],
+  },
+  {
     sector: "Federal · Remote",
     title: "Naval Air Weapons Station — China Lake",
     meta: "Remote Mojave Installation · 2022–2023",
     desc: "Special inspector on South Airfield military construction: MEP seismic bracing, equipment anchorage, reinforced concrete, and structural masonry on a remote federal installation.",
     tags: ["Seismic Anchorage", "Remote", "Federal"],
+  },
+  {
+    sector: "DSA · Higher Education",
+    title: "Long Beach City College — Math & Tech Building V",
+    meta: "DSA · Long Beach, CA",
+    desc: "QA Senior Special Inspector — steel framing, pipe welding for HVAC, elevator construction, and reinforced concrete. Direct interface with DSA Inspector of Record throughout.",
+    tags: ["DSA", "Steel Framing", "Reinforced Concrete"],
   },
   {
     sector: "Water · Wastewater",
@@ -66,13 +73,6 @@ const projects = [
     meta: "20″ Process Pipeline · Ontario, CA",
     desc: "QA Certified Welding Inspector for a below-grade process pipeline — fit-up and welding of joints, flanges, and fittings on ion-exchange water-treatment facilities.",
     tags: ["CWI", "Process Pipeline", "Water Treatment"],
-  },
-  {
-    sector: "DSA · Higher Education",
-    title: "Long Beach City College — Math & Tech Building V",
-    meta: "DSA · Long Beach, CA",
-    desc: "QA Senior Special Inspector — steel framing, pipe welding for HVAC, elevator construction, and reinforced concrete. Direct interface with DSA Inspector of Record throughout.",
-    tags: ["DSA", "Steel Framing", "Reinforced Concrete"],
   },
   {
     sector: "Entertainment · Commercial",

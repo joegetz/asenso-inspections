@@ -126,6 +126,39 @@ lib/
 └── utils.ts                # cn() helper from shadcn
 ```
 
+## Market Focus
+
+Decided September 2026. Two focus markets, chosen against a bench of seven named
+people: focus is arithmetic, not preference.
+
+**Healthcare and HCAI** is first. It is live revenue, the references are real
+(City of Hope Irvine, CHOC, Hoag and a current occupied-hospital campus), HCAI
+review is unforgiving about documentation, and the firm's record discipline is
+what the client is most afraid of getting wrong. Embedded programs on a campus
+are sticky.
+
+**Aviation** is second. LAX Terminal 5, John Wayne at $220M, San Diego T1. RAMP
+registration, LAWA playbooks and badging are barriers already cleared, programs
+run for years, and LAWA's SBE and DBE goals convert the firm's certifications
+into shortlist position rather than a line on a capability statement.
+
+**Advanced manufacturing** (semiconductor, data centres) is the growth option
+and is taken opportunistically. Better economics and owner-side program QA is
+normal there, but it is geographically scattered and consumes a senior person on
+travel for months.
+
+**Not a focus:** K-12 DSA and water/wastewater. The capability and the DSA
+credentials stay, because they open community college and higher ed, but neither
+is marketed. DSA is volume work bid on price against firms built for it, and it
+uses the senior bench badly.
+
+**Laboratories and prime firms are a deliberate channel**, not overflow. It is
+revenue with almost no business development cost. Nothing published may make a
+lab hesitate to call, which is why no service is named by side of the table.
+
+Sector rows on the site are ordered to this focus. All six sectors stay visible
+as evidence; the order is what signals focus.
+
 ## Service Model
 
 Two families of service. **Not a hierarchy** — this was wrong in an earlier

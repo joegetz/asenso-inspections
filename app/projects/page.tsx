@@ -5,7 +5,7 @@ import { PageCta } from "@/components/page-cta";
 export const metadata: Metadata = {
   title: "Projects | Asenso Construction Quality",
   description:
-    "Work Asenso's quality managers have delivered across federal and defense, industrial, healthcare, aviation, education under DSA, and water and wastewater programs.",
+    "Work Asenso's quality managers have delivered across healthcare and HCAI, aviation, advanced manufacturing, federal and defense, education under DSA, and water and wastewater programs.",
 };
 
 export default function ProjectsPage() {

@@ -8,14 +8,14 @@ const audiences = [
     desc: "Fast mobilization, same-day reports, direct communication. Whether you contract us directly or we're assigned through your testing lab, you get the same responsiveness and the same people start to finish.",
   },
   {
+    icon: Briefcase,
+    title: "Testing Labs & Prime Contractors",
+    desc: "A deliberate channel, not overflow. When a job needs certified capacity you do not have free, we work as your subconsultant with carded people who mobilize quickly and deliver AHJ-ready documentation under your name.",
+  },
+  {
     icon: Home,
     title: "Structural Engineers of Record",
     desc: "We support your structural observation program with thorough documentation, so your stamp is backed by defensible field records throughout every construction phase.",
-  },
-  {
-    icon: Briefcase,
-    title: "Testing Labs & Prime Contractors",
-    desc: "Need certified quality staff for overflow work, DSA projects or high-accountability jobs? We support established labs and primes with carded people who mobilize quickly and deliver AHJ-ready documentation.",
   },
   {
     icon: Building,

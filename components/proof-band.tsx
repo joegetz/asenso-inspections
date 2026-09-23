@@ -21,10 +21,10 @@ const stats = [
 ];
 
 const sectors = [
-  { icon: Shield, label: "Federal / Defense" },
-  { icon: Factory, label: "Industrial" },
-  { icon: Heart, label: "Healthcare" },
+  { icon: Heart, label: "Healthcare / HCAI" },
   { icon: Plane, label: "Aviation" },
+  { icon: Factory, label: "Advanced Manufacturing" },
+  { icon: Shield, label: "Federal / Defense" },
   { icon: GraduationCap, label: "Education / DSA" },
   { icon: Droplets, label: "Water / Wastewater" },
 ];
