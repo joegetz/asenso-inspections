@@ -33,7 +33,16 @@ The full system lives in the Asenso brand kit. The rules that bind this repo:
   response-time commitments. When in doubt, remove an element and add a fact.
 - **Tone:** modern, plainspoken, confident, technical without being dry. Own the words
   *transparent, real-time, traceable, auditable, data-driven, senior, named*.
-- **No brag stacks.** A run of claims separated by commas ("ICC-certified
+- **Never attack another firm.** Not by name, not by category, not by
+implication. No "most firms sell inspections by the visit", no comparison table
+with a "National Lab" column, no "not a box we tick", no "whoever is free that
+week". The competitive frame in the brand kit is for internal reasoning about
+positioning; it is not copy. State what Asenso commits to and make each
+commitment checkable. A reader who is evaluating three firms will do the
+comparison themselves, and a firm that does it for them looks like the one that
+needs to.
+
+**No brag stacks.** A run of claims separated by commas ("ICC-certified
 inspectors, AHJ-ready documentation, principals on the job, and reporting you can
 audit the same day") is four assertions with nothing behind any of them, and it
 usually duplicates evidence already on screen. Describe the work; let the

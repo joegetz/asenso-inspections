@@ -29,7 +29,7 @@ export function ServicesTeaser() {
       level="band"
       eyebrow="What we do"
       title="Construction quality, run as a program."
-      intro="Most firms sell inspections by the visit. We are usually retained to run the quality function itself, with the field scope underneath it covered by our own certified people."
+      intro="We are retained to run the quality function on a project and hold it for the duration, with the field scope underneath it covered by our own certified people."
       aside={
         <Link
           href="/services"

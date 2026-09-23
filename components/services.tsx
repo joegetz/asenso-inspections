@@ -16,7 +16,7 @@ const engagements = [
   {
     id: "svc-embedded",
     title: "Embedded QA/QC",
-    code: "CM · GC · Owner's Rep",
+    code: "Inside your team",
     desc: "We sit inside your team and run the quality function for the duration of the job, rather than being called out per inspection.",
     items: [
       "Project-specific QA/QC plan",
@@ -31,7 +31,7 @@ const engagements = [
   {
     id: "svc-owner",
     title: "Owner's Quality Management",
-    code: "Owner · EPC",
+    code: "Owner-side, independent",
     desc: "We act as the owner's or EPC's quality team, verifying the trade contractors' work on your behalf across the full scope, with the planning, traceability and closeout a financed or mission-critical build requires.",
     items: [
       "Independent verification of contractor QC",
@@ -46,7 +46,7 @@ const engagements = [
   {
     id: "svc-readiness",
     title: "Inspection Readiness and Evidence",
-    code: "Readiness",
+    code: "Ahead of the inspection",
     desc: "We walk each area and attach the evidence before the request goes in, so it passes the first time instead of costing a second round.",
     items: [
       "Pre-request area walks",
@@ -73,8 +73,8 @@ const capabilities = [
   },
   {
     title: "MEP Inspection and QA",
-    code: "Mech · Elec · Plumb",
-    desc: "Mechanical, electrical and plumbing inspection and quality support. Real depth on our senior bench, not a box we tick.",
+    code: "CMC · CEC · CPC",
+    desc: "Mechanical, electrical and plumbing inspection and quality support, carried by senior people who have run these systems.",
   },
   {
     title: "Non-Destructive Testing",
@@ -83,7 +83,7 @@ const capabilities = [
   },
   {
     title: "Source and Shop Inspection",
-    code: "Source",
+    code: "AWS D1.1 · Mill certs",
     desc: "Fabricated steel traceability, heat numbers, weld and bolt QA at the shop before it ships, and again when it lands in the field.",
   },
   {
@@ -120,11 +120,10 @@ export function Services() {
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-12 items-start mb-16">
           <p className="text-[16px] text-muted max-w-[620px] leading-[1.8] font-normal">
-            Most firms sell inspections by the visit. We are usually retained to
-            run the quality function itself, which is a different engagement:
-            scoped to the project and the phase, held for the duration, and
-            answerable for the record at closeout. The field scope underneath
-            it is covered by our own certified people.
+            We are retained to run the quality function on a project: scoped
+            to the work and the phase, held for the duration, and answerable
+            for the record at closeout. The field scope underneath it is
+            covered by our own certified people.
           </p>
           <div className="border-l-2 border-gold pl-5">
             <div className="brand-label-sm text-muted mb-3">On this page</div>
@@ -186,8 +185,7 @@ export function Services() {
           </div>
           <p className="text-[13.5px] text-muted max-w-[600px] leading-[1.7]">
             Our own certified people, on their own cards. Materials testing is
-            the one scope we place with an accredited partner, and we say so
-            rather than leave you to find out.
+            the one scope we place with an accredited partner.
           </p>
         </div>
 
