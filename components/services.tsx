@@ -180,14 +180,11 @@ export function Services() {
         </div>
 
         {/* Layer 2: technical scope */}
-        <div id="field-scope" className="mb-6 scroll-mt-[100px]">
-          <div className="brand-label text-gold mb-2">
-            What we cover in the field
-          </div>
-          <p className="text-[13.5px] text-muted max-w-[600px] leading-[1.7]">
-            Each of these is carried by our own certified staff, working under
-            their own certifications and deputy registrations.
-          </p>
+        <div
+          id="field-scope"
+          className="brand-label text-gold mb-6 scroll-mt-[100px]"
+        >
+          What we cover in the field
         </div>
 
         <div className="border border-border rounded-xl overflow-hidden">
