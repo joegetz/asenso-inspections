@@ -5,6 +5,11 @@ import { SectionTag } from "./section-tag";
  * Layer 1 is how the firm is engaged: program-level, retained, harder to
  * displace. Layer 2 is the technical scope underneath it.
  *
+ * Layer 2 carries no code chips. Every one of them was either a restatement
+ * of the title it sat on or a code citation nobody had verified, and this is a
+ * compliance firm: an asserted section number that turns out to be wrong costs
+ * more than the label was ever worth.
+ *
  * Do not call layer 2 "what we self-perform". Self-perform is a general
  * contractor's word for doing work with its own forces instead of subbing it
  * out. Borrowing it puts the firm on the subcontractor side of the table and
@@ -63,32 +68,26 @@ const engagements = [
 const capabilities = [
   {
     title: "Special and Deputy Inspection",
-    code: "IBC / CBC Ch. 17",
     desc: "Continuous and periodic inspection per the Statement of Special Inspections, by ICC-certified inspectors carrying the deputy card for the jurisdiction.",
   },
   {
     title: "Structural Observation and Threshold",
-    code: "ASCE 7 · CBC §1705",
     desc: "Phased site visits with the Structural Engineer of Record, a deficiency log carried to resolution, and the final observation letter for closeout.",
   },
   {
     title: "MEP Inspection and QA",
-    code: "CMC · CEC · CPC",
     desc: "Mechanical, electrical and plumbing inspection and quality support, carried by senior people who have run these systems.",
   },
   {
     title: "Non-Destructive Testing",
-    code: "ASNT · AWS",
     desc: "Ultrasonic, magnetic particle and dye penetrant testing on welds and structural connections, performed in house by our own technicians.",
   },
   {
     title: "Source and Shop Inspection",
-    code: "AWS D1.1 · Mill certs",
     desc: "Fabricated steel traceability, heat numbers, weld and bolt QA at the shop before it ships, and again when it lands in the field.",
   },
   {
     title: "Materials Testing",
-    code: "ASTM · ISO/IEC 17025",
     desc: "Field sampling of concrete, masonry and soils, with laboratory breaks through our ISO/IEC 17025 accredited partner of twenty years.",
   },
 ];
@@ -200,7 +199,6 @@ export function Services() {
                   i < capabilities.length - 1 ? "border-b sm:border-b" : ""
                 } ${i >= capabilities.length - 3 ? "lg:border-b-0" : ""}`}
               >
-                <div className="brand-label-sm text-gold mb-2">{cap.code}</div>
                 <h4 className="text-[0.95rem] font-bold text-navy leading-[1.3] mb-2">
                   {cap.title}
                 </h4>

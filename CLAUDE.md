@@ -33,7 +33,14 @@ The full system lives in the Asenso brand kit. The rules that bind this repo:
   response-time commitments. When in doubt, remove an element and add a fact.
 - **Tone:** modern, plainspoken, confident, technical without being dry. Own the words
   *transparent, real-time, traceable, auditable, data-driven, senior, named*.
-- **Never attack another firm.** Not by name, not by category, not by
+- **Never assert a code section, statute or registration that has not been verified
+against the current source.** No "CBC §1705" on a card, no coverage matrix of
+ticks by jurisdiction, no cert described as current when the resume says "in
+renewal". This is a compliance firm: a wrong section number or a lapsed
+registration published as active costs far more than the label was ever worth.
+When a fact is not verified, describe the work instead and leave the citation out.
+
+**Never attack another firm.** Not by name, not by category, not by
 implication. No "most firms sell inspections by the visit", no comparison table
 with a "National Lab" column, no "not a box we tick", no "whoever is free that
 week". The competitive frame in the brand kit is for internal reasoning about
