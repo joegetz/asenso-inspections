@@ -5,7 +5,7 @@ const audiences = [
   {
     icon: Layers,
     title: "General Contractors",
-    desc: "Fast mobilization, same-day reports, direct communication. Whether you contract us directly or we're assigned through your testing lab, you get the same responsiveness and inspector continuity.",
+    desc: "Fast mobilization, same-day reports, direct communication. Whether you contract us directly or we're assigned through your testing lab, you get the same responsiveness and the same people start to finish.",
   },
   {
     icon: Home,
@@ -15,7 +15,7 @@ const audiences = [
   {
     icon: Briefcase,
     title: "Testing Labs & Prime Contractors",
-    desc: "Need qualified inspectors for overflow work, DSA projects, or high-accountability jobs? We support established labs and primes with certified staff who can mobilize quickly and deliver AHJ-ready documentation.",
+    desc: "Need certified quality staff for overflow work, DSA projects or high-accountability jobs? We support established labs and primes with carded people who mobilize quickly and deliver AHJ-ready documentation.",
   },
   {
     icon: Building,
@@ -35,8 +35,8 @@ export function WhoWeServe() {
           People we work with.
         </h2>
         <p className="text-[16px] text-muted max-w-[560px] mb-14 leading-[1.8] font-normal">
-          We work directly with GCs, engineers, owners, and agencies — or partner
-          with established labs who need qualified inspectors on demanding
+          We work directly with GCs, engineers, owners and agencies, or we partner
+          with established labs who need certified quality staff on demanding
           projects. Either way, you get the same team, the same credentials, and
           the same responsiveness.
         </p>

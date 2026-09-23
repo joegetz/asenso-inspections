@@ -1,10 +1,11 @@
 import { Shield, Clock, FileText, Briefcase } from "lucide-react";
+import { GayamanPanel } from "./motif";
 
 const jurisdictions = [
   "Los Angeles",
   "Orange County",
   "San Diego",
-  "Dallas\u2013Fort Worth",
+  "Dallas–Fort Worth",
   "Austin",
   "Salt Lake City",
   "Denver",
@@ -33,63 +34,43 @@ const credPills = [
   },
 ];
 
-function HexPattern() {
-  return (
-    <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-      <svg
-        viewBox="0 0 900 700"
-        preserveAspectRatio="xMidYMid slice"
-        className="w-full h-full"
-      >
-        <defs>
-          <pattern
-            id="geo"
-            x="0"
-            y="0"
-            width="60"
-            height="52"
-            patternUnits="userSpaceOnUse"
-          >
-            <polygon
-              points="30,2 58,17 58,35 30,50 2,35 2,17"
-              fill="none"
-              stroke="#EAE2D6"
-              strokeWidth=".6"
-              opacity=".04"
-            />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#geo)" />
-      </svg>
-    </div>
-  );
-}
-
 export function Hero() {
   return (
     <section
       id="hero"
       className="min-h-[90vh] flex items-center bg-navy relative overflow-hidden py-24 px-8"
     >
-      <HexPattern />
+      {/* The one pattern moment on this surface: gayaman, bounded to the
+          right edge, with clean space beside it. */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-y-0 right-0 w-[26px] opacity-40 pointer-events-none hidden md:block"
+      >
+        <GayamanPanel />
+      </div>
+
       <div className="max-w-[--container-site] mx-auto grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-20 items-center relative z-1">
         {/* Left column */}
         <div>
-          <div className="text-[10px] font-bold tracking-[0.34em] uppercase text-gold mb-6 flex items-center gap-3 before:content-[''] before:block before:w-7 before:h-px before:bg-gold">
-            California, Texas &amp; the Mountain West
+          <div className="brand-label text-gold mb-6 flex items-center gap-3 before:content-[''] before:block before:w-7 before:h-px before:bg-gold">
+            Construction Quality &middot; California, Texas &amp; the Mountain West
           </div>
-          <h1 className="text-[clamp(2.8rem,4.8vw,4.2rem)] font-extrabold leading-[1.04] tracking-tight text-white mb-6">
+          <h1 className="text-[clamp(2.8rem,4.8vw,4.2rem)] font-extrabold leading-[1.04] tracking-tight text-white mb-5">
             Quality oversight for
             <br />
             high-accountability
             <br />
             <em className="not-italic text-gold">construction.</em>
           </h1>
-          <p className="text-[16px] text-sand/[0.58] leading-[1.85] mb-[2.2rem] max-w-[500px] font-normal">
-            Special inspections, structural observation, threshold inspections,
-            and embedded QA/QC support across California, Texas, and the
-            Mountain West &mdash; backed by ICC-certified inspectors, AHJ-ready
-            documentation, and a team that moves at your pace.
+          <p className="text-[13px] font-bold tracking-[0.16em] uppercase text-sand/[0.55] mb-[1.6rem]">
+            Rigorous. Responsive. Transparent.
+          </p>
+          <p className="text-[16px] text-sand/[0.58] leading-[1.85] mb-[2.2rem] max-w-[520px] font-normal">
+            We run construction quality as a standing program, not a line
+            item: special inspection, structural observation, threshold
+            inspection, and embedded QA/QC. ICC-certified inspectors, AHJ-ready
+            documentation, principals on the job, and reporting you can audit
+            the same day.
           </p>
           <div className="flex gap-4 flex-wrap mb-[2.4rem]">
             <a
@@ -99,14 +80,14 @@ export function Hero() {
               Discuss a Project
             </a>
             <a
-              href="#credentials"
+              href="/leadership"
               className="bg-transparent text-sand/75 text-[12px] font-bold tracking-[0.1em] uppercase px-7 py-[13px] rounded-full border-[1.5px] border-sand/20 no-underline transition-colors hover:border-sand/50"
             >
-              View Credentials
+              Meet the Team
             </a>
           </div>
           <div className="flex flex-wrap gap-2 items-center">
-            <span className="text-[10px] font-semibold tracking-[0.15em] uppercase text-sand/[0.28] mr-[0.2rem]">
+            <span className="brand-label-sm text-sand/[0.28] mr-[0.2rem]">
               Working in
             </span>
             {jurisdictions.map((j) => (
@@ -120,7 +101,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Right column — credential pills (hidden on tablet and below) */}
+        {/* Right column: credential pills (hidden on tablet and below) */}
         <div className="hidden lg:flex flex-col gap-[0.85rem]">
           {credPills.map((pill) => (
             <div
@@ -129,7 +110,7 @@ export function Hero() {
             >
               <pill.icon className="w-[18px] h-[18px] text-gold shrink-0 mt-0.5" />
               <div>
-                <div className="text-[12px] font-bold text-white mb-0.5">
+                <div className="text-[12px] font-bold text-white mb-0.5 brand-nums">
                   {pill.label}
                 </div>
                 <div className="text-[11px] text-sand/[0.42] leading-[1.4]">

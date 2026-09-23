@@ -14,7 +14,7 @@ const steps = [
   {
     num: "03",
     title: "Field Inspections",
-    desc: "On-site per your SSI \u2014 continuous or periodic. Same-day digital field reports. Same inspector every visit.",
+    desc: "On-site per your SSI \u2014 continuous or periodic. Same-day digital field reports. The same person every visit.",
   },
   {
     num: "04",
@@ -59,8 +59,8 @@ export function Process() {
           SSI review to permit closeout.
         </h2>
         <p className="text-[16px] text-sand/[0.48] max-w-[560px] mb-14 leading-[1.8] font-normal">
-          Structured around your project schedule &mdash; not a lab&apos;s
-          dispatch queue.
+          Structured around your project schedule, not a lab&apos;s dispatch
+          queue.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step) => (

@@ -124,7 +124,7 @@ export function Credentials() {
         {/* Intro + summary */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start mb-14">
           <p className="text-[15px] text-muted leading-[1.8]">
-            Every inspector on the Asenso team holds active, verified
+            Everyone on the Asenso team holds active, verified
             certifications from the leading bodies in the industry &mdash; ICC,
             AWS, ACI, and IFC. We don&apos;t say &ldquo;ICC certified&rdquo; as
             a marketing line. Below is the full credential inventory our team

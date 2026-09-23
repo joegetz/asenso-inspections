@@ -65,3 +65,31 @@
     line-height: 1.7;
   }
 }
+
+/* ── Asenso brand system ───────────────────────────────────────────────
+   Typographic rules from the brand kit. The motif system lives in
+   components/motif.tsx — gayaman is the signature register, monochrome
+   gold, one pattern moment per surface.
+   ────────────────────────────────────────────────────────────────────── */
+
+@layer components {
+  /* Uppercase labels: 0.15–0.25em tracking, per the type spec. */
+  .brand-label {
+    @apply text-[10px] font-bold uppercase tracking-[0.2em];
+  }
+
+  .brand-label-sm {
+    @apply text-[9px] font-bold uppercase tracking-[0.24em];
+  }
+
+  /* Numbers set in columns use tabular figures. */
+  .brand-nums {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+
+  /* Gold hairline. The only accent; never a gradient. */
+  .brand-hairline {
+    @apply block h-px w-full bg-gold;
+  }
+}

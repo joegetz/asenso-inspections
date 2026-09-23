@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
+import { BrandDefs } from "@/components/motif";
+import { Nav } from "@/components/nav";
+import { IdentityBand } from "@/components/identity-band";
+import { Footer } from "@/components/footer";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -8,14 +12,17 @@ const manrope = Manrope({
   weight: ["300", "400", "500", "600", "700", "800"],
 });
 
+const title =
+  "Asenso Construction Quality | Special Inspection & QA/QC | California, Texas & the Mountain West";
+const description =
+  "Asenso runs construction quality programs across California, Texas, and the Mountain West: special inspection, structural observation, threshold inspection, and owner's QA/QC. ICC-certified inspectors, AHJ-ready documentation, principals on the job. Minority-owned, California DGS-certified small business (SBE/VSBE).";
+
 export const metadata: Metadata = {
-  title: "Asenso — Special Inspections & QA/QC | California, Texas & the Mountain West",
-  description:
-    "Special inspections, structural observation, and QA/QC program management across California, Texas, and the Mountain West — including LA, Orange County, Riverside and San Bernardino. ICC-certified, minority-owned, California DGS-certified small business (SBE/VSBE).",
+  title,
+  description,
   openGraph: {
-    title: "Asenso — Special Inspections & QA/QC | California, Texas & the Mountain West",
-    description:
-      "Special inspections, structural observation, and QA/QC program management across California, Texas, and the Mountain West — including LA, Orange County, Riverside and San Bernardino. ICC-certified, minority-owned, California DGS-certified small business (SBE/VSBE).",
+    title,
+    description,
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
@@ -31,7 +38,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${manrope.variable} h-full`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <BrandDefs />
+        <Nav />
+        <IdentityBand />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

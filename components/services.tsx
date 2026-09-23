@@ -1,123 +1,106 @@
 import { SectionTag } from "./section-tag";
 
-const services = [
+/**
+ * Two layers, deliberately.
+ * Layer 1 is how the firm is engaged: program-level, retained, harder to
+ * displace. Layer 2 is what the firm self-performs, which is what separates
+ * us from boutiques who broker the work out.
+ */
+
+const engagements = [
   {
-    id: "svc-qaqc",
-    title: "QA/QC Program Management",
-    code: "Owner \u00b7 GC \u00b7 Agency",
-    desc: "Embedded quality assurance and control support for contractors, owners, and public agencies who need active oversight throughout construction \u2014 not just code-triggered inspection milestones.",
+    id: "svc-embedded",
+    title: "Embedded QA/QC",
+    code: "CM · GC · Owner's Rep",
+    desc: "We sit inside your team and run the quality function for the duration of the job, rather than being called out per inspection.",
     items: [
-      "Project-specific QA/QC plan development",
-      "Pre-pour & pre-placement readiness verification",
-      "Non-conformance tracking & resolution",
-      "Owner\u2019s representative support",
+      "Project-specific QA/QC plan",
+      "Inspection and test plan (ITP) development",
+      "Hold and witness point register",
       "Contractor QC program review",
-      "Issue resolution follow-through",
-      "Closeout documentation & readiness packages",
+      "Non-conformance tracking to closure",
+      "Pre-pour and pre-placement readiness",
+      "Turnover and closeout packages",
     ],
   },
   {
-    id: "svc-special",
-    title: "Special Inspections",
-    code: "IBC Ch. 17 / CBC",
-    desc: "Continuous and periodic special inspections per the project Statement of Special Inspections \u2014 performed by ICC-certified inspectors licensed in the relevant jurisdiction.",
-    items: [
-      "Reinforcing Steel Placement",
-      "Concrete Placement & Curing",
-      "Shotcrete Placement",
-      "Pre-Stress & Post-Tensioned Concrete",
-      "Structural Steel Welding",
-      "High-Strength Bolting",
-      "Reinforced Masonry Construction",
-      "Epoxy Anchor Installation",
-      "Mechanical Anchors",
-      "Non-Destructive Testing",
-      "Fireproofing",
-      "Structural Wood",
-      "Exterior Insulation & Finish Systems (EIFS)",
-      "Welder Qualifications",
-      "Steel & Welding Fabricator Shop Inspections",
-    ],
-  },
-  {
-    id: "svc-cqm",
-    title: "Construction Quality Management",
+    id: "svc-owner",
+    title: "Owner's Quality Management",
     code: "Owner · EPC",
-    desc: "Serving as the owner’s or EPC’s embedded quality team — verifying the trade contractors’ work on your behalf across the full structural scope, with the planning, documentation, and closeout a financed or mission-critical build requires.",
+    desc: "We act as the owner's or EPC's quality team, verifying the trade contractors' work on your behalf across the full scope, with the planning, traceability and closeout a financed or mission-critical build requires.",
     items: [
-      "Inspection & Test Plan (ITP) development",
-      "Hold & witness-point register management",
+      "Independent verification of contractor QC",
       "USACE three-phase control",
-      "Receiving inspection & material traceability",
-      "Non-conformance (NCR) tracking to closure",
-      "Heat-number & mill-cert verification",
-      "MSHA-ready remote / industrial mobilization",
-      "Turnover & closeout documentation packages",
+      "Receiving inspection and material traceability",
+      "Heat number and mill certificate verification",
+      "Owner's representative support",
+      "Remote and industrial mobilization",
+      "Turnover documentation packages",
     ],
   },
   {
-    id: "svc-materials",
-    title: "Materials Testing",
-    code: "ASTM · ISO/IEC 17025",
-    desc: "Field sampling and testing of concrete, masonry, and soils, with laboratory breaks through our ISO/IEC 17025-accredited partner of twenty years — accredited-lab results without the rotating staff of a national branch network.",
+    id: "svc-readiness",
+    title: "Inspection Readiness and Evidence",
+    code: "Readiness",
+    desc: "We walk each area and attach the evidence before the request goes in, so it passes the first time instead of costing a second round.",
     items: [
-      "Concrete field testing (slump, air, temperature)",
-      "Concrete cylinder casting & accredited-lab breaks",
-      "Grout prism & mortar compression tests",
-      "Reinforcing & anchor verification",
-      "Soils & compaction coordination",
-      "Chain-of-custody from field to lab",
-      "Calibrated equipment with current certificates",
-    ],
-  },
-  {
-    id: "svc-ndt",
-    title: "Non-Destructive Testing",
-    code: "ASNT · AWS",
-    desc: "Visual and non-destructive examination of structural welds, coordinated with ASNT-qualified personnel — sized to the project’s acceptance criteria and inspection test plan.",
-    items: [
-      "Visual weld inspection by CWI",
-      "Ultrasonic testing (UT) coordination",
-      "Magnetic particle (MT) & dye penetrant (PT)",
-      "Bolting verification — turn-of-nut & direct tension",
-      "Welder & WPS qualification review",
-    ],
-  },
-  {
-    id: "svc-structural",
-    title: "Structural Observation",
-    code: "ASCE 7",
-    desc: "Structural observation services coordinated with the Structural Engineer of Record \u2014 ensuring field conditions match design intent at every required phase.",
-    items: [
-      "Phased site visits per observation program",
-      "Deficiency tracking & resolution log",
-      "SEOR coordination and reporting",
-      "Final structural observation letter for AHJ",
-      "Coordination with building department at closeout",
-    ],
-  },
-  {
-    id: "svc-threshold",
-    title: "Threshold Inspections",
-    code: "CBC \u00a71705",
-    desc: "Threshold building inspection services for projects triggering mandatory structural observation \u2014 including large concrete and post-tensioned structures.",
-    items: [
-      "Concrete & post-tensioned slab systems",
-      "Moment frames and shear wall construction",
-      "Sequential phase documentation",
-      "Threshold inspection reports for AHJ",
+      "Pre-request area walks",
+      "Photo evidence with the code basis attached",
+      "Findings issued the day they are raised",
+      "Condition register, open to verified closed",
+      "Deficiency resolution follow-through",
+      "AHJ and SEOR coordination",
+      "Closeout readiness verification",
     ],
   },
 ];
 
-const navItems = [
-  { href: "#svc-qaqc", label: "QA/QC Program Management" },
-  { href: "#svc-special", label: "Special Inspections" },
-  { href: "#svc-cqm", label: "Construction Quality Management" },
-  { href: "#svc-materials", label: "Materials Testing" },
-  { href: "#svc-ndt", label: "Non-Destructive Testing" },
-  { href: "#svc-structural", label: "Structural Observation" },
-  { href: "#svc-threshold", label: "Threshold Inspections" },
+const capabilities = [
+  {
+    title: "Special and Deputy Inspection",
+    code: "IBC / CBC Ch. 17",
+    desc: "Continuous and periodic inspection per the Statement of Special Inspections, by ICC-certified inspectors carrying the deputy card for the jurisdiction.",
+  },
+  {
+    title: "Structural Observation and Threshold",
+    code: "ASCE 7 · CBC §1705",
+    desc: "Phased site visits with the Structural Engineer of Record, a deficiency log carried to resolution, and the final observation letter for closeout.",
+  },
+  {
+    title: "MEP Inspection and QA",
+    code: "Mech · Elec · Plumb",
+    desc: "Mechanical, electrical and plumbing inspection and quality support. Real depth on our senior bench, not a box we tick.",
+  },
+  {
+    title: "Non-Destructive Testing",
+    code: "ASNT · AWS",
+    desc: "Ultrasonic, magnetic particle and dye penetrant testing on welds and structural connections, performed in house by our own technicians.",
+  },
+  {
+    title: "Source and Shop Inspection",
+    code: "Source",
+    desc: "Fabricated steel traceability, heat numbers, weld and bolt QA at the shop before it ships, and again when it lands in the field.",
+  },
+  {
+    title: "Materials Testing",
+    code: "ASTM · ISO/IEC 17025",
+    desc: "Field sampling of concrete, masonry and soils, with laboratory breaks through our ISO/IEC 17025 accredited partner of twenty years.",
+  },
+];
+
+const ch17Scope = [
+  "Reinforcing steel placement",
+  "Concrete placement and curing",
+  "Shotcrete",
+  "Prestressed and post-tensioned concrete",
+  "Structural steel welding",
+  "High-strength bolting",
+  "Reinforced masonry",
+  "Epoxy and mechanical anchors",
+  "Fireproofing",
+  "Structural wood",
+  "EIFS",
+  "Welder qualifications",
 ];
 
 export function Services() {
@@ -126,66 +109,90 @@ export function Services() {
       <div className="max-w-[--container-site] mx-auto">
         <SectionTag>Services</SectionTag>
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
-          Inspection & Quality Services
+          Construction quality,
+          <br />
+          run as a program.
         </h2>
-        <p className="text-[16px] text-muted max-w-[600px] mb-14 leading-[1.8] font-normal">
-          From code-required special inspections to materials testing and
-          embedded quality management for owners and EPC teams &mdash;
-          ICC-certified across the full IBC Chapter 17 and CBC scope, licensed
-          in California and deployed on industrial sites across Texas and the
-          Mountain West.
+        <p className="text-[16px] text-muted max-w-[620px] mb-16 leading-[1.8] font-normal">
+          Most firms sell inspections by the visit. We are usually retained to
+          run the quality function itself, and we self-perform the field work
+          underneath it. Both layers are below.
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-16 items-start">
-          {/* Sidebar nav — hidden on mobile */}
-          <div className="hidden lg:block sticky top-[88px] max-h-[calc(100vh-120px)] overflow-y-auto">
-            <div className="text-[10px] font-bold tracking-[0.2em] uppercase text-muted mb-4">
-              Jump to
-            </div>
-            <ul className="list-none flex flex-col gap-[0.2rem]">
-              {navItems.map((n) => (
-                <li key={n.href}>
-                  <a
-                    href={n.href}
-                    className="block py-[0.55rem] px-[0.85rem] rounded-md no-underline text-[13.5px] font-medium text-muted transition-all border-l-2 border-transparent hover:bg-sand hover:text-navy hover:border-l-gold"
-                  >
-                    {n.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* Layer 1: engagement models */}
+        <div className="mb-6">
+          <div className="brand-label text-gold mb-2">How we are engaged</div>
+          <p className="text-[13.5px] text-muted max-w-[560px] leading-[1.7]">
+            Retained quality programs. Scoped to the project and the phase, held
+            for the duration.
+          </p>
+        </div>
 
-          {/* Service panels */}
-          <div className="flex flex-col gap-8">
-            {services.map((svc) => (
-              <div
-                key={svc.id}
-                id={svc.id}
-                className="bg-offwhite border border-border rounded-xl p-[2.2rem] px-8 transition-colors relative overflow-hidden scroll-mt-[100px] group hover:border-gold/30 before:content-[''] before:absolute before:top-0 before:left-0 before:bottom-0 before:w-[3px] before:bg-gold before:opacity-0 before:transition-opacity hover:before:opacity-100"
-              >
-                <div className="flex items-start justify-between gap-4 mb-3">
-                  <h3 className="text-[1.1rem] font-extrabold text-navy">
-                    {svc.title}
-                  </h3>
-                  <span className="text-[10px] font-bold tracking-[0.1em] uppercase text-gold bg-gold/10 px-[10px] py-1 rounded-full whitespace-nowrap shrink-0">
-                    {svc.code}
-                  </span>
-                </div>
-                <p className="text-[14px] text-muted leading-[1.75] mb-[1.2rem]">
-                  {svc.desc}
-                </p>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-[0.4rem] gap-x-3 list-none">
-                  {svc.items.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-2 text-[13px] text-charcoal leading-[1.5] before:content-[''] before:w-1 before:h-1 before:bg-gold before:shrink-0 before:mt-[7px] before:[clip-path:polygon(50%_0%,0%_100%,100%_100%)]"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-20">
+          {engagements.map((svc) => (
+            <div
+              key={svc.id}
+              id={svc.id}
+              className="bg-offwhite border border-border rounded-xl p-7 scroll-mt-[100px] flex flex-col transition-colors hover:border-gold/30"
+            >
+              <span className="brand-label-sm text-gold mb-3">{svc.code}</span>
+              <h3 className="text-[1.05rem] font-extrabold text-navy leading-[1.25] mb-3">
+                {svc.title}
+              </h3>
+              <p className="text-[13.5px] text-muted leading-[1.7] mb-5">
+                {svc.desc}
+              </p>
+              <ul className="list-none flex flex-col gap-[0.35rem] mt-auto">
+                {svc.items.map((item) => (
+                  <li
+                    key={item}
+                    className="flex items-start gap-2 text-[12.5px] text-charcoal leading-[1.5] before:content-[''] before:w-1 before:h-1 before:bg-gold before:shrink-0 before:mt-[7px] before:[clip-path:polygon(50%_0%,0%_100%,100%_100%)]"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Layer 2: self-performed capability */}
+        <div className="mb-6">
+          <div className="brand-label text-gold mb-2">What we self-perform</div>
+          <p className="text-[13.5px] text-muted max-w-[560px] leading-[1.7]">
+            Our own certified people in the field. Materials testing is the one
+            scope we place with an accredited partner, and we say so.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8 border-t border-border pt-10">
+          {capabilities.map((cap) => (
+            <div key={cap.title}>
+              <div className="flex items-baseline justify-between gap-3 mb-2">
+                <h4 className="text-[0.92rem] font-bold text-navy leading-[1.3]">
+                  {cap.title}
+                </h4>
               </div>
+              <div className="brand-label-sm text-gold mb-2">{cap.code}</div>
+              <p className="text-[13px] text-muted leading-[1.65]">
+                {cap.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 border-t border-border pt-8">
+          <div className="brand-label-sm text-muted mb-4">
+            Full IBC Chapter 17 scope
+          </div>
+          <div className="flex flex-wrap gap-x-2 gap-y-2">
+            {ch17Scope.map((s) => (
+              <span
+                key={s}
+                className="text-[12px] font-medium text-charcoal bg-sand border border-stone/60 rounded-full px-3 py-1"
+              >
+                {s}
+              </span>
             ))}
           </div>
         </div>

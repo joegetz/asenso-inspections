@@ -1,19 +1,21 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Logo } from "./logo";
 
 const links = [
-  { href: "#services", label: "Services" },
-  { href: "#credentials", label: "Credentials" },
-  { href: "#why", label: "Why Asenso" },
-  { href: "#senior-staff", label: "Senior Staff" },
-  { href: "#projects", label: "Experience" },
-  { href: "#contact", label: "Contact" },
+  { href: "/services", label: "Services" },
+  { href: "/leadership", label: "Leadership" },
+  { href: "/projects", label: "Projects" },
+  { href: "/#why", label: "Why Asenso" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export function Nav() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onResize = () => {
@@ -38,20 +40,28 @@ export function Nav() {
 
           {/* Desktop links */}
           <ul className="hidden sm:flex items-center gap-[2.2rem] list-none">
-            {links.map((l) => (
-              <li key={l.href}>
-                <a
-                  href={l.href}
-                  className="no-underline text-muted text-[13px] font-medium transition-colors hover:text-navy"
-                >
-                  {l.label}
-                </a>
-              </li>
-            ))}
+            {links.map((l) => {
+              const active =
+                l.href.startsWith("/") &&
+                !l.href.includes("#") &&
+                pathname.startsWith(l.href);
+              return (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    className={`no-underline text-[13px] font-medium transition-colors hover:text-navy ${
+                      active ? "text-navy" : "text-muted"
+                    }`}
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
 
           <a
-            href="#contact"
+            href="/#contact"
             className="hidden sm:inline-block bg-navy text-offwhite text-[12px] font-bold tracking-[0.1em] uppercase px-[22px] py-[10px] rounded-full transition-all hover:bg-[#1c3148] hover:-translate-y-px no-underline"
           >
             Discuss a Project
@@ -88,18 +98,18 @@ export function Nav() {
           <ul className="list-none flex flex-col gap-1 mb-8">
             {links.map((l) => (
               <li key={l.href}>
-                <a
+                <Link
                   href={l.href}
                   onClick={() => setOpen(false)}
                   className="block text-[1.15rem] font-bold text-navy no-underline py-[0.85rem] border-b border-border tracking-tight hover:text-gold"
                 >
                   {l.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
           <a
-            href="#contact"
+            href="/#contact"
             onClick={() => setOpen(false)}
             className="block w-full text-center bg-gold text-navy text-[13px] font-extrabold tracking-[0.1em] uppercase px-7 py-[15px] rounded-full no-underline hover:opacity-88"
           >

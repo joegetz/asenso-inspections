@@ -4,23 +4,23 @@ import { Info } from "lucide-react";
 const features = [
   {
     num: "01",
-    title: "We know your project, not just the code",
-    desc: "The inspector at your pre-con meeting is the same one on-site every phase. No rotating staff, no hand-off gaps \u2014 they remember what was agreed and understand your project\u2019s specifics.",
+    title: "The same inspector, start to finish",
+    desc: "The inspector at your pre-construction meeting is the one on site every phase, and a principal signs the work. No rotating staff, no hand-off gaps, no account manager layer between you and the person who knows your job.",
   },
   {
     num: "02",
-    title: "Documentation built for scrutiny",
-    desc: "Field reports formatted for the AHJ, SEOR, and owner. Written to hold up under review \u2014 not just check a compliance box. Same-day delivery, ready for submittal.",
+    title: "Findings the day we see them",
+    desc: "Every condition goes out the day it is raised, with the code section behind it and photo evidence attached. Written to hold up under review, and formatted so the building department, the SEOR and the owner all work from the same record.",
   },
   {
     num: "03",
-    title: "Direct access when decisions can\u2019t wait",
-    desc: "Mid-pour and need an answer? You reach the inspector or a principal directly. No call center, no dispatch queue, no account manager layer between you and the person who knows your job.",
+    title: "Every condition tracked to closed",
+    desc: "Open conditions sit in a register that carries forward day to day until each one is verified closed. Nothing is lost between reports, nothing gets carried forward unresolved, and nobody is surprised at closeout.",
   },
   {
     num: "04",
-    title: "Active in-house certifications across the team",
-    desc: "Every cert is real, current, and earned by our inspectors \u2014 not borrowed from a subcontractor network. You get our team, with credentials you can verify, on every project.",
+    title: "Credentials you can check",
+    desc: "Every certification is current and held by our own quality managers, not borrowed from a subcontractor network. Deputy cards sit on each building department's public registry, and we name the inspector and the card number at proposal.",
   },
 ];
 
@@ -42,6 +42,12 @@ const tableRows = [
     asenso: "\u2713 Direct to founder",
     lab: "Account manager layer",
     boutique: "Sometimes",
+  },
+  {
+    label: "Findings tracked to closure",
+    asenso: "\u2713 Register carried day to day",
+    lab: "Report by report",
+    boutique: "Varies",
   },
   {
     label: "Full cert stack visible",
@@ -78,15 +84,15 @@ export function WhyAsenso() {
           <div>
             <SectionTag>Why Asenso</SectionTag>
             <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
-              Responsive service.
+              Senior people.
               <br />
-              Verified credentials.
+              Evidence you can check.
             </h2>
             <p className="text-[16px] text-muted max-w-[560px] mb-14 leading-[1.8] font-normal">
-              National labs offer materials testing capabilities. Boutique firms
-              offer personalized service. We focus on what both often
-              miss: inspector continuity, principal access, and credential
-              transparency from day one.
+              National labs have scale and an accredited lab. Boutique firms
+              have personal service. Both tend to miss the same things:
+              inspector continuity, direct access to a principal, and a record
+              you can audit while the job is still running.
             </p>
             <div className="flex flex-col gap-[1.8rem]">
               {features.map((f) => (
