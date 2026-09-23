@@ -7,21 +7,21 @@ const projects = [
   {
     sector: "Aviation",
     title: "LAX Terminal 5 Modernization",
-    meta: "Hensel Phelps · $1.6B · Los Angeles, CA · Active",
+    meta: "$1.6B · Los Angeles, CA · Active",
     desc: "Structural QA team: receiving inspection, material traceability and heat-number verification across structural steel, concrete, embeds, anchors, and welding; deficiency logs, NCRs, and turnover records.",
     tags: ["Material Traceability", "Structural Steel", "Welding"],
   },
   {
     sector: "Federal · Defense",
     title: "Sentinel Program (GBSD)",
-    meta: "Northrop Grumman / Clark · Department of Defense",
+    meta: "Department of Defense · Nuclear refurbishment",
     desc: "Construction Quality Manager for classified DoD facilities under EM-385 and ICD-705 — multidiscipline quality and BIM coordination on remote federal installations.",
     tags: ["DoD", "EM-385 / ICD-705", "CQM"],
   },
   {
     sector: "Healthcare · Campus",
     title: "City of Hope — Orange County Hospital",
-    meta: "Fenagh · 6-Level Hospital · Irvine, CA",
+    meta: "6-level hospital · HCAI · Irvine, CA",
     desc: "QA Lead Special Inspector on a six-level HCAI hospital — daily structural inspection, special-inspection coordination, and HCAI Inspector-of-Record interface through closeout.",
     tags: ["HCAI / OSHPD", "Structural Steel", "QC Program Lead"],
   },
@@ -136,8 +136,9 @@ export function Projects() {
         </div>
 
         <p className="text-[12px] text-sand/[0.32] leading-[1.7] mt-10 max-w-[860px]">
-          Projects reflect our team’s delivery history, performed under the
-          GC or host firm shown. Dollar figures are total
+          Projects reflect our quality managers’ delivery history, each
+          performed under a general contractor, prime or host firm. Those firms
+          are named at proposal stage rather than here. Dollar figures are total
           project value, shown for context. References available on request.
         </p>
       </div>

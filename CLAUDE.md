@@ -125,7 +125,14 @@ we are retained to do. The ladder:
 | Records | Quality Program Manager, Records and Closeout |
 | Developing | Associate Quality Manager, `<coverage>` |
 
-**No narrative bios on profile cards, and no client or project names.** A card
+**No contractor, prime or host firm names anywhere on the site.** Not on profile
+cards, not in project meta lines. Naming Hensel Phelps, Northrop Grumman, Clark or
+a host inspection firm tells competitors who the bench works through and names
+firms that never agreed to appear here. Public agency owners (Department of
+Defense, County of Orange) and the projects themselves are fine; the firms are
+named at proposal stage.
+
+**No narrative bios on profile cards.** A card
 carries the person, the title, the tenure and the certifications. That is all.
 Paragraphs describing what someone authored, which general contractor they are
 placed with, or which campus they ran are proposal content: they tell competitors
