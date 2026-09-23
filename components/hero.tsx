@@ -66,10 +66,10 @@ export function Hero() {
             Rigorous. Responsive. Transparent.
           </p>
           <p className="text-[16px] text-sand/[0.58] leading-[1.85] mb-[2.2rem] max-w-[520px] font-normal">
-            We work alongside the team already on your project, carrying the
-            quality program from the first drawing review through the closeout
-            package: special inspection, structural observation and embedded
-            QA/QC. Every condition is tracked until it is verified closed.
+            Special inspection, structural observation and embedded QA/QC,
+            from the first drawing review through the closeout package. We work
+            alongside the team already on your project, and every condition we
+            raise is tracked until it is verified closed.
           </p>
           <div className="flex gap-4 flex-wrap mb-[2.4rem]">
             <a
