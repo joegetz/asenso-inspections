@@ -21,8 +21,8 @@ const engagements = [
   {
     id: "svc-embedded",
     title: "Embedded QA/QC",
-    code: "Inside your team",
-    desc: "We sit inside your team and run the quality function for the duration of the job, rather than being called out per inspection.",
+    code: "Alongside your team",
+    desc: "We work inside your team and carry the inspection and test plan, the hold points and the record, so your QC manager is not carrying it alone.",
     items: [
       "Project-specific QA/QC plan",
       "Inspection and test plan (ITP) development",
@@ -35,9 +35,9 @@ const engagements = [
   },
   {
     id: "svc-owner",
-    title: "Owner's Quality Management",
-    code: "Owner-side, independent",
-    desc: "We act as the owner's or EPC's quality team, verifying the trade contractors' work on your behalf across the full scope, with the planning, traceability and closeout a financed or mission-critical build requires.",
+    title: "Owner-Side Verification",
+    code: "For the owner or EPC",
+    desc: "Independent verification for the owner or EPC, checking the work against the contract documents alongside the contractor's own QC program, with the traceability and closeout a financed or mission-critical build requires.",
     items: [
       "Independent verification of contractor QC",
       "USACE three-phase control",
@@ -51,7 +51,7 @@ const engagements = [
   {
     id: "svc-readiness",
     title: "Inspection Readiness and Evidence",
-    code: "Ahead of the inspection",
+    code: "Before the request goes in",
     desc: "We walk each area and attach the evidence before the request goes in, so it passes the first time instead of costing a second round.",
     items: [
       "Pre-request area walks",
@@ -113,16 +113,17 @@ export function Services() {
       <div className="max-w-[--container-site] mx-auto">
         <SectionTag>Services</SectionTag>
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
-          Construction quality,
+          Quality support that
           <br />
-          run as a program.
+          stays on the job.
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-12 items-start mb-16">
           <p className="text-[16px] text-muted max-w-[620px] leading-[1.8] font-normal">
-            We are retained to run the quality function on a project: scoped
-            to the work and the phase, held for the duration, and answerable
-            for the record at closeout. The field scope underneath it is
-            covered by our own certified people.
+            We are brought on to strengthen the quality program on a project,
+            not to replace the people already running it. Scoped to the work
+            and the phase, held for the duration, and answerable for the record
+            at closeout. The field scope underneath is covered by our own
+            certified people.
           </p>
           <div className="border-l-2 border-gold pl-5">
             <div className="brand-label-sm text-muted mb-3">On this page</div>

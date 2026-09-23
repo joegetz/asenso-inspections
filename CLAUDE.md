@@ -33,7 +33,16 @@ The full system lives in the Asenso brand kit. The rules that bind this repo:
   response-time commitments. When in doubt, remove an element and add a fact.
 - **Tone:** modern, plainspoken, confident, technical without being dry. Own the words
   *transparent, real-time, traceable, auditable, data-driven, senior, named*.
-- **Never assert a code section, statute or registration that has not been verified
+- **Complementary, never displacing.** Asenso is brought on to strengthen the
+quality program on a project, not to take it over. Do not write "we run the
+quality function", "we act as your quality team" or anything that reads as
+replacing the GC's QC manager or the owner's staff. A general contractor with a
+QC manager will not buy a firm that says it is replacing them; they will buy
+certified capacity that carries the inspection program and keeps the record.
+Owner-side work is the one place independence is the point, and it is framed as
+verification alongside the contractor's own QC program, not instead of it.
+
+**Never assert a code section, statute or registration that has not been verified
 against the current source.** No "CBC §1705" on a card, no coverage matrix of
 ticks by jurisdiction, no cert described as current when the resume says "in
 renewal". This is a compliance firm: a wrong section number or a lapsed
@@ -113,7 +122,7 @@ lib/
 Two layers, and the order matters.
 
 **Layer 1, how we are engaged** (program level, retained, harder to displace):
-Embedded QA/QC, Owner's Quality Management, Inspection Readiness and Evidence.
+Embedded QA/QC, Owner-Side Verification, Inspection Readiness and Evidence.
 
 **Layer 2, what we cover in the field** (the technical scope):
 Special and Deputy Inspection, Structural Observation and Threshold, MEP

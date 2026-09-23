@@ -3,17 +3,17 @@ import { Section } from "./section";
 
 const engagements = [
   {
-    code: "CM · GC · Owner's Rep",
+    code: "Alongside your team",
     title: "Embedded QA/QC",
-    desc: "We sit inside your team and run the quality function for the duration of the job, rather than being called out per inspection.",
+    desc: "We work inside your team and carry the inspection and test plan, the hold points and the record, so your QC manager is not carrying it alone.",
   },
   {
-    code: "Owner · EPC",
-    title: "Owner's Quality Management",
-    desc: "We act as the owner's or EPC's quality team, verifying the trade contractors' work on your behalf across the full scope.",
+    code: "For the owner or EPC",
+    title: "Owner-Side Verification",
+    desc: "Independent verification for the owner or EPC, checking the work against the contract documents alongside the contractor's own QC program.",
   },
   {
-    code: "Readiness",
+    code: "Before the request goes in",
     title: "Inspection Readiness and Evidence",
     desc: "We walk each area and attach the evidence before the request goes in, so it passes the first time instead of costing a second round.",
   },
@@ -28,8 +28,8 @@ export function ServicesTeaser() {
     <Section
       level="band"
       eyebrow="What we do"
-      title="Construction quality, run as a program."
-      intro="We are retained to run the quality function on a project and hold it for the duration, with the field scope underneath it covered by our own certified people."
+      title="Quality support that stays on the job."
+      intro="We are brought on to strengthen the quality program on a project, not to replace the people already running it, and we hold it for the duration."
       aside={
         <Link
           href="/services"
