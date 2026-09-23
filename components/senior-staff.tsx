@@ -1,80 +1,39 @@
 import { SectionTag } from "./section-tag";
 
-const staff = [
+/**
+ * No named individuals. Anyone who could appear in a proposal as delivery
+ * stays off the public site, including the principal, who is also the Quality
+ * Director and is proposed like anyone else.
+ *
+ * The reason is commercial. A proposal should read as selection: these are the
+ * quality managers we chose for your project. If the bench is published, the
+ * client can see it was not a selection, it was the roster, and they can count
+ * capacity and treat availability as a negotiating point rather than a
+ * commitment. The deputy registries already publish individuals by name and
+ * card, so this is not about hiding credentials. It is about who does the
+ * selecting.
+ */
+
+const commitments = [
   {
-    initials: "RG",
-    name: "Raymond Getz III",
-    title: "Principal and Quality Director",
-    exp: "20+ years experience",
-    featured: true,
-    certs: [
-      "AWS Certified Welding Inspector (CWI)",
-      "ICC Structural Steel & Bolting Special Inspector",
-      "ICC Structural Welding Special Inspector",
-      "ICC Structural Masonry Special Inspector",
-      "ICC Spray-Applied Fireproofing Special Inspector",
-      "ICC Firestopping Credential of Learning Achievement",
-      "IFC / International Firestop Council Certified",
-    ],
+    label: "A principal signs the work",
+    detail:
+      "A principal of the firm is accountable for every engagement and is in the field at the phases that carry the most risk. Not a name on a signature page.",
   },
   {
-    initials: "RM",
-    name: "Raymond Mitchell",
-    title: "QA/QC Manager",
-    exp: "15+ years experience",
-    featured: false,
-    certs: [
-      { text: "ICC Master of Special Inspection", bold: true },
-      "ICC California Commercial Building Inspector",
-      "ICC California Commercial Electrical Inspector",
-      "ICC California Plumbing Inspector",
-      "ICC Reinforced Concrete Special Inspector",
-      "ICC Post-Tensioned Concrete Special Inspector",
-      "ICC Structural Masonry Special Inspector",
-      "ICC Soils Special Inspector",
-      "ICC Structural Steel & Welding Special Inspector",
-      "ICC High-Strength Bolting Special Inspector",
-      "ICC Spray-Applied Fireproofing Special Inspector",
-      "AWS Certified Welding Inspector (CWI)",
-      "DSA Masonry Inspector",
-      "DSA Shotcrete Inspector",
-      "ACI Concrete Field Testing Technician, Grade I",
-      "ACI Masonry Technician",
-      "ACI Anchor Inspector",
-      "Firestop & Fire Wrap Inspector",
-    ],
+    label: "The same people, start to finish",
+    detail:
+      "The quality managers assigned to a project stay on it, from the pre-construction meeting through the closeout package.",
   },
   {
-    initials: "R4",
-    name: "Raymond Getz IV",
-    title: "Construction Quality Manager",
-    exp: "15+ years experience",
-    featured: false,
-    certs: [
-      "USACE Construction Quality Manager",
-      "AWS Certified Welding Inspector, No. 22070261",
-      "ICC Reinforced Concrete Special Inspector, No. 8889657",
-      "ICC Prestressed Concrete Special Inspector",
-      "ICC Structural Masonry Special Inspector",
-      "ICC Spray-Applied Fireproofing Special Inspector",
-      "ACI Concrete Field Testing Technician, Grade I",
-    ],
+    label: "Named in the proposal",
+    detail:
+      "We name the quality managers for your project, with their certifications and deputy card numbers, matched to the scope, the jurisdiction and the schedule. Card numbers can be checked against the issuing registry.",
   },
   {
-    initials: "VG",
-    name: "Victor Getz",
-    title: "Quality Manager",
-    exp: "20+ years experience",
-    featured: false,
-    certs: [
-      "ICC California Commercial Building Inspector, No. 5264286",
-      "ICC Reinforced Concrete Special Inspector",
-      "ICC Prestressed Concrete Special Inspector",
-      "ICC Structural Masonry Special Inspector",
-      "ICC Spray-Applied Fireproofing Special Inspector",
-      "LADBS Deputy Inspector, Wood Construction, P041321",
-      "ACI Concrete Field Testing Technician, Grade I",
-    ],
+    label: "Second generation",
+    detail:
+      "The practice began in 2000, when two brothers moved from concrete placement into special inspection. It is family-run, and reputation is the whole business when the name on the report is the name on the door.",
   },
 ];
 
@@ -82,77 +41,32 @@ export function SeniorStaff() {
   return (
     <section id="senior-staff" className="bg-sand py-24 px-8">
       <div className="max-w-[--container-site] mx-auto">
-        <SectionTag>Leadership</SectionTag>
+        <SectionTag>The Team</SectionTag>
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
-          Who owns quality
+          Who does the work
           <br />
           on your job.
         </h2>
-        <p className="text-[16px] text-muted max-w-[560px] mb-14 leading-[1.8] font-normal">
-          The practice began in 2000, when two brothers moved from concrete
-          placement into special inspection. It is second-generation and
-          family-run. These four lead the quality program on your job, and
-          they are the same people from the pre-construction meeting to the
-          closeout package. Every certification below is current and held by
-          that person, and where a card number is published it can be checked
-          against the issuing registry.
+        <p className="text-[16px] text-muted max-w-[620px] mb-12 leading-[1.8] font-normal">
+          Senior quality managers carrying ICC, AWS, ACI and DSA certifications,
+          including the ICC Master of Special Inspection. We name the people on
+          your project when we propose on it.
         </p>
-        <div className="columns-1 sm:columns-2 gap-6">
-          {staff.map((s) => (
-            <div
-              key={s.name}
-              className={`bg-offwhite border rounded-[14px] p-8 relative overflow-hidden break-inside-avoid mb-6 ${
-                s.featured ? "border-gold/30" : "border-border"
-              }`}
-            >
-              {s.featured && (
-                <div className="absolute top-0 left-0 right-0 h-[3px] bg-gold" />
-              )}
-              <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 rounded-[10px] bg-navy text-gold text-[13px] font-extrabold tracking-[0.04em] flex items-center justify-center shrink-0">
-                  {s.initials}
-                </div>
-                <div>
-                  <div className="text-[1rem] font-extrabold text-navy tracking-tight mb-0.5">
-                    {s.name}
-                  </div>
-                  <div className="text-[12.5px] font-medium text-muted mb-[3px]">
-                    {s.title}
-                  </div>
-                  <div className="text-[11px] font-bold tracking-[0.06em] uppercase text-gold">
-                    {s.exp}
-                  </div>
-                </div>
-              </div>
-              <div className="brand-label-sm text-gold mb-[0.7rem]">
-                Certifications
-              </div>
-              <ul className="list-none flex flex-col gap-[0.45rem]">
-                {s.certs.map((cert) => {
-                  const text = typeof cert === "string" ? cert : cert.text;
-                  const isBold = typeof cert !== "string" && cert.bold;
-                  return (
-                    <li
-                      key={text}
-                      className="flex items-start gap-2 text-[13px] text-muted leading-[1.5] before:content-[''] before:w-1 before:h-1 before:bg-gold before:shrink-0 before:mt-[6px] before:[clip-path:polygon(50%_0%,0%_100%,100%_100%)]"
-                    >
-                      {isBold ? (
-                        <strong className="text-charcoal font-bold">
-                          {text}
-                        </strong>
-                      ) : (
-                        text
-                      )}
-                    </li>
-                  );
-                })}
-              </ul>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8 mb-10">
+          {commitments.map((c) => (
+            <div key={c.label} className="border-t-2 border-gold pt-5">
+              <h3 className="text-[1rem] font-extrabold text-navy leading-[1.3] mb-2">
+                {c.label}
+              </h3>
+              <p className="text-[13.5px] text-muted leading-[1.7]">
+                {c.detail}
+              </p>
             </div>
           ))}
         </div>
 
-        {/* Advisor band */}
-        <div className="mt-6 bg-navy rounded-[14px] p-7 px-8">
+        <div className="bg-navy rounded-[14px] p-7 px-8">
           <p className="text-[13.5px] text-sand/55 leading-[1.7]">
             <strong className="text-white font-semibold">
               Engineering advisory:

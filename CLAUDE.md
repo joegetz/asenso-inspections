@@ -237,25 +237,31 @@ stay as they were actually held.
 
 ## Public Profiles Policy
 
-The leadership tier is named publicly: Raymond Getz III, Raymond Mitchell, Raymond
-Getz IV and Victor Getz, with carded credentials and, where published, card numbers
-that can be checked against the issuing registry.
+**No individual is named on the public site**, including the principal. Anyone
+who could appear in a proposal as delivery stays off it, and the principal is
+also the Quality Director and gets proposed like anyone else.
 
-Everyone else is **not** named on the public site. The bench appears in
-`components/coverage.tsx` as capacity: network size, registered jurisdictions,
-mobilization time, and the special inspection categories covered, with in-house
-scopes distinguished from partnered ones. Named quality managers, deputy card numbers
-and resumes are provided at proposal stage for a defined scope.
+The reason is commercial, not privacy. A proposal should read as selection:
+these are the quality managers we chose for your project. If the bench is
+published, the client can see it was not a selection, it was the roster. They
+can count capacity, work out what happens if the firm wins another program, and
+treat availability as a negotiating point rather than a commitment. Naming four
+people turned every proposal into an inventory list.
 
-This mirrors the firm's existing policy in `Asenso_Deputy_Inspector_Coverage.md`.
-Do not add profile cards for non-leadership staff without an explicit decision to
-change the policy: it is a poaching surface and a maintenance burden, and stale
-profiles cost more credibility than absent ones. Two profiles were understated by
-five and ten years before the September 2026 pass.
+The deputy registries at LADBS, Long Beach and LA County already publish
+individual inspectors by name and card number, so this is not about concealing
+credentials. It is about who does the selecting.
 
-**Never publish a coverage or registration claim that has not been verified against
-the current registry.** For a compliance firm an out-of-date coverage claim is the
-worst available error.
+What the site carries instead: the certifying bodies held across the team, the
+special inspection categories covered, registered jurisdictions, network size,
+mobilization time, and the commitment that named quality managers with card
+numbers come with the proposal. Magdalena Cejudo, P.E. stays named as
+engineering advisory, because an advisor is not proposed as delivery.
+
+Earlier versions named four people with full certification inventories. Two of
+those profiles were also understated by five and ten years, which is a second
+argument for keeping the public surface small: what is not published cannot go
+stale.
 
 ## Do Not Repeat Yourself
 

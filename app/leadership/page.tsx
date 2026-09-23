@@ -4,9 +4,9 @@ import { Coverage } from "@/components/coverage";
 import { PageCta } from "@/components/page-cta";
 
 export const metadata: Metadata = {
-  title: "Leadership & Credentials | Asenso Construction Quality",
+  title: "The Team & Credentials | Asenso Construction Quality",
   description:
-    "The quality managers who lead the program on your job, their carded credentials and card numbers, the bench behind them, and the special inspection categories Asenso covers across Southern California.",
+    "How Asenso staffs a project, the certifying bodies the team carries, the special inspection categories covered, and registered deputy coverage across Southern California. Named quality managers and card numbers come with the proposal.",
 };
 
 /**

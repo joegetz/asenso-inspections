@@ -69,13 +69,13 @@ export function Coverage() {
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-white mb-4">
           Depth behind
           <br />
-          the named team.
+          the people we send.
         </h2>
         <p className="text-[16px] text-sand/[0.48] max-w-[620px] mb-14 leading-[1.8] font-normal">
-          The quality managers above lead the program. Behind them is a wider
-          bench of carded inspectors and a surge network of around thirty, so
-          coverage does not thin out when three trades run at once. These are
-          the bodies we carry credentials from and the categories we cover.
+          Behind the quality managers on a project is a wider bench of carded
+          inspectors and a surge network of around thirty, so coverage does not
+          thin out when three trades run at once. These are the bodies we carry
+          credentials from and the categories we cover.
         </p>
 
         <div className="grid grid-cols-3 sm:grid-cols-6 gap-3 border-y border-white/[0.08] py-7 mb-14">
