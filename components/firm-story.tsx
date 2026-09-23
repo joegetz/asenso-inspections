@@ -2,7 +2,7 @@ import { SectionTag } from "./section-tag";
 
 export function FirmStory() {
   return (
-    <section id="firm" className="bg-offwhite py-16 px-8 border-t border-border">
+    <section id="firm" className="bg-offwhite pt-14 pb-16 px-8">
       <div className="max-w-[--container-site] mx-auto">
         <div className="max-w-[760px]">
           <SectionTag>The Firm</SectionTag>

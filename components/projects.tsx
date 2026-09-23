@@ -112,7 +112,7 @@ function ProjectCard({ p }: { p: (typeof projects)[number] }) {
 
 export function Projects() {
   return (
-    <section id="projects" className="bg-navy py-24 px-8">
+    <section id="projects" className="bg-navy pt-16 pb-24 px-8">
       <div className="max-w-[--container-site] mx-auto">
         <SectionTag>Team Experience</SectionTag>
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-white mb-4">

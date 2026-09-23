@@ -10,8 +10,6 @@ const links = [
   { href: "/services", label: "Services" },
   { href: "/leadership", label: "Leadership" },
   { href: "/projects", label: "Projects" },
-  { href: "/#why", label: "Why Asenso" },
-  { href: "/#contact", label: "Contact" },
 ];
 
 export function Nav() {

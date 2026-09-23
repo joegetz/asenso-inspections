@@ -105,7 +105,7 @@ const ch17Scope = [
 
 export function Services() {
   return (
-    <section id="services" className="bg-offwhite py-24 px-8">
+    <section id="services" className="bg-offwhite pt-16 pb-24 px-8">
       <div className="max-w-[--container-site] mx-auto">
         <SectionTag>Services</SectionTag>
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
@@ -113,19 +113,38 @@ export function Services() {
           <br />
           run as a program.
         </h2>
-        <p className="text-[16px] text-muted max-w-[620px] mb-16 leading-[1.8] font-normal">
-          Most firms sell inspections by the visit. We are usually retained to
-          run the quality function itself, and we self-perform the field work
-          underneath it. Both layers are below.
-        </p>
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-12 items-start mb-16">
+          <p className="text-[16px] text-muted max-w-[620px] leading-[1.8] font-normal">
+            Most firms sell inspections by the visit. We are usually retained to
+            run the quality function itself, which is a different engagement:
+            scoped to the project and the phase, held for the duration, and
+            answerable for the record at closeout. We self-perform the field
+            work underneath it.
+          </p>
+          <div className="border-l-2 border-gold pl-5">
+            <div className="brand-label-sm text-muted mb-3">On this page</div>
+            <ul className="list-none flex flex-col gap-2">
+              {[
+                { href: "#engagement", label: "How we are engaged" },
+                { href: "#self-performed", label: "What we self-perform" },
+                { href: "#ch17", label: "Full IBC Chapter 17 scope" },
+              ].map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    className="text-[13.5px] font-semibold text-navy no-underline transition-colors hover:text-gold"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
 
         {/* Layer 1: engagement models */}
-        <div className="mb-6">
-          <div className="brand-label text-gold mb-2">How we are engaged</div>
-          <p className="text-[13.5px] text-muted max-w-[560px] leading-[1.7]">
-            Retained quality programs. Scoped to the project and the phase, held
-            for the duration.
-          </p>
+        <div id="engagement" className="brand-label text-gold mb-6 scroll-mt-[100px]">
+          How we are engaged
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-20">
@@ -157,7 +176,7 @@ export function Services() {
         </div>
 
         {/* Layer 2: self-performed capability */}
-        <div className="mb-6">
+        <div id="self-performed" className="mb-6 scroll-mt-[100px]">
           <div className="brand-label text-gold mb-2">What we self-perform</div>
           <p className="text-[13.5px] text-muted max-w-[560px] leading-[1.7]">
             Our own certified people in the field. Materials testing is the one
@@ -181,7 +200,7 @@ export function Services() {
           ))}
         </div>
 
-        <div className="mt-12 border-t border-border pt-8">
+        <div id="ch17" className="mt-12 border-t border-border pt-8 scroll-mt-[100px]">
           <div className="brand-label-sm text-muted mb-4">
             Full IBC Chapter 17 scope
           </div>
