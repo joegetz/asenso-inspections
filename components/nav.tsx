@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { Logo } from "./logo";
 
 const links = [
+  { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/leadership", label: "Leadership" },
   { href: "/projects", label: "Projects" },
@@ -41,10 +42,11 @@ export function Nav() {
           {/* Desktop links */}
           <ul className="hidden sm:flex items-center gap-[2.2rem] list-none">
             {links.map((l) => {
-              const active =
-                l.href.startsWith("/") &&
-                !l.href.includes("#") &&
-                pathname.startsWith(l.href);
+              const active = l.href.includes("#")
+                ? false
+                : l.href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(l.href);
               return (
                 <li key={l.href}>
                   <Link

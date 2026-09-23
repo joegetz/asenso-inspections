@@ -99,11 +99,11 @@ export function SeniorStaff() {
           beneath each name are the carded credentials they hold. Where a card
           number is published it can be checked against the issuing registry.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="columns-1 sm:columns-2 gap-6">
           {staff.map((s) => (
             <div
               key={s.name}
-              className={`bg-offwhite border rounded-[14px] p-8 relative overflow-hidden ${
+              className={`bg-offwhite border rounded-[14px] p-8 relative overflow-hidden break-inside-avoid mb-6 ${
                 s.featured ? "border-gold/30" : "border-border"
               }`}
             >

@@ -15,6 +15,7 @@ export default function ProjectsPage() {
       <PageCta
         heading="References are available for any project on this page."
         body="Every project listed reflects delivery history performed under the general contractor or host firm shown. Ask and we will connect you with the person who ran it."
+        secondary={{ href: "/services", label: "See Services" }}
       />
     </>
   );

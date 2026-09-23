@@ -1,4 +1,5 @@
 import { SectionTag } from "./section-tag";
+import { SectorStrip } from "./sector-strip";
 
 // Delivery history of our team, delivered under the GC or host
 // inspection firm shown.
@@ -109,15 +110,6 @@ function ProjectCard({ p }: { p: (typeof projects)[number] }) {
   );
 }
 
-const sectors = [
-  { label: "Federal / Defense", example: "Sentinel \u00b7 Vandenberg SFB" },
-  { label: "Industrial", example: "Semiconductor \u00b7 Process" },
-  { label: "Healthcare", example: "City of Hope \u00b7 CHOC \u00b7 Hoag" },
-  { label: "Aviation", example: "JWA \u00b7 LAX \u00b7 San Diego Int'l" },
-  { label: "Education / DSA", example: "K\u201312 \u00b7 Community College" },
-  { label: "Water / Wastewater", example: "Treatment \u00b7 Pipe welding" },
-];
-
 export function Projects() {
   return (
     <section id="projects" className="bg-navy py-24 px-8">
@@ -135,18 +127,7 @@ export function Projects() {
           delivery history.
         </p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-5 gap-y-5 border-y border-white/[0.08] py-6 mb-12">
-          {sectors.map((sector) => (
-            <div key={sector.label}>
-              <div className="text-[12px] font-bold text-white leading-[1.3] mb-1">
-                {sector.label}
-              </div>
-              <div className="text-[11px] text-sand/[0.38] leading-[1.4]">
-                {sector.example}
-              </div>
-            </div>
-          ))}
-        </div>
+        <SectorStrip variant="dark" eyebrow="Sectors we work in" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map((p) => (

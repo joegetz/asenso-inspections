@@ -77,7 +77,7 @@ const tableRows = [
 
 export function WhyAsenso() {
   return (
-    <section id="why" className="bg-offwhite py-24 px-8 relative overflow-hidden">
+    <section id="why" className="bg-sand py-24 px-8 relative overflow-hidden">
       <div className="max-w-[--container-site] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
           {/* Left: features */}

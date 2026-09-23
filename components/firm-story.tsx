@@ -37,9 +37,9 @@ export function FirmStory() {
               Joseph Getz, President
             </strong>
             , pairing the family&rsquo;s field expertise with a modern operating
-            model &mdash; same-day digital field reports, single-workflow
-            document control, and the systems discipline to deploy a credentialed
-            roster on demand.
+            model: same-day digital field reports, single-workflow document
+            control, and the systems discipline to deploy a credentialed roster
+            on demand.
           </p>
         </div>
       </div>

@@ -15,6 +15,7 @@ export default function ServicesPage() {
       <PageCta
         heading="Tell us the scope, the jurisdiction and the start window."
         body="We will come back with the categories we cover, the quality manager we would put on it, and what the program costs. You should not need a discovery call to get a straight answer."
+        secondary={{ href: "/leadership", label: "Meet the Team" }}
       />
     </>
   );
