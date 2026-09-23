@@ -10,7 +10,7 @@ import { Info } from "lucide-react";
 
 const tableRows = [
   {
-    label: "Inspector continuity",
+    label: "Continuity of the person on your job",
     asenso: "✓ Same quality manager throughout",
     lab: "Varies by staff availability",
     boutique: "Often, but varies",

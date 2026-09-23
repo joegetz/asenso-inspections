@@ -21,7 +21,7 @@ const staff = [
   {
     initials: "RM",
     name: "Raymond Mitchell",
-    title: "QA/QC Manager, Structural and MEP",
+    title: "QA/QC Manager",
     exp: "15+ years experience",
     featured: false,
     owns: "Holds the general contractor to the contract documents across phased construction, keeps the deficiency record and drives closeout punch items to acceptance. Covers the whole building rather than one trade: structural steel, concrete, masonry and fireproofing; electrical distribution, fire alarm and security; plumbing, HVAC and waterproofing. Currently QC Manager on a confidential data center program, after the Texas Instruments 300mm fabrication facility in Lehi, Utah, and John Wayne Airport\u2019s $220M program.",
@@ -66,7 +66,7 @@ const staff = [
   {
     initials: "VG",
     name: "Victor Getz",
-    title: "Quality Manager, Whole-Building Compliance",
+    title: "Quality Manager",
     exp: "20+ years experience",
     featured: false,
     owns: "Twenty years on DSA school, HCAI hospital, federal and civic work, verifying the complete building against the approved documents. Owns the inspection request lookahead, coordination of special inspection and the testing laboratory, and the verified-report record, with quality issues carried to documented closure. Two LAUSD campuses and Katella High School under DSA Application No. 30-H1. Most recently QA/QC Lead on Navy facilities at Oxnard with Clark Construction.",

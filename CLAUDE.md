@@ -120,10 +120,16 @@ we are retained to do. The ladder:
 |---|---|
 | Principal | Principal and Quality Director |
 | Site anchor | Resident Quality Manager |
-| Senior | Senior Quality Manager, `<discipline>` |
-| Core | Quality Manager, `<discipline>` |
+| Senior | Senior Quality Manager |
+| Core | Quality Manager |
 | Records | Quality Program Manager, Records and Closeout |
 | Developing | Associate Quality Manager, `<coverage>` |
+
+**Titles carry no discipline qualifier.** Not "Quality Manager, Whole-Building
+Compliance", not "QA/QC Manager, Structural and MEP". Appending a discipline
+narrows the person back into a trade specialist, which is the framing the firm is
+moving away from, and it reads as a caveat on the title rather than a description
+of range. The range belongs in the paragraph and the certifications underneath.
 
 **The one rule that keeps this honest:** a title describes what the person
 manages on the program. It never replaces a carded credential. ICC Special
