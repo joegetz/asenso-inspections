@@ -1,9 +1,14 @@
 import { SectionTag } from "./section-tag";
 
 /**
- * Two layers, deliberately.
- * Layer 1 is how the firm is engaged: program-level, retained, harder to
- * displace. Layer 2 is the technical scope underneath it.
+ * Two families of service, not a hierarchy. A retained quality program runs
+ * alongside the client's team for the duration of a job. An inspection or
+ * testing scope is bought on its own, for a defined package of work. Both are
+ * sellable on their own and many projects take one and add the other later.
+ *
+ * Do not present the disciplines as "what sits underneath" the programs. They
+ * are services in their own right and a client can hire us for one of them
+ * without ever buying a program.
  *
  * Layer 2 carries no code chips. Every one of them was either a restatement
  * of the title it sat on or a code citation nobody had verified, and this is a
@@ -113,25 +118,26 @@ export function Services() {
       <div className="max-w-[--container-site] mx-auto">
         <SectionTag>Services</SectionTag>
         <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
-          Quality support that
+          Inspection, testing and
           <br />
-          stays on the job.
+          quality programs.
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-12 items-start mb-16">
           <p className="text-[16px] text-muted max-w-[620px] leading-[1.8] font-normal">
-            We are brought on to strengthen the quality program on a project,
-            not to replace the people already running it. Owners, CMs and
-            general contractors retain us directly. Testing laboratories and
-            prime firms bring us in as a subconsultant when a job needs
-            certified capacity they do not have free. The work is the same
-            either way, and so are the people.
+            Two ways to bring us on: a retained quality program that runs
+            alongside your team for the duration, or a single inspection or
+            testing scope on a defined package of work. Many projects start
+            with one and add the other. Owners, CMs and general contractors
+            retain us directly; testing laboratories and prime firms bring us
+            in as a subconsultant when a job needs certified capacity they do
+            not have free.
           </p>
           <div className="border-l-2 border-gold pl-5">
             <div className="brand-label-sm text-muted mb-3">On this page</div>
             <ul className="list-none flex flex-col gap-2">
               {[
-                { href: "#engagement", label: "How we are engaged" },
-                { href: "#field-scope", label: "What we cover in the field" },
+                { href: "#engagement", label: "Retained quality programs" },
+                { href: "#field-scope", label: "Inspection and testing services" },
               ].map((l) => (
                 <li key={l.href}>
                   <a
@@ -146,9 +152,9 @@ export function Services() {
           </div>
         </div>
 
-        {/* Layer 1: engagement models */}
+        {/* Retained programs */}
         <div id="engagement" className="brand-label text-gold mb-6 scroll-mt-[100px]">
-          How we are engaged
+          Retained quality programs
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-20">
@@ -179,12 +185,12 @@ export function Services() {
           ))}
         </div>
 
-        {/* Layer 2: technical scope */}
+        {/* Individual inspection and testing services */}
         <div
           id="field-scope"
           className="brand-label text-gold mb-6 scroll-mt-[100px]"
         >
-          What we cover in the field
+          Inspection and testing services
         </div>
 
         <div className="border border-border rounded-xl overflow-hidden">

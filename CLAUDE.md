@@ -128,15 +128,22 @@ lib/
 
 ## Service Model
 
-Two layers, and the order matters.
+Two families of service. **Not a hierarchy** — this was wrong in an earlier
+version and it misrepresents how the firm sells.
 
-**Layer 1, how we are engaged** (program level, retained, harder to displace):
-Embedded QA/QC, Independent Quality Assurance, Inspection Readiness and Evidence.
+**Retained quality programs** run alongside the client's team for the duration
+of a job: Embedded QA/QC, Independent Quality Assurance, Inspection Readiness
+and Evidence.
 
-**Layer 2, what we cover in the field** (the technical scope):
-Special and Deputy Inspection, Structural Observation and Threshold, MEP
+**Inspection and testing services** are bought on their own, for a defined
+package of work: Special and Deputy Inspection, Structural Observation, MEP
 Inspection and QA, Non-Destructive Testing, Source and Shop Inspection,
 Materials Testing.
+
+Both are sellable on their own; many projects take one and add the other. Never
+present the disciplines as "what sits underneath" the programs, or with a label
+like "what we cover in the field" that reads as a component list. A client can
+hire Asenso for non-destructive testing alone and never buy a program.
 
 Materials testing is the one scope placed with an accredited partner, and the
 site says so plainly. That admission is worth more than another checkmark.

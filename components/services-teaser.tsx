@@ -28,8 +28,8 @@ export function ServicesTeaser() {
     <Section
       level="band"
       eyebrow="What we do"
-      title="Quality support that stays on the job."
-      intro="We are brought on to strengthen the quality program on a project, not to replace the people already running it. Retained directly by owners, CMs and general contractors, or brought in as a subconsultant by testing laboratories and prime firms."
+      title="Inspection, testing and quality programs."
+      intro="Two ways to bring us on: a retained quality program that runs alongside your team for the duration, or a single inspection or testing scope on a defined package of work."
       aside={
         <Link
           href="/services"
@@ -60,9 +60,9 @@ export function ServicesTeaser() {
       </div>
 
       <p className="text-[13px] text-muted mt-6 leading-[1.7] max-w-[760px]">
-        Underneath: special and deputy inspection, structural observation and
-        threshold, MEP, non-destructive testing, source and shop inspection.
-        Materials testing is placed with our accredited partner.{" "}
+        Taken on their own or alongside a program: special and deputy
+        inspection, structural observation, MEP, non-destructive testing,
+        source and shop inspection, and materials testing.{" "}
         <Link
           href="/services"
           className="text-navy font-semibold underline decoration-gold/40 underline-offset-4 hover:decoration-gold"
