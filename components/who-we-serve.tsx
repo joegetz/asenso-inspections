@@ -1,4 +1,4 @@
-import { Layers, Home, Briefcase, Building, Download } from "lucide-react";
+import { Layers, Home, Briefcase, Building } from "lucide-react";
 import { SectionTag } from "./section-tag";
 
 const audiences = [
@@ -10,7 +10,7 @@ const audiences = [
   {
     icon: Home,
     title: "Structural Engineers of Record",
-    desc: "We support your structural observation program with thorough documentation \u2014 so your stamp is backed by defensible field records throughout every construction phase.",
+    desc: "We support your structural observation program with thorough documentation, so your stamp is backed by defensible field records throughout every construction phase.",
   },
   {
     icon: Briefcase,
@@ -20,7 +20,7 @@ const audiences = [
   {
     icon: Building,
     title: "Public Agencies & Owners",
-    desc: "For projects requiring embedded QC oversight, independent verification, or compliance with diversity goals. K\u201312, community college, public works, and infrastructure \u2014 our minority/SBE status supports your outreach requirements.",
+    desc: "For projects requiring embedded QC oversight, independent verification, or compliance with diversity goals. K\u201312, community college, public works, and infrastructure. Our minority and SBE status supports your outreach requirements.",
   },
 ];
 
@@ -53,30 +53,19 @@ export function WhoWeServe() {
           ))}
         </div>
 
-        {/* Capability Statement CTA */}
-        <div className="bg-offwhite border border-border rounded-xl p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-          <div className="flex items-start gap-4">
-            <Download className="w-6 h-6 text-gold shrink-0 mt-1" />
-            <div>
-              <h3 className="text-[1.05rem] font-bold text-navy mb-1">
-                Download Capability Statement
-              </h3>
-              <p className="text-[13.5px] text-muted leading-[1.6] max-w-[560px]">
-                Full service lines, certifications, jurisdictions, ownership
-                status, and project examples in a format ready for estimators,
-                PMs, and agency reviewers.
-              </p>
-            </div>
-          </div>
+        <p className="text-[13.5px] text-muted leading-[1.7] mt-10 pt-8 border-t border-stone/60">
+          Estimators, PMs and agency reviewers can take the whole picture in one
+          file.{" "}
           <a
             href="/asenso-capability-statement.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gold text-navy text-[12px] font-extrabold tracking-[0.1em] uppercase px-6 py-3 rounded-full no-underline transition-all hover:opacity-88 hover:-translate-y-px whitespace-nowrap shrink-0"
+            className="text-navy font-semibold underline decoration-gold/40 underline-offset-4 hover:decoration-gold"
           >
-            Download PDF
+            Download the capability statement (PDF)
           </a>
-        </div>
+          .
+        </p>
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ import { SectionTag } from "./section-tag";
 const steps = [
   {
     num: "01",
-    title: "SSI & Drawing Review",
+    title: "Drawing & Program Review",
     desc: "We review the Statement of Special Inspections, structural drawings, and specs before the first pour. No surprises in the field.",
   },
   {
@@ -14,12 +14,12 @@ const steps = [
   {
     num: "03",
     title: "Field Inspections",
-    desc: "On-site per your SSI \u2014 continuous or periodic. Same-day digital field reports. The same person every visit.",
+    desc: "On site per the approved program, continuous or periodic. Same-day digital field reports. The same person every visit.",
   },
   {
     num: "04",
     title: "Closeout Package",
-    desc: "Final summary report, all field logs, NCR resolution, and observation letters \u2014 compiled and ready for AHJ submittal.",
+    desc: "Final summary report, all field logs, NCR resolution and observation letters, compiled and ready for AHJ submittal.",
   },
 ];
 
@@ -56,7 +56,7 @@ export function Process() {
       <div className="max-w-[--container-site] mx-auto relative z-1">
         <SectionTag>Engagement Process</SectionTag>
         <h2 className="text-[clamp(1.25rem,1.9vw,1.6rem)] font-extrabold leading-[1.15] tracking-tight text-white mb-3">
-          SSI review to permit closeout.
+          From drawing review to closeout.
         </h2>
         <p className="text-[14px] text-sand/[0.45] max-w-[560px] mb-10 leading-[1.7] font-normal">
           Structured around your project schedule, not a lab&apos;s dispatch

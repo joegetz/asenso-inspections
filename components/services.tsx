@@ -132,7 +132,6 @@ export function Services() {
               {[
                 { href: "#engagement", label: "How we are engaged" },
                 { href: "#field-scope", label: "What we cover in the field" },
-                { href: "#ch17", label: "Full IBC Chapter 17 scope" },
               ].map((l) => (
                 <li key={l.href}>
                   <a
@@ -192,35 +191,42 @@ export function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8 border-t border-border pt-10">
-          {capabilities.map((cap) => (
-            <div key={cap.title}>
-              <div className="flex items-baseline justify-between gap-3 mb-2">
-                <h4 className="text-[0.92rem] font-bold text-navy leading-[1.3]">
+        <div className="border border-border rounded-xl overflow-hidden">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            {capabilities.map((cap, i) => (
+              <div
+                key={cap.title}
+                className={`p-7 border-border ${
+                  i % 3 !== 2 ? "lg:border-r" : ""
+                } ${i % 2 !== 1 ? "sm:border-r lg:border-r-0" : ""} ${
+                  i < capabilities.length - 1 ? "border-b sm:border-b" : ""
+                } ${i >= capabilities.length - 3 ? "lg:border-b-0" : ""}`}
+              >
+                <div className="brand-label-sm text-gold mb-2">{cap.code}</div>
+                <h4 className="text-[0.95rem] font-bold text-navy leading-[1.3] mb-2">
                   {cap.title}
                 </h4>
+                <p className="text-[13px] text-muted leading-[1.65]">
+                  {cap.desc}
+                </p>
               </div>
-              <div className="brand-label-sm text-gold mb-2">{cap.code}</div>
-              <p className="text-[13px] text-muted leading-[1.65]">
-                {cap.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-
-        <div id="ch17" className="mt-12 border-t border-border pt-8 scroll-mt-[100px]">
-          <div className="brand-label-sm text-muted mb-4">
-            Full IBC Chapter 17 scope
-          </div>
-          <div className="flex flex-wrap gap-x-2 gap-y-2">
-            {ch17Scope.map((s) => (
-              <span
-                key={s}
-                className="text-[12px] font-medium text-charcoal bg-sand border border-stone/60 rounded-full px-3 py-1"
-              >
-                {s}
-              </span>
             ))}
+          </div>
+
+          <div id="ch17" className="bg-sand/50 border-t border-border p-7 scroll-mt-[100px]">
+            <div className="brand-label-sm text-muted mb-4">
+              Every category under IBC Chapter 17
+            </div>
+            <div className="flex flex-wrap gap-x-2 gap-y-2">
+              {ch17Scope.map((c) => (
+                <span
+                  key={c}
+                  className="text-[12px] font-medium text-charcoal bg-offwhite border border-stone/60 rounded-full px-3 py-1"
+                >
+                  {c}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
