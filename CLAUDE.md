@@ -125,6 +125,13 @@ we are retained to do. The ladder:
 | Records | Quality Program Manager, Records and Closeout |
 | Developing | Associate Quality Manager, `<coverage>` |
 
+**No narrative bios on profile cards, and no client or project names.** A card
+carries the person, the title, the tenure and the certifications. That is all.
+Paragraphs describing what someone authored, which general contractor they are
+placed with, or which campus they ran are proposal content: they tell competitors
+where the bench is deployed, and they name clients who never agreed to appear on
+a public website. The certifications are the proof; the narrative is the claim.
+
 **Titles carry no discipline qualifier.** Not "Quality Manager, Whole-Building
 Compliance", not "QA/QC Manager, Structural and MEP". Appending a discipline
 narrows the person back into a trade specialist, which is the framing the firm is

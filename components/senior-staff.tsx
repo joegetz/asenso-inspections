@@ -7,7 +7,6 @@ const staff = [
     title: "Principal and Quality Director",
     exp: "20+ years experience",
     featured: true,
-    owns: "Directs the firm's quality program and is in the field at the steel and bolting peaks. Senior review on every engagement, not a name on a signature page. Most recently QC Lead on the two-year City of Hope Irvine campus program, running quality across structural and multiple trades from groundbreaking through closeout.",
     certs: [
       "AWS Certified Welding Inspector (CWI)",
       "ICC Structural Steel & Bolting Special Inspector",
@@ -24,7 +23,6 @@ const staff = [
     title: "QA/QC Manager",
     exp: "15+ years experience",
     featured: false,
-    owns: "Holds the general contractor to the contract documents across phased construction, keeps the deficiency record and drives closeout punch items to acceptance. Covers the whole building rather than one trade: structural steel, concrete, masonry and fireproofing; electrical distribution, fire alarm and security; plumbing, HVAC and waterproofing. Currently QC Manager on a confidential data center program, after the Texas Instruments 300mm fabrication facility in Lehi, Utah, and John Wayne Airport\u2019s $220M program.",
     certs: [
       { text: "ICC Master of Special Inspection", bold: true },
       "ICC California Commercial Building Inspector",
@@ -52,7 +50,6 @@ const staff = [
     title: "Construction Quality Manager",
     exp: "15+ years experience",
     featured: false,
-    owns: "Runs quality programs on DSA and HCAI work. Authored the governing Quality Management Plan on a healthcare program and administers three-phase control on each definable feature of work, running the preparatory meeting with the superintendent and trade foreman before work starts. USACE Construction Quality Manager. Currently Construction Quality Manager at LAX Terminal 5 with Hensel Phelps, after the $40M Ivanhoe Elementary campus for LAUSD under DSA and four years on the Sentinel program.",
     certs: [
       "USACE Construction Quality Manager",
       "AWS Certified Welding Inspector, No. 22070261",
@@ -69,7 +66,6 @@ const staff = [
     title: "Quality Manager",
     exp: "20+ years experience",
     featured: false,
-    owns: "Twenty years on DSA school, HCAI hospital, federal and civic work, verifying the complete building against the approved documents. Owns the inspection request lookahead, coordination of special inspection and the testing laboratory, and the verified-report record, with quality issues carried to documented closure. Two LAUSD campuses and Katella High School under DSA Application No. 30-H1. Most recently QA/QC Lead on Navy facilities at Oxnard with Clark Construction.",
     certs: [
       "ICC California Commercial Building Inspector, No. 5264286",
       "ICC Reinforced Concrete Special Inspector",
@@ -97,9 +93,9 @@ export function SeniorStaff() {
           placement into special inspection. It is second-generation and
           family-run. These four lead the quality program on your job, and
           they are the same people from the pre-construction meeting to the
-          closeout package. Titles describe what each person manages; the certifications
-          beneath each name are the carded credentials they hold. Where a card
-          number is published it can be checked against the issuing registry.
+          closeout package. Every certification below is current and held by
+          that person, and where a card number is published it can be checked
+          against the issuing registry.
         </p>
         <div className="columns-1 sm:columns-2 gap-6">
           {staff.map((s) => (
@@ -128,9 +124,6 @@ export function SeniorStaff() {
                   </div>
                 </div>
               </div>
-              <p className="text-[13.5px] text-charcoal leading-[1.7] mb-6">
-                {s.owns}
-              </p>
               <div className="brand-label-sm text-gold mb-[0.7rem]">
                 Certifications
               </div>
