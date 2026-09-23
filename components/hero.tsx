@@ -1,4 +1,4 @@
-import { Shield, Clock, FileText, Briefcase } from "lucide-react";
+import { Shield, Clock, FileText, Award } from "lucide-react";
 import { GayamanPanel } from "./motif";
 
 const jurisdictions = [
@@ -28,9 +28,9 @@ const credPills = [
     sub: "AHJ-ready documentation",
   },
   {
-    icon: Briefcase,
-    label: "DSA Experience",
-    sub: "K–12 · College · Public Works",
+    icon: Award,
+    label: "Master of Special Inspection",
+    sub: "ICC designation held on our senior bench",
   },
 ];
 
