@@ -7,7 +7,7 @@ import { PageCta } from "@/components/page-cta";
 export const metadata: Metadata = {
   title: "Services | Asenso Construction Quality",
   description:
-    "Construction quality run as a program: embedded QA/QC, owner's quality management and inspection readiness, with special and deputy inspection, structural observation, MEP, NDT and source inspection self-performed underneath.",
+    "Construction quality run as a program: embedded QA/QC, owner's quality management and inspection readiness, over a field scope of special and deputy inspection, structural observation, MEP, NDT and source inspection.",
 };
 
 /** What we do, then how we run it, then who we do it for. */

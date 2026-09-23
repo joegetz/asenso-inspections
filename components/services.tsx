@@ -3,8 +3,13 @@ import { SectionTag } from "./section-tag";
 /**
  * Two layers, deliberately.
  * Layer 1 is how the firm is engaged: program-level, retained, harder to
- * displace. Layer 2 is what the firm self-performs, which is what separates
- * us from boutiques who broker the work out.
+ * displace. Layer 2 is the technical scope underneath it.
+ *
+ * Do not call layer 2 "what we self-perform". Self-perform is a general
+ * contractor's word for doing work with its own forces instead of subbing it
+ * out. Borrowing it puts the firm on the subcontractor side of the table and
+ * sounds defensive. Say what we cover, and note the one partnered scope in a
+ * sentence.
  */
 
 const engagements = [
@@ -118,15 +123,15 @@ export function Services() {
             Most firms sell inspections by the visit. We are usually retained to
             run the quality function itself, which is a different engagement:
             scoped to the project and the phase, held for the duration, and
-            answerable for the record at closeout. We self-perform the field
-            work underneath it.
+            answerable for the record at closeout. The field scope underneath
+            it is covered by our own certified people.
           </p>
           <div className="border-l-2 border-gold pl-5">
             <div className="brand-label-sm text-muted mb-3">On this page</div>
             <ul className="list-none flex flex-col gap-2">
               {[
                 { href: "#engagement", label: "How we are engaged" },
-                { href: "#self-performed", label: "What we self-perform" },
+                { href: "#field-scope", label: "What we cover in the field" },
                 { href: "#ch17", label: "Full IBC Chapter 17 scope" },
               ].map((l) => (
                 <li key={l.href}>
@@ -175,12 +180,15 @@ export function Services() {
           ))}
         </div>
 
-        {/* Layer 2: self-performed capability */}
-        <div id="self-performed" className="mb-6 scroll-mt-[100px]">
-          <div className="brand-label text-gold mb-2">What we self-perform</div>
-          <p className="text-[13.5px] text-muted max-w-[560px] leading-[1.7]">
-            Our own certified people in the field. Materials testing is the one
-            scope we place with an accredited partner, and we say so.
+        {/* Layer 2: technical scope */}
+        <div id="field-scope" className="mb-6 scroll-mt-[100px]">
+          <div className="brand-label text-gold mb-2">
+            What we cover in the field
+          </div>
+          <p className="text-[13.5px] text-muted max-w-[600px] leading-[1.7]">
+            Our own certified people, on their own cards. Materials testing is
+            the one scope we place with an accredited partner, and we say so
+            rather than leave you to find out.
           </p>
         </div>
 

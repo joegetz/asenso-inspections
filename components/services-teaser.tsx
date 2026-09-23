@@ -29,7 +29,7 @@ export function ServicesTeaser() {
       level="band"
       eyebrow="What we do"
       title="Construction quality, run as a program."
-      intro="Most firms sell inspections by the visit. We are usually retained to run the quality function itself, and we self-perform the field work underneath it."
+      intro="Most firms sell inspections by the visit. We are usually retained to run the quality function itself, with the field scope underneath it covered by our own certified people."
       aside={
         <Link
           href="/services"
@@ -60,10 +60,9 @@ export function ServicesTeaser() {
       </div>
 
       <p className="text-[13px] text-muted mt-6 leading-[1.7] max-w-[760px]">
-        Self-performed underneath: special and deputy inspection, structural
-        observation and threshold, MEP, non-destructive testing, source and
-        shop inspection. Materials testing is placed with our accredited
-        partner.{" "}
+        Underneath: special and deputy inspection, structural observation and
+        threshold, MEP, non-destructive testing, source and shop inspection.
+        Materials testing is placed with our accredited partner.{" "}
         <Link
           href="/services"
           className="text-navy font-semibold underline decoration-gold/40 underline-offset-4 hover:decoration-gold"

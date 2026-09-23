@@ -55,7 +55,7 @@ const categories = [
   },
   {
     title: "Soils, compaction and laboratory testing",
-    sub: "Placed with our accredited partner, not self-performed",
+    sub: "Placed with our accredited partner",
     basis: "ISO/IEC 17025 partner",
     self: false,
   },

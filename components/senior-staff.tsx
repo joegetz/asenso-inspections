@@ -93,9 +93,11 @@ export function SeniorStaff() {
           on your job.
         </h2>
         <p className="text-[16px] text-muted max-w-[560px] mb-14 leading-[1.8] font-normal">
-          These four lead the quality program on your job, and they are the
-          same people from the pre-construction meeting to the closeout
-          package. Titles describe what each person manages; the certifications
+          The practice began in 2000, when two brothers moved from concrete
+          placement into special inspection. It is second-generation and
+          family-run. These four lead the quality program on your job, and
+          they are the same people from the pre-construction meeting to the
+          closeout package. Titles describe what each person manages; the certifications
           beneath each name are the carded credentials they hold. Where a card
           number is published it can be checked against the issuing registry.
         </p>

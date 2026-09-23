@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { FirmStory } from "@/components/firm-story";
 import { SeniorStaff } from "@/components/senior-staff";
 import { Coverage } from "@/components/coverage";
 import { PageCta } from "@/components/page-cta";
@@ -11,14 +10,18 @@ export const metadata: Metadata = {
 };
 
 /**
- * Who leads it, then the depth behind them. The separate credentials
- * section was deleted: every certification in it already appears on a
- * person's card a few hundred pixels above.
+ * Who leads it, then the depth behind them.
+ *
+ * Two sections were deleted from this page. The credentials inventory,
+ * because every certification in it already appeared on a person's card a
+ * few hundred pixels above. And the firm story, because four detailed
+ * profiles demonstrate "built by people who have done the work" far better
+ * than a paragraph claiming it. The one fact worth keeping from it, the
+ * 2000 lineage, now sits in the intro below.
  */
 export default function LeadershipPage() {
   return (
     <>
-      <FirmStory />
       <SeniorStaff />
       <Coverage />
       <PageCta

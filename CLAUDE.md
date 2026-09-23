@@ -91,13 +91,19 @@ Two layers, and the order matters.
 **Layer 1, how we are engaged** (program level, retained, harder to displace):
 Embedded QA/QC, Owner's Quality Management, Inspection Readiness and Evidence.
 
-**Layer 2, what we self-perform** (proves we are not brokering the work out):
+**Layer 2, what we cover in the field** (the technical scope):
 Special and Deputy Inspection, Structural Observation and Threshold, MEP
 Inspection and QA, Non-Destructive Testing, Source and Shop Inspection,
 Materials Testing.
 
 Materials testing is the one scope placed with an accredited partner, and the
 site says so plainly. That admission is worth more than another checkmark.
+
+**Never say "self-perform" on this site.** It is a general contractor's word for
+doing work with its own forces rather than subbing it out. Borrowing it puts
+Asenso on the subcontractor side of the table and makes the technical layer sound
+defensive, as though answering an accusation of brokering that nobody made. Say
+what we cover; note the one partnered scope in a sentence.
 
 The transparency pillar is proved by one specific mechanic, not by adjectives:
 **every condition is tracked in a register from open to verified closed**, and
@@ -135,7 +141,7 @@ that can be checked against the issuing registry.
 
 Everyone else is **not** named on the public site. The bench appears in
 `components/coverage.tsx` as capacity: network size, registered jurisdictions,
-mobilization time, and the special inspection categories covered, with self-performed
+mobilization time, and the special inspection categories covered, with in-house
 scopes distinguished from partnered ones. Named quality managers, deputy card numbers
 and resumes are provided at proposal stage for a defined scope.
 
