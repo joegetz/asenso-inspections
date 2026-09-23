@@ -185,8 +185,8 @@ export function Services() {
             What we cover in the field
           </div>
           <p className="text-[13.5px] text-muted max-w-[600px] leading-[1.7]">
-            Our own certified people, on their own cards. Materials testing is
-            the one scope we place with an accredited partner.
+            Each of these is carried by our own certified staff, working under
+            their own certifications and deputy registrations.
           </p>
         </div>
 
