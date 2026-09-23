@@ -66,11 +66,11 @@ export function Hero() {
             Rigorous. Responsive. Transparent.
           </p>
           <p className="text-[16px] text-sand/[0.58] leading-[1.85] mb-[2.2rem] max-w-[520px] font-normal">
-            We run construction quality as a standing program, not a line
-            item: special inspection, structural observation, threshold
-            inspection, and embedded QA/QC. ICC-certified inspectors, AHJ-ready
-            documentation, principals on the job, and reporting you can audit
-            the same day.
+            We take on the quality function for a project and hold it for the
+            duration: special inspection, structural observation, threshold
+            inspection and embedded QA/QC, from the first drawing review
+            through the closeout package. Every condition is tracked until it
+            is verified closed.
           </p>
           <div className="flex gap-4 flex-wrap mb-[2.4rem]">
             <a

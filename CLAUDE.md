@@ -33,7 +33,15 @@ The full system lives in the Asenso brand kit. The rules that bind this repo:
   response-time commitments. When in doubt, remove an element and add a fact.
 - **Tone:** modern, plainspoken, confident, technical without being dry. Own the words
   *transparent, real-time, traceable, auditable, data-driven, senior, named*.
-- **Copy mechanics.** American spelling, always: program, color, rigor, analyze. The
+- **No brag stacks.** A run of claims separated by commas ("ICC-certified
+inspectors, AHJ-ready documentation, principals on the job, and reporting you can
+audit the same day") is four assertions with nothing behind any of them, and it
+usually duplicates evidence already on screen. Describe the work; let the
+credential pills, the comparison table and the certification lists carry the
+claims. Do not argue with the category either ("not a line item") — the reader
+does not think of themselves as buying one.
+
+**Copy mechanics.** American spelling, always: program, color, rigor, analyze. The
   brand kit itself is written in British spelling; convert it. Do not use em dashes in
   prose. Use a colon, a comma, or a second sentence. Do not use "delve", "leverage" as a
   verb, "robust", "seamless", "in today's landscape", or a rule-of-three flourish where
