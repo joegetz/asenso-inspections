@@ -33,7 +33,16 @@ The full system lives in the Asenso brand kit. The rules that bind this repo:
   response-time commitments. When in doubt, remove an element and add a fact.
 - **Tone:** modern, plainspoken, confident, technical without being dry. Own the words
   *transparent, real-time, traceable, auditable, data-driven, senior, named*.
-- **Complementary, never displacing.** Asenso is brought on to strengthen the
+- **Name services by the work, never by the side of the table.** "Owner-Side
+Verification" told a GC we might be pointed at them and told a testing lab or
+prime that we compete with them for owner work. A meaningful share of the firm's
+work arrives as a subconsultant to labs and primes, so nothing on the site may
+read as channel conflict. Say what the work is (Independent Quality Assurance),
+name who retains us in a chip, and state both channels plainly: retained directly
+by owners, CMs and GCs, or brought in as a subconsultant by laboratories and
+prime firms.
+
+**Complementary, never displacing.** Asenso is brought on to strengthen the
 quality program on a project, not to take it over. Do not write "we run the
 quality function", "we act as your quality team" or anything that reads as
 replacing the GC's QC manager or the owner's staff. A general contractor with a
@@ -122,7 +131,7 @@ lib/
 Two layers, and the order matters.
 
 **Layer 1, how we are engaged** (program level, retained, harder to displace):
-Embedded QA/QC, Owner-Side Verification, Inspection Readiness and Evidence.
+Embedded QA/QC, Independent Quality Assurance, Inspection Readiness and Evidence.
 
 **Layer 2, what we cover in the field** (the technical scope):
 Special and Deputy Inspection, Structural Observation and Threshold, MEP

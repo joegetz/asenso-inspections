@@ -8,9 +8,9 @@ const engagements = [
     desc: "We work inside your team and carry the inspection and test plan, the hold points and the record, so your QC manager is not carrying it alone.",
   },
   {
-    code: "For the owner or EPC",
-    title: "Owner-Side Verification",
-    desc: "Independent verification for the owner or EPC, checking the work against the contract documents alongside the contractor's own QC program.",
+    code: "Owner, EPC or prime",
+    title: "Independent Quality Assurance",
+    desc: "Quality assurance carried out independently of the party performing the work, checking it against the contract documents alongside the contractor's own QC program.",
   },
   {
     code: "Before the request goes in",
@@ -29,7 +29,7 @@ export function ServicesTeaser() {
       level="band"
       eyebrow="What we do"
       title="Quality support that stays on the job."
-      intro="We are brought on to strengthen the quality program on a project, not to replace the people already running it, and we hold it for the duration."
+      intro="We are brought on to strengthen the quality program on a project, not to replace the people already running it. Retained directly by owners, CMs and general contractors, or brought in as a subconsultant by testing laboratories and prime firms."
       aside={
         <Link
           href="/services"

@@ -35,9 +35,9 @@ const engagements = [
   },
   {
     id: "svc-owner",
-    title: "Owner-Side Verification",
-    code: "For the owner or EPC",
-    desc: "Independent verification for the owner or EPC, checking the work against the contract documents alongside the contractor's own QC program, with the traceability and closeout a financed or mission-critical build requires.",
+    title: "Independent Quality Assurance",
+    code: "Owner, EPC or prime",
+    desc: "Quality assurance carried out independently of the party performing the work, checking it against the contract documents alongside the contractor's own QC program, with the traceability and closeout a financed or mission-critical build requires.",
     items: [
       "Independent verification of contractor QC",
       "USACE three-phase control",
@@ -120,10 +120,11 @@ export function Services() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-12 items-start mb-16">
           <p className="text-[16px] text-muted max-w-[620px] leading-[1.8] font-normal">
             We are brought on to strengthen the quality program on a project,
-            not to replace the people already running it. Scoped to the work
-            and the phase, held for the duration, and answerable for the record
-            at closeout. The field scope underneath is covered by our own
-            certified people.
+            not to replace the people already running it. Owners, CMs and
+            general contractors retain us directly. Testing laboratories and
+            prime firms bring us in as a subconsultant when a job needs
+            certified capacity they do not have free. The work is the same
+            either way, and so are the people.
           </p>
           <div className="border-l-2 border-gold pl-5">
             <div className="brand-label-sm text-muted mb-3">On this page</div>
