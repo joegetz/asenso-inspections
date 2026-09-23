@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SectionTag } from "./section-tag";
+import { Section } from "./section";
 
 const engagements = [
   {
@@ -19,60 +19,59 @@ const engagements = [
   },
 ];
 
+/**
+ * A band, not a chapter. Rows with rules between them rather than cards,
+ * so it does not read as another grid of boxes.
+ */
 export function ServicesTeaser() {
   return (
-    <section className="bg-offwhite py-24 px-8">
-      <div className="max-w-[--container-site] mx-auto">
-        <SectionTag>Services</SectionTag>
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 items-end mb-14">
-          <div>
-            <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
-              Construction quality,
-              <br />
-              run as a program.
-            </h2>
-            <p className="text-[16px] text-muted max-w-[580px] leading-[1.8] font-normal">
-              Most firms sell inspections by the visit. We are usually retained
-              to run the quality function itself, and we self-perform the field
-              work underneath it.
-            </p>
-          </div>
+    <Section
+      level="band"
+      eyebrow="What we do"
+      title="Construction quality, run as a program."
+      intro="Most firms sell inspections by the visit. We are usually retained to run the quality function itself, and we self-perform the field work underneath it."
+      aside={
+        <Link
+          href="/services"
+          className="inline-block bg-navy text-offwhite text-[12px] font-extrabold tracking-[0.1em] uppercase px-7 py-[13px] rounded-full no-underline transition-all hover:bg-[#1c3148] hover:-translate-y-px"
+        >
+          All Services
+        </Link>
+      }
+    >
+      <div className="border-t border-border">
+        {engagements.map((e) => (
           <Link
+            key={e.title}
             href="/services"
-            className="shrink-0 bg-navy text-offwhite text-[12px] font-extrabold tracking-[0.1em] uppercase px-7 py-[13px] rounded-full no-underline transition-all hover:bg-[#1c3148] hover:-translate-y-px"
+            className="grid grid-cols-1 md:grid-cols-[190px_1fr] gap-x-8 gap-y-1 py-6 border-b border-border no-underline group items-baseline"
           >
-            All Services
-          </Link>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-          {engagements.map((e) => (
-            <Link
-              key={e.title}
-              href="/services"
-              className="bg-offwhite border border-border rounded-xl p-7 no-underline transition-colors hover:border-gold/30 group"
-            >
-              <span className="brand-label-sm text-gold mb-3 block">
-                {e.code}
-              </span>
-              <h3 className="text-[1.05rem] font-extrabold text-navy leading-[1.25] mb-3 transition-colors group-hover:text-gold">
+            <div>
+              <div className="brand-label-sm text-gold mb-1">{e.code}</div>
+              <h3 className="text-[1rem] font-extrabold text-navy leading-[1.25] transition-colors group-hover:text-gold">
                 {e.title}
               </h3>
-              <p className="text-[13.5px] text-muted leading-[1.7]">{e.desc}</p>
-            </Link>
-          ))}
-        </div>
-
-        <p className="text-[13px] text-muted mt-8 leading-[1.7]">
-          Underneath: special and deputy inspection, structural observation and
-          threshold, MEP, non-destructive testing, source and shop inspection,
-          and materials testing.{" "}
-          <Link href="/services" className="text-navy font-semibold underline decoration-gold/40 underline-offset-4 hover:decoration-gold">
-            See the full scope
+            </div>
+            <p className="text-[13.5px] text-muted leading-[1.7] max-w-[620px]">
+              {e.desc}
+            </p>
           </Link>
-          .
-        </p>
+        ))}
       </div>
-    </section>
+
+      <p className="text-[13px] text-muted mt-6 leading-[1.7] max-w-[760px]">
+        Self-performed underneath: special and deputy inspection, structural
+        observation and threshold, MEP, non-destructive testing, source and
+        shop inspection. Materials testing is placed with our accredited
+        partner.{" "}
+        <Link
+          href="/services"
+          className="text-navy font-semibold underline decoration-gold/40 underline-offset-4 hover:decoration-gold"
+        >
+          See the full scope
+        </Link>
+        .
+      </p>
+    </Section>
   );
 }

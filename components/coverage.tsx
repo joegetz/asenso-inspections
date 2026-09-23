@@ -7,10 +7,19 @@ import { SectionTag } from "./section-tag";
  * three more profile cards.
  */
 
-const stats = [
-  { figure: "~30", label: "Inspector network", sub: "Family core, plus surge" },
-  { figure: "3", label: "Registered jurisdictions", sub: "LADBS · Long Beach · LA County" },
-  { figure: "24–48", label: "Hours to mobilize", sub: "Typical scheduling response" },
+const bodies = [
+  { body: "ICC", label: "Certified" },
+  { body: "AWS", label: "Welding" },
+  { body: "ACI", label: "Field & anchor" },
+  { body: "IFC", label: "Firestop" },
+  { body: "DSA", label: "Masonry \u00b7 shotcrete" },
+  { body: "USACE", label: "Quality manager" },
+];
+
+const registries = [
+  { authority: "City of Los Angeles", type: "Registered Deputy Inspector" },
+  { authority: "City of Long Beach", type: "Registered Deputy Inspector" },
+  { authority: "County of Los Angeles", type: "Deputy / Special Inspector" },
 ];
 
 const categories = [
@@ -64,21 +73,22 @@ export function Coverage() {
         </h2>
         <p className="text-[16px] text-sand/[0.48] max-w-[620px] mb-14 leading-[1.8] font-normal">
           The quality managers above lead the program. Behind them is a wider
-          bench of carded inspectors and a surge network for the peaks, so
-          coverage does not thin out when three trades run at once.
+          bench of carded inspectors and a surge network of around thirty, so
+          coverage does not thin out when three trades run at once. These are
+          the bodies we carry credentials from and the categories we cover.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 border-y border-white/[0.08] py-8 mb-14">
-          {stats.map((s) => (
-            <div key={s.label}>
-              <div className="text-[2.4rem] font-extrabold text-gold leading-none tracking-tight mb-2 brand-nums">
-                {s.figure}
+        <div className="grid grid-cols-3 sm:grid-cols-6 gap-3 border-y border-white/[0.08] py-7 mb-14">
+          {bodies.map((b) => (
+            <div
+              key={b.body}
+              className="bg-white/[0.04] border border-white/[0.08] rounded-[10px] py-4 px-3 text-center"
+            >
+              <div className="text-[0.95rem] font-extrabold text-white tracking-tight mb-0.5">
+                {b.body}
               </div>
-              <div className="text-[13px] font-bold text-white mb-1">
-                {s.label}
-              </div>
-              <div className="text-[12px] text-sand/[0.4] leading-[1.4]">
-                {s.sub}
+              <div className="text-[10.5px] text-sand/[0.4] leading-[1.3]">
+                {b.label}
               </div>
             </div>
           ))}
@@ -115,15 +125,31 @@ export function Coverage() {
         </div>
 
         <div className="border-t border-white/[0.08] pt-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <p className="text-[13.5px] text-sand/[0.5] leading-[1.75]">
-            <strong className="text-white font-semibold">
-              Registered coverage.
-            </strong>{" "}
-            Deputy and special inspector registrations are held individually and
-            listed on each building department&rsquo;s public registry. Orange
-            County, San Diego, Riverside and San Bernardino are registerable on
-            demand for a defined scope and start window.
-          </p>
+          <div>
+            <div className="brand-label-sm text-gold mb-3">
+              Registered deputy coverage
+            </div>
+            <ul className="list-none flex flex-col gap-2 mb-4">
+              {registries.map((r) => (
+                <li
+                  key={r.authority}
+                  className="flex items-baseline justify-between gap-4 text-[13px] border-b border-white/[0.06] pb-2"
+                >
+                  <span className="text-white font-semibold">
+                    {r.authority}
+                  </span>
+                  <span className="text-sand/[0.42] text-[12px] text-right">
+                    {r.type}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="text-[12.5px] text-sand/[0.42] leading-[1.7]">
+              Registrations are held individually and listed on each
+              department&rsquo;s public registry. Orange County, San Diego,
+              Riverside and San Bernardino are registerable on demand.
+            </p>
+          </div>
           <p className="text-[13.5px] text-sand/[0.5] leading-[1.75]">
             <strong className="text-white font-semibold">
               Named people at proposal.

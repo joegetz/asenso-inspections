@@ -26,15 +26,13 @@ const audiences = [
 
 export function WhoWeServe() {
   return (
-    <section id="serve" className="bg-sand py-24 px-8">
+    <section id="serve" className="bg-sand py-16 px-8">
       <div className="max-w-[--container-site] mx-auto">
         <SectionTag>Who We Serve</SectionTag>
-        <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-navy mb-4">
-          Projects we support.
-          <br />
-          People we work with.
+        <h2 className="text-[clamp(1.25rem,1.9vw,1.6rem)] font-extrabold leading-[1.15] tracking-tight text-navy mb-3">
+          Who we work with.
         </h2>
-        <p className="text-[16px] text-muted max-w-[560px] mb-14 leading-[1.8] font-normal">
+        <p className="text-[14px] text-muted max-w-[580px] mb-10 leading-[1.7] font-normal">
           We work directly with GCs, engineers, owners and agencies, or we partner
           with established labs who need certified quality staff on demanding
           projects. Either way, you get the same team, the same credentials, and

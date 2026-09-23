@@ -58,7 +58,7 @@ export function ContactSection() {
             </h2>
             <p className="text-[15px] text-muted leading-[1.8] mb-8">
               Send us a project brief or call to talk scope. We respond within one
-              business day &mdash; and we&apos;re happy to jump on a quick call
+              business day, and we&apos;re happy to jump on a quick call
               before you commit to anything.
             </p>
             <div className="flex items-start gap-3 text-[13.5px] text-muted mb-[0.9rem]">
@@ -79,7 +79,7 @@ export function ContactSection() {
               <strong className="text-navy font-bold">
                 Urgent or same-day needs?
               </strong>{" "}
-              Call us directly &mdash; if you&apos;re mid-pour and need an
+              Call us directly. If you&apos;re mid-pour and need an
               inspector on-site, we&apos;ll do everything we can to get there.
             </div>
           </div>

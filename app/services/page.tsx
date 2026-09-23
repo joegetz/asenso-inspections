@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Services } from "@/components/services";
+import { Process } from "@/components/process";
+import { WhoWeServe } from "@/components/who-we-serve";
 import { PageCta } from "@/components/page-cta";
 
 export const metadata: Metadata = {
@@ -8,10 +10,13 @@ export const metadata: Metadata = {
     "Construction quality run as a program: embedded QA/QC, owner's quality management and inspection readiness, with special and deputy inspection, structural observation, MEP, NDT and source inspection self-performed underneath.",
 };
 
+/** What we do, then how we run it, then who we do it for. */
 export default function ServicesPage() {
   return (
     <>
       <Services />
+      <Process />
+      <WhoWeServe />
       <PageCta
         heading="Tell us the scope, the jurisdiction and the start window."
         body="We will come back with the categories we cover, the quality manager we would put on it, and what the program costs. You should not need a discovery call to get a straight answer."

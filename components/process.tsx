@@ -51,14 +51,14 @@ function DotPattern() {
 
 export function Process() {
   return (
-    <section id="process" className="bg-navy py-24 px-8 relative overflow-hidden">
+    <section id="process" className="bg-navy py-16 px-8 relative overflow-hidden">
       <DotPattern />
       <div className="max-w-[--container-site] mx-auto relative z-1">
         <SectionTag>Engagement Process</SectionTag>
-        <h2 className="text-[clamp(1.9rem,3vw,2.6rem)] font-extrabold leading-[1.07] tracking-tight text-white mb-4">
+        <h2 className="text-[clamp(1.25rem,1.9vw,1.6rem)] font-extrabold leading-[1.15] tracking-tight text-white mb-3">
           SSI review to permit closeout.
         </h2>
-        <p className="text-[16px] text-sand/[0.48] max-w-[560px] mb-14 leading-[1.8] font-normal">
+        <p className="text-[14px] text-sand/[0.45] max-w-[560px] mb-10 leading-[1.7] font-normal">
           Structured around your project schedule, not a lab&apos;s dispatch
           queue.
         </p>

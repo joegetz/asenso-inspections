@@ -1,23 +1,21 @@
 import { Hero } from "@/components/hero";
-import { SectorStrip } from "@/components/sector-strip";
-import { WhoWeServe } from "@/components/who-we-serve";
+import { ProofBand } from "@/components/proof-band";
 import { ServicesTeaser } from "@/components/services-teaser";
 import { WhyAsenso } from "@/components/why-asenso";
-import { Process } from "@/components/process";
 import { ContactSection } from "@/components/contact-section";
 
+/**
+ * Home has one job: convince in a few screens, then take the enquiry.
+ * Hero (claim) -> proof at a glance -> what we do -> why us -> contact.
+ * Process and who-we-serve moved to /services, where they belong.
+ */
 export default function Home() {
   return (
     <>
       <Hero />
-      <SectorStrip
-        eyebrow="Team experience across"
-        heading="High-accountability sectors across California, Texas & the Mountain West"
-      />
-      <WhoWeServe />
+      <ProofBand />
       <ServicesTeaser />
       <WhyAsenso />
-      <Process />
       <ContactSection />
     </>
   );
